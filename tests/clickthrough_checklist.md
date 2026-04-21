@@ -4,8 +4,9 @@
 2. flask --app app run 
 3. Open http://localhost:5000 
 
-#Click through Section
+## Click-through Section
 | # | Action | Expected Result | Pass/Fail | Notes |
+|---|---|---|---|---|
 | [ ] 1 | Open `/` | [cite_start]Home page loads with Start button visible [cite: 253] | | |
 | [ ] 2 | Click Start | [cite_start]URL changes to `/learn/1` and intro is visible [cite: 253] | | |
 | [ ] 3 | Click Next (Lessons 1-5) | [cite_start]URL advances `/learn/1` → `/learn/2` ... → `/learn/5` [cite: 253] | | |
