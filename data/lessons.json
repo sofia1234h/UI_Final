@@ -1,0 +1,53 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "What is a Compensation Pattern?",
+      "type": "intro",
+      "body": "When someone squats, their body sometimes works around a limitation instead of moving the way it should. That workaround is called a compensation pattern. It usually means a joint is stiff, a muscle is weak, or the person hasn't learned the movement yet. Spotting these patterns is the first step to coaching a safer, stronger squat. In this module, you'll learn to watch a squat from the side and name what you see.",
+      "bullets": [
+        { "label": "Heel Rise", "desc": "Heels lift off the ground at the bottom of the squat, usually because the ankles can't bend far enough." },
+        { "label": "Excessive Forward Lean", "desc": "The whole torso tips forward past the shin angle, often from tight hips or a weak core." },
+        { "label": "Lumbar Flexion", "desc": "The lower back rounds at the bottom of the squat, sometimes called a 'butt wink.'" }
+      ],
+      "image": null
+    },
+    {
+      "id": 2,
+      "title": "3 Things to Watch (Side View)",
+      "type": "intro",
+      "body": "Stand to the side of the person squatting. From this angle, three checks tell you almost everything you need to know. Go through them in order, top to bottom, every time you watch a squat.",
+      "bullets": [
+        { "label": "Heel Position", "desc": "Watch the feet. Heels should stay flat on the floor the whole time. If they lift, that's heel rise — usually limited ankle motion." },
+        { "label": "Torso-Tibia Alignment", "desc": "Compare the angle of the torso to the angle of the shin. They should be roughly parallel. If the torso tips much further forward than the shin, that's excessive forward lean." },
+        { "label": "Lumbar Curve", "desc": "Watch the lower back at the bottom of the squat. It should stay in a gentle natural arch. If it rounds or tucks under, that's lumbar flexion." }
+      ],
+      "image": null
+    },
+    {
+      "id": 3,
+      "title": "Heel Position",
+      "type": "comparison",
+      "good": { "image": "heel_good.png", "caption": "Heels flat on ground" },
+      "bad": { "image": "heel_bad.png", "caption": "Heels lifted off ground" },
+      "tip": "If the heels come up during the squat, the person probably can't bend their ankles far enough to stay flat. This is often from tight calves or stiff ankle joints. A quick fix to try: have them squat with their heels on a small plate or a rolled towel and see if the rest of the squat cleans up."
+    },
+    {
+      "id": 4,
+      "title": "Torso-Tibia Alignment",
+      "type": "comparison",
+      "good": { "image": "lean_good.png", "caption": "Torso roughly parallel to shin" },
+      "bad": { "image": "lean_bad.png", "caption": "Torso tipped way past shin angle" },
+      "tip": "If the whole torso tips forward more than the shin does, the person is leaning excessively. Common causes are tight hips (so the body folds at the waist to get depth) or a weak core (so the chest falls forward under load). Cue them to 'stand tall through the chest' and see if it changes."
+    },
+    {
+      "id": 5,
+      "title": "Lumbar Flexion Control",
+      "type": "comparison",
+      "good": { "image": "lumbar_good.png", "caption": "Lower back stays in a natural arch" },
+      "bad": { "image": "lumbar_bad.png", "caption": "Lower back rounds at the bottom" },
+      "tip": "If the lower back rounds or tucks under at the bottom of the squat, that's lumbar flexion — sometimes called a 'butt wink.' It usually means the hips can't flex far enough, so the pelvis tucks to steal more range of motion.",
+      "side_by_side_note": "Forward lean and lumbar flexion can look similar, but they're not the same thing. Forward lean is when the WHOLE torso tips forward as one piece — the back stays straight, it just angles down. Lumbar flexion is when only the LOWER BACK rounds while the upper back stays where it is. Watch the curve of the spine, not just the overall angle."
+    }
+  ]
+}
