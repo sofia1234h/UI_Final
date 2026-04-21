@@ -18,7 +18,7 @@
 | [ ] 9 | Click Restart | [cite_start]Returns to `/` and session resets [cite: 253] | | |
 | [ ] 10| Use Browser Back Button | [cite_start]App does not crash at any stage [cite: 253] | | |
 
-##Backend Verification
+## Backend Verification
 * [cite_start][ ] **Start Time**: Confirm `start_time` is printed in server console after clicking Start[cite: 254].
 * [cite_start][ ] **Lesson Visits**: Confirm `lesson_visits` has a new timestamp after each lesson visit[cite: 255].
 * [cite_start][ ] **Quiz Answers**: Confirm `answers[id]` is populated with answer + correct flag after submit[cite: 256].
