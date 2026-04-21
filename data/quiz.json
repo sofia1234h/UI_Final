@@ -1,0 +1,34 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "type": "multi_select",
+      "prompt": "Watch this side-view squat. Do you see any compensation patterns? Select all that apply.",
+      "image": "quiz_q1.png",
+      "options": ["Heel Rise", "Excessive Forward Lean", "Lumbar Flexion", "No compensations"],
+      "correct": ["Excessive Forward Lean", "Lumbar Flexion"],
+      "explanation": "Heels stay flat on the floor the whole time — that check passes. But look at the torso: it tips way further forward than the shin, so that's excessive forward lean. At the bottom, the lower back also rounds under, which is lumbar flexion. Two compensations, not one."
+    },
+    {
+      "id": 2,
+      "type": "single_select",
+      "prompt": "Read this observer's notes. Which compensation pattern are they describing?",
+      "notes": "From the side, I can see her torso is angled way further forward than her shin. Her heels stay flat on the ground the whole squat, and her lower back keeps a normal curve at the bottom — it doesn't round under. But that chest-down posture gets worse the deeper she goes.",
+      "options": ["Heel Rise", "Excessive Forward Lean", "Lumbar Flexion"],
+      "correct": "Excessive Forward Lean",
+      "explanation": "The key clue is 'torso angled way further forward than her shin.' That mismatch between torso angle and shin angle is the definition of excessive forward lean. Heels are flat (rules out heel rise) and the lower back stays neutral (rules out lumbar flexion)."
+    },
+    {
+      "id": 3,
+      "type": "true_false_multi",
+      "prompt": "True or False? Mark each statement.",
+      "statements": [
+        { "text": "If heels lift, it means the knees are weak.", "correct": false },
+        { "text": "Lumbar flexion means the lower back rounds at the bottom of the squat.", "correct": true },
+        { "text": "Torso-tibia alignment means comparing the angle of the torso to the angle of the shin.", "correct": true },
+        { "text": "Knee valgus (knees caving in) is best assessed from the side view.", "correct": false }
+      ],
+      "explanation": "Heel rise is an ankle mobility issue, not a knee strength issue. Lumbar flexion and torso-tibia alignment are defined exactly as stated. Knee valgus is a front-view check — you can't see the knees tracking inward from the side."
+    }
+  ]
+}
