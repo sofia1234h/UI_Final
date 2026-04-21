@@ -1,8 +1,8 @@
 
-#How to run
-1. pip install -r requirements.txt 
-2. flask --app app run 
-3. Open http://localhost:5000 
+## How to Run
+1. [cite_start]`pip install -r requirements.txt` [cite: 250]
+2. [cite_start]`flask --app app run` [cite: 250]
+3. [cite_start]Open http://localhost:5000 [cite: 250]
 
 ## Click-through Section
 | # | Action | Expected Result | Pass/Fail | Notes |
