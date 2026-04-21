@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}Learn: {{ lesson.title }}{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-body p-4">
+        <h2 class="title-serif mb-4">{{ lesson.title }}</h2>
+
+        {% if lesson.type == "intro" %}
+            <p class="mb-4">{{ lesson.body }}</p>
+
+            {% if lesson.bullets %}
+            <div class="mt-4">
+                {% for bullet in lesson.bullets %}
+                <div class="d-flex align-items-start mb-3">
+                    <div class="bullet-number me-3">{{ loop.index }}</div>
+                    <div>
+                        <strong class="text-success-custom">{{ bullet.label }}</strong>
+                        <span class="ms-2">{{ bullet.desc }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+        {% elif lesson.type == "comparison" %}
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-header card-header-good">
+                            GOOD: {{ lesson.good.caption }}
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="/static/img/{{ lesson.good.image }}" class="img-fluid" alt="{{ lesson.good.caption }}">
+                            <p class="text-muted small mt-2">{{ lesson.good.caption }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-header card-header-bad">
+                            COMPENSATION: {{ lesson.bad.caption }}
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="/static/img/{{ lesson.bad.image }}" class="img-fluid" alt="{{ lesson.bad.caption }}">
+                            <p class="text-muted small mt-2">{{ lesson.bad.caption }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-muted"><strong>What to look for:</strong> {{ lesson.tip }}</p>
+
+            {% if lesson.side_by_side_note %}
+            <div class="callout-blue">
+                <strong>Key difference from forward lean:</strong>
+                <p class="mb-0 mt-2">{{ lesson.side_by_side_note }}</p>
+            </div>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block nav %}
+{% if lesson.id > 1 %}
+<a href="/learn/{{ lesson.id - 1 }}" class="btn btn-link text-success-custom">&larr; Back</a>
+{% else %}
+<a href="/" class="btn btn-link text-success-custom">&larr; Back</a>
+{% endif %}
+
+{% if lesson.id < total_lessons %}
+<a href="/learn/{{ lesson.id + 1 }}" class="btn btn-link text-success-custom">Next &rarr;</a>
+{% else %}
+<a href="/quiz/1" class="btn btn-link text-success-custom">Start Quiz &rarr;</a>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz: Question {{ question.id }} of {{ total_questions }}{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-body p-4">
+        <h4 class="text-muted mb-4">Question {{ question.id }} of {{ total_questions }}</h4>
+        <p class="lead mb-4">{{ question.prompt }}</p>
+
+        {% if question.type == "multi_select" %}
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <img src="/static/img/{{ question.image }}" class="img-fluid rounded" alt="Quiz image">
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="bg-light p-3 rounded h-100">
+                    <strong class="text-muted">Look for:</strong>
+                    <ol class="mt-2 mb-0">
+                        <li>Are heels flat?</li>
+                        <li>Torso vs shin angle?</li>
+                        <li>Low back curved or neutral?</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                {% for option in question.options %}
+                <div class="form-check mb-2">
+                    <input class="form-check-input quiz-option" type="checkbox" value="{{ option }}" id="opt{{ loop.index }}">
+                    <label class="form-check-label" for="opt{{ loop.index }}">{{ option }}</label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        {% elif question.type == "single_select" %}
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="bg-light p-4 rounded border-start border-4" style="border-color: #6c757d !important;">
+                    <strong class="text-muted d-block mb-2">Observer notes:</strong>
+                    <p class="fst-italic mb-0">"{{ question.notes }}"</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                {% for option in question.options %}
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="quiz-option" value="{{ option }}" id="opt{{ loop.index }}">
+                    <label class="form-check-label" for="opt{{ loop.index }}">
+                        <strong>{{ ['A)', 'B)', 'C)', 'D)'][loop.index0] }}</strong> {{ option }}
+                    </label>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        {% elif question.type == "true_false_multi" %}
+        <div class="mt-3">
+            {% for stmt in question.statements %}
+            <div class="row align-items-center mb-3 py-2 {% if not loop.last %}border-bottom{% endif %}">
+                <div class="col-md-8">
+                    <span>{{ stmt.text }}</span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="stmt-{{ loop.index0 }}" id="stmt{{ loop.index0 }}-true" value="true">
+                        <label class="btn btn-outline-success" for="stmt{{ loop.index0 }}-true">T</label>
+                        <input type="radio" class="btn-check" name="stmt-{{ loop.index0 }}" id="stmt{{ loop.index0 }}-false" value="false">
+                        <label class="btn btn-outline-danger" for="stmt{{ loop.index0 }}-false">F</label>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="text-center mt-4">
+            <button type="button" id="submit-btn" class="btn btn-squat-primary btn-lg"
+                    data-type="{{ question.type }}" data-qid="{{ question.id }}">
+                Submit Answer
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+$('#submit-btn').on('click', function() {
+    const type = $(this).data('type');
+    const qid = $(this).data('qid');
+    let answer;
+
+    if (type === 'multi_select') {
+        answer = $('.quiz-option:checked').map(function() { return $(this).val(); }).get();
+    } else if (type === 'single_select') {
+        answer = $('input[name="quiz-option"]:checked').val();
+    } else if (type === 'true_false_multi') {
+        answer = [];
+        {% if question.type == "true_false_multi" %}
+        const totalStatements = {{ question.statements|length }};
+        {% else %}
+        const totalStatements = 0;
+        {% endif %}
+        for (let i = 0; i < totalStatements; i++) {
+            const checked = $('input[name="stmt-' + i + '"]:checked');
+            if (checked.length === 0) {
+                alert('Please answer all statements.');
+                return;
+            }
+            answer.push(checked.val() === 'true');
+        }
+    }
+
+    if (answer === undefined || (Array.isArray(answer) && answer.length === 0)) {
+        alert('Please select an answer.');
+        return;
+    }
+
+    $.ajax({
+        url: '/submit-answer',
+        method: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ question_id: qid, answer: answer }),
+        success: function(res) { window.location.href = res.next_url; },
+        error: function() { alert('Submit failed. Check the server console.'); }
+    });
+});
+</script>
+{% endblock %}
+
+{% block nav %}
+{% if question.id > 1 %}
+<a href="/quiz/{{ question.id - 1 }}" class="btn btn-link text-success-custom">&larr; Back</a>
+{% else %}
+<a href="/learn/5" class="btn btn-link text-success-custom">&larr; Back to Lessons</a>
+{% endif %}
+<span></span>
+{% endblock %}

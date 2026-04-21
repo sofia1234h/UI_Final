@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Quiz Complete{% endblock %}
+
+{% block content %}
+<div class="text-center py-4">
+    <h1 class="title-serif display-1" style="font-size: 96px;">{{ score }} / {{ total }}</h1>
+    <p class="lead mt-3">
+        {% if score == total %}
+            Great job!
+        {% elif score >= total // 2 %}
+            Nice work!
+        {% else %}
+            Keep practicing!
+        {% endif %}
+    </p>
+</div>
+
+<div class="card mt-4">
+    <div class="card-body">
+        <h5 class="mb-3">Results Breakdown</h5>
+        {% for item in breakdown %}
+        <div class="d-flex justify-content-between align-items-center py-2 {% if not loop.last %}border-bottom{% endif %}">
+            <span>
+                <strong>Question {{ item.id }}:</strong> {{ item.prompt|truncate(60) }}
+            </span>
+            {% if item.correct %}
+            <span class="badge-pass">PASS</span>
+            {% else %}
+            <span class="badge-fail">FAIL</span>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a href="/" class="btn btn-squat-primary btn-lg">Restart</a>
+</div>
+{% endblock %}
+
+{% block nav %}{% endblock %}
