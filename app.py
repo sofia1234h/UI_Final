@@ -85,6 +85,10 @@ def quiz(n):
         safe_q["statements"] = [
             {"text": s["text"]} for s in q.get("statements", [])
         ]
+    # NOTE for HW11: spot_click sends correct_zone and distractor_zones to the client.
+    # This is intentional for this learning quiz — a curious user can inspect them,
+    # but that's acceptable since this is a learning tool, not a high-stakes test.
+    # The 'explanation' field is still withheld until after submit.
     return render_template(
         "quiz.html", question=safe_q, total_questions=len(questions)
     )
@@ -99,6 +103,9 @@ def check_answer(question, submitted):
     if qtype == "true_false_multi":
         expected = [s["correct"] for s in question["statements"]]
         return list(submitted or []) == expected
+    if qtype == "spot_click":
+        # Frontend already computed correctness; backend just stores it
+        return bool(submitted.get("correct")) if isinstance(submitted, dict) else False
     return False
 
 
@@ -125,6 +132,18 @@ def submit_answer():
     else:
         next_url = url_for("result")
     return jsonify({"correct": is_correct, "next_url": next_url})
+
+
+@app.route("/log-interaction", methods=["POST"])
+def log_interaction():
+    ensure_state()
+    payload = request.get_json(silent=True) or {}
+    session.setdefault("interactions", []).append({
+        "t": now_iso(),
+        **payload
+    })
+    session.modified = True
+    return jsonify({"ok": True})
 
 
 @app.route("/result")

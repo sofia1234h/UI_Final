@@ -1,0 +1,171 @@
+/* Skeleton Player Styles */
+
+.skeleton-player {
+  background: #FAF9F6;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.skeleton-canvas-wrapper {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FAF9F6;
+}
+
+.skeleton-svg {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+.skeleton-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.skeleton-play-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #2E5E4E;
+  background: #fff;
+  color: #2E5E4E;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+
+.skeleton-play-btn:hover {
+  background: #2E5E4E;
+  color: #fff;
+}
+
+.skeleton-play-btn .pause-icon {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.skeleton-scrubber {
+  flex: 1;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ddd;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.skeleton-scrubber::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #2E5E4E;
+  cursor: pointer;
+}
+
+.skeleton-scrubber::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #2E5E4E;
+  cursor: pointer;
+  border: none;
+}
+
+.skeleton-frame-counter {
+  font-size: 12px;
+  color: #666;
+  min-width: 50px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.skeleton-angle-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.skeleton-angle-toggle input {
+  cursor: pointer;
+}
+
+.skeleton-error {
+  padding: 40px 20px;
+  text-align: center;
+  color: #C94A4A;
+  font-size: 14px;
+}
+
+/* Joint hover tooltip */
+.joint-tooltip {
+  pointer-events: none;
+}
+
+.joint-tooltip rect {
+  fill: #FAF9F6;
+  stroke: #2d5d4f;
+  stroke-width: 1px;
+  rx: 4;
+  ry: 4;
+}
+
+.joint-tooltip text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 11px;
+  fill: #333;
+}
+
+/* Joint hover highlight */
+.skeleton-joints circle {
+  transition: r 120ms ease, stroke 120ms ease, stroke-width 120ms ease;
+}
+
+.skeleton-joints circle:focus {
+  outline: none;
+}
+
+.skeleton-joints circle.joint-hovered {
+  stroke-width: 2.5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .skeleton-controls {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skeleton-scrubber {
+    order: 3;
+    width: 100%;
+    flex: none;
+  }
+
+  .skeleton-frame-counter {
+    order: 2;
+  }
+
+  .skeleton-angle-toggle {
+    order: 4;
+  }
+}

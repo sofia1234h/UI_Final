@@ -1,0 +1,6727 @@
+{
+  "label": "Sample 2",
+  "fps": 15.0,
+  "source_csv": "video_2cb16bfdde7143ec909ade9ad0ba0377_IMG_7416.csv",
+  "frame_range": null,
+  "bounds": {
+    "w": 1.0,
+    "h": 1.0
+  },
+  "frames": [
+    {
+      "t": 0,
+      "joints": {
+        "nose": [
+          0.3849,
+          0.9361
+        ],
+        "left_shoulder": [
+          0.6099,
+          0.83
+        ],
+        "right_shoulder": [
+          0.1619,
+          0.8211
+        ],
+        "left_elbow": [
+          0.7003,
+          0.7224
+        ],
+        "right_elbow": [
+          0.1277,
+          0.7222
+        ],
+        "left_wrist": [
+          0.4959,
+          0.8445
+        ],
+        "right_wrist": [
+          0.3793,
+          0.8531
+        ],
+        "left_hip": [
+          0.5607,
+          0.5551
+        ],
+        "right_hip": [
+          0.2775,
+          0.5494
+        ],
+        "left_knee": [
+          0.6151,
+          0.3068
+        ],
+        "right_knee": [
+          0.284,
+          0.3053
+        ],
+        "left_ankle": [
+          0.6369,
+          0.0794
+        ],
+        "right_ankle": [
+          0.2793,
+          0.0879
+        ],
+        "left_heel": [
+          0.598,
+          0.0562
+        ],
+        "right_heel": [
+          0.3302,
+          0.0687
+        ]
+      },
+      "angles": {
+        "left_elbow": 14.7,
+        "right_elbow": 28.5,
+        "left_shoulder": 21.4,
+        "right_shoulder": 16.5,
+        "left_hip": 171.4,
+        "right_hip": 171.5,
+        "left_knee": 177.4,
+        "right_knee": 179.0,
+        "left_ankle": 145.7,
+        "right_ankle": 134.5,
+        "upper_back": 180.0,
+        "lower_back": 180.0
+      }
+    },
+    {
+      "t": 1,
+      "joints": {
+        "nose": [
+          0.382,
+          0.9385
+        ],
+        "left_shoulder": [
+          0.6179,
+          0.829
+        ],
+        "right_shoulder": [
+          0.1609,
+          0.8182
+        ],
+        "left_elbow": [
+          0.7002,
+          0.7197
+        ],
+        "right_elbow": [
+          0.129,
+          0.7221
+        ],
+        "left_wrist": [
+          0.4946,
+          0.8461
+        ],
+        "right_wrist": [
+          0.3795,
+          0.8509
+        ],
+        "left_hip": [
+          0.5603,
+          0.5548
+        ],
+        "right_hip": [
+          0.2747,
+          0.5494
+        ],
+        "left_knee": [
+          0.6151,
+          0.3033
+        ],
+        "right_knee": [
+          0.2838,
+          0.3038
+        ],
+        "left_ankle": [
+          0.6457,
+          0.0808
+        ],
+        "right_ankle": [
+          0.2806,
+          0.0861
+        ],
+        "left_heel": [
+          0.6038,
+          0.0563
+        ],
+        "right_heel": [
+          0.3304,
+          0.066
+        ]
+      },
+      "angles": {
+        "left_elbow": 15.6,
+        "right_elbow": 29.1,
+        "left_shoulder": 20.3,
+        "right_shoulder": 16.1,
+        "left_hip": 170.8,
+        "right_hip": 171.7,
+        "left_knee": 178.3,
+        "right_knee": 178.9,
+        "left_ankle": 144.3,
+        "right_ankle": 136.8,
+        "upper_back": 180.0,
+        "lower_back": 179.5
+      }
+    },
+    {
+      "t": 2,
+      "joints": {
+        "nose": [
+          0.3818,
+          0.9399
+        ],
+        "left_shoulder": [
+          0.6193,
+          0.8284
+        ],
+        "right_shoulder": [
+          0.1593,
+          0.817
+        ],
+        "left_elbow": [
+          0.7007,
+          0.7197
+        ],
+        "right_elbow": [
+          0.1302,
+          0.7217
+        ],
+        "left_wrist": [
+          0.4939,
+          0.8472
+        ],
+        "right_wrist": [
+          0.3796,
+          0.8501
+        ],
+        "left_hip": [
+          0.5598,
+          0.5545
+        ],
+        "right_hip": [
+          0.2731,
+          0.5491
+        ],
+        "left_knee": [
+          0.615,
+          0.3027
+        ],
+        "right_knee": [
+          0.2836,
+          0.3029
+        ],
+        "left_ankle": [
+          0.6485,
+          0.0819
+        ],
+        "right_ankle": [
+          0.2833,
+          0.0847
+        ],
+        "left_heel": [
+          0.6065,
+          0.0564
+        ],
+        "right_heel": [
+          0.3317,
+          0.0636
+        ]
+      },
+      "angles": {
+        "left_elbow": 15.7,
+        "right_elbow": 29.6,
+        "left_shoulder": 20.4,
+        "right_shoulder": 15.6,
+        "left_hip": 170.6,
+        "right_hip": 171.9,
+        "left_knee": 178.6,
+        "right_knee": 179.0,
+        "left_ankle": 145.0,
+        "right_ankle": 139.1,
+        "upper_back": 180.0,
+        "lower_back": 179.3
+      }
+    },
+    {
+      "t": 3,
+      "joints": {
+        "nose": [
+          0.379,
+          0.9409
+        ],
+        "left_shoulder": [
+          0.6193,
+          0.8281
+        ],
+        "right_shoulder": [
+          0.158,
+          0.8164
+        ],
+        "left_elbow": [
+          0.7062,
+          0.7196
+        ],
+        "right_elbow": [
+          0.1298,
+          0.7213
+        ],
+        "left_wrist": [
+          0.4932,
+          0.8471
+        ],
+        "right_wrist": [
+          0.3793,
+          0.8479
+        ],
+        "left_hip": [
+          0.5598,
+          0.5548
+        ],
+        "right_hip": [
+          0.2724,
+          0.5496
+        ],
+        "left_knee": [
+          0.6153,
+          0.3027
+        ],
+        "right_knee": [
+          0.2837,
+          0.3029
+        ],
+        "left_ankle": [
+          0.6498,
+          0.0823
+        ],
+        "right_ankle": [
+          0.2838,
+          0.0844
+        ],
+        "left_heel": [
+          0.608,
+          0.0564
+        ],
+        "right_heel": [
+          0.3312,
+          0.0632
+        ]
+      },
+      "angles": {
+        "left_elbow": 15.4,
+        "right_elbow": 30.2,
+        "left_shoulder": 21.5,
+        "right_shoulder": 15.5,
+        "left_hip": 170.6,
+        "right_hip": 171.8,
+        "left_knee": 178.6,
+        "right_knee": 179.0,
+        "left_ankle": 145.3,
+        "right_ankle": 139.9,
+        "upper_back": 180.0,
+        "lower_back": 179.3
+      }
+    },
+    {
+      "t": 4,
+      "joints": {
+        "nose": [
+          0.3781,
+          0.9416
+        ],
+        "left_shoulder": [
+          0.6208,
+          0.8276
+        ],
+        "right_shoulder": [
+          0.1574,
+          0.8159
+        ],
+        "left_elbow": [
+          0.7195,
+          0.7199
+        ],
+        "right_elbow": [
+          0.1298,
+          0.7187
+        ],
+        "left_wrist": [
+          0.4922,
+          0.8412
+        ],
+        "right_wrist": [
+          0.3796,
+          0.8435
+        ],
+        "left_hip": [
+          0.5598,
+          0.5559
+        ],
+        "right_hip": [
+          0.2714,
+          0.5509
+        ],
+        "left_knee": [
+          0.6155,
+          0.3029
+        ],
+        "right_knee": [
+          0.284,
+          0.3029
+        ],
+        "left_ankle": [
+          0.6508,
+          0.0825
+        ],
+        "right_ankle": [
+          0.284,
+          0.0842
+        ],
+        "left_heel": [
+          0.6087,
+          0.0567
+        ],
+        "right_heel": [
+          0.3314,
+          0.0628
+        ]
+      },
+      "angles": {
+        "left_elbow": 16.2,
+        "right_elbow": 30.9,
+        "left_shoulder": 23.9,
+        "right_shoulder": 15.3,
+        "left_hip": 170.4,
+        "right_hip": 171.9,
+        "left_knee": 178.7,
+        "right_knee": 178.9,
+        "left_ankle": 145.0,
+        "right_ankle": 140.2,
+        "upper_back": 180.0,
+        "lower_back": 179.2
+      }
+    },
+    {
+      "t": 5,
+      "joints": {
+        "nose": [
+          0.3778,
+          0.9427
+        ],
+        "left_shoulder": [
+          0.6218,
+          0.8277
+        ],
+        "right_shoulder": [
+          0.1574,
+          0.8157
+        ],
+        "left_elbow": [
+          0.7537,
+          0.7264
+        ],
+        "right_elbow": [
+          0.1282,
+          0.7179
+        ],
+        "left_wrist": [
+          0.4842,
+          0.8385
+        ],
+        "right_wrist": [
+          0.3801,
+          0.8425
+        ],
+        "left_hip": [
+          0.5602,
+          0.5566
+        ],
+        "right_hip": [
+          0.2711,
+          0.5515
+        ],
+        "left_knee": [
+          0.6167,
+          0.3026
+        ],
+        "right_knee": [
+          0.284,
+          0.3031
+        ],
+        "left_ankle": [
+          0.651,
+          0.0824
+        ],
+        "right_ankle": [
+          0.284,
+          0.0842
+        ],
+        "left_heel": [
+          0.6087,
+          0.0565
+        ],
+        "right_heel": [
+          0.3316,
+          0.0629
+        ]
+      },
+      "angles": {
+        "left_elbow": 16.0,
+        "right_elbow": 30.8,
+        "left_shoulder": 31.0,
+        "right_shoulder": 15.6,
+        "left_hip": 170.3,
+        "right_hip": 171.9,
+        "left_knee": 178.6,
+        "right_knee": 178.9,
+        "left_ankle": 145.1,
+        "right_ankle": 140.0,
+        "upper_back": 180.0,
+        "lower_back": 179.1
+      }
+    },
+    {
+      "t": 6,
+      "joints": {
+        "nose": [
+          0.3776,
+          0.9453
+        ],
+        "left_shoulder": [
+          0.6214,
+          0.829
+        ],
+        "right_shoulder": [
+          0.1581,
+          0.8157
+        ],
+        "left_elbow": [
+          0.7838,
+          0.7348
+        ],
+        "right_elbow": [
+          0.1223,
+          0.7172
+        ],
+        "left_wrist": [
+          0.4848,
+          0.8351
+        ],
+        "right_wrist": [
+          0.3769,
+          0.8345
+        ],
+        "left_hip": [
+          0.5614,
+          0.5592
+        ],
+        "right_hip": [
+          0.2714,
+          0.5534
+        ],
+        "left_knee": [
+          0.6206,
+          0.3033
+        ],
+        "right_knee": [
+          0.2857,
+          0.3063
+        ],
+        "left_ankle": [
+          0.651,
+          0.0831
+        ],
+        "right_ankle": [
+          0.2833,
+          0.0852
+        ],
+        "left_heel": [
+          0.6083,
+          0.0572
+        ],
+        "right_heel": [
+          0.3312,
+          0.0642
+        ]
+      },
+      "angles": {
+        "left_elbow": 15.3,
+        "right_elbow": 31.4,
+        "left_shoulder": 37.8,
+        "right_shoulder": 17.0,
+        "left_hip": 170.2,
+        "right_hip": 172.0,
+        "left_knee": 178.0,
+        "right_knee": 178.5,
+        "left_ankle": 145.2,
+        "right_ankle": 139.1,
+        "upper_back": 180.0,
+        "lower_back": 179.0
+      }
+    },
+    {
+      "t": 7,
+      "joints": {
+        "nose": [
+          0.3798,
+          0.945
+        ],
+        "left_shoulder": [
+          0.6196,
+          0.8289
+        ],
+        "right_shoulder": [
+          0.1563,
+          0.8153
+        ],
+        "left_elbow": [
+          0.7881,
+          0.7361
+        ],
+        "right_elbow": [
+          0.1103,
+          0.7166
+        ],
+        "left_wrist": [
+          0.4858,
+          0.8276
+        ],
+        "right_wrist": [
+          0.3865,
+          0.8245
+        ],
+        "left_hip": [
+          0.5638,
+          0.5593
+        ],
+        "right_hip": [
+          0.2724,
+          0.5531
+        ],
+        "left_knee": [
+          0.6237,
+          0.3036
+        ],
+        "right_knee": [
+          0.2852,
+          0.3056
+        ],
+        "left_ankle": [
+          0.6503,
+          0.0829
+        ],
+        "right_ankle": [
+          0.2843,
+          0.0863
+        ],
+        "left_heel": [
+          0.6082,
+          0.0567
+        ],
+        "right_heel": [
+          0.3318,
+          0.0659
+        ]
+      },
+      "angles": {
+        "left_elbow": 16.9,
+        "right_elbow": 34.0,
+        "left_shoulder": 38.8,
+        "right_shoulder": 19.4,
+        "left_hip": 170.5,
+        "right_hip": 171.7,
+        "left_knee": 177.6,
+        "right_knee": 178.8,
+        "left_ankle": 146.3,
+        "right_ankle": 138.6,
+        "upper_back": 180.0,
+        "lower_back": 179.3
+      }
+    },
+    {
+      "t": 8,
+      "joints": {
+        "nose": [
+          0.3821,
+          0.9449
+        ],
+        "left_shoulder": [
+          0.6219,
+          0.8289
+        ],
+        "right_shoulder": [
+          0.1572,
+          0.8142
+        ],
+        "left_elbow": [
+          0.7909,
+          0.7358
+        ],
+        "right_elbow": [
+          0.1104,
+          0.7165
+        ],
+        "left_wrist": [
+          0.4863,
+          0.8232
+        ],
+        "right_wrist": [
+          0.3874,
+          0.8233
+        ],
+        "left_hip": [
+          0.5692,
+          0.5581
+        ],
+        "right_hip": [
+          0.2743,
+          0.5524
+        ],
+        "left_knee": [
+          0.6282,
+          0.302
+        ],
+        "right_knee": [
+          0.2839,
+          0.3042
+        ],
+        "left_ankle": [
+          0.6497,
+          0.0827
+        ],
+        "right_ankle": [
+          0.2846,
+          0.0855
+        ],
+        "left_heel": [
+          0.6078,
+          0.0558
+        ],
+        "right_heel": [
+          0.332,
+          0.0652
+        ]
+      },
+      "angles": {
+        "left_elbow": 18.3,
+        "right_elbow": 34.1,
+        "left_shoulder": 38.5,
+        "right_shoulder": 19.8,
+        "left_hip": 170.9,
+        "right_hip": 171.3,
+        "left_knee": 177.2,
+        "right_knee": 179.2,
+        "left_ankle": 147.5,
+        "right_ankle": 138.8,
+        "upper_back": 180.0,
+        "lower_back": 179.7
+      }
+    },
+    {
+      "t": 9,
+      "joints": {
+        "nose": [
+          0.386,
+          0.9421
+        ],
+        "left_shoulder": [
+          0.6222,
+          0.8233
+        ],
+        "right_shoulder": [
+          0.1561,
+          0.8105
+        ],
+        "left_elbow": [
+          0.7978,
+          0.7329
+        ],
+        "right_elbow": [
+          0.1105,
+          0.7135
+        ],
+        "left_wrist": [
+          0.4941,
+          0.8128
+        ],
+        "right_wrist": [
+          0.3925,
+          0.8203
+        ],
+        "left_hip": [
+          0.5726,
+          0.5562
+        ],
+        "right_hip": [
+          0.2751,
+          0.5514
+        ],
+        "left_knee": [
+          0.6355,
+          0.2976
+        ],
+        "right_knee": [
+          0.2831,
+          0.3031
+        ],
+        "left_ankle": [
+          0.6494,
+          0.0819
+        ],
+        "right_ankle": [
+          0.2846,
+          0.084
+        ],
+        "left_heel": [
+          0.607,
+          0.0541
+        ],
+        "right_heel": [
+          0.332,
+          0.0612
+        ]
+      },
+      "angles": {
+        "left_elbow": 18.9,
+        "right_elbow": 34.8,
+        "left_shoulder": 40.2,
+        "right_shoulder": 19.8,
+        "left_hip": 170.8,
+        "right_hip": 170.9,
+        "left_knee": 176.2,
+        "right_knee": 179.5,
+        "left_ankle": 148.8,
+        "right_ankle": 142.2,
+        "upper_back": 180.0,
+        "lower_back": 179.8
+      }
+    },
+    {
+      "t": 10,
+      "joints": {
+        "nose": [
+          0.3904,
+          0.9331
+        ],
+        "left_shoulder": [
+          0.6244,
+          0.8191
+        ],
+        "right_shoulder": [
+          0.1523,
+          0.8054
+        ],
+        "left_elbow": [
+          0.7984,
+          0.7205
+        ],
+        "right_elbow": [
+          0.1126,
+          0.7008
+        ],
+        "left_wrist": [
+          0.5001,
+          0.8083
+        ],
+        "right_wrist": [
+          0.3983,
+          0.8205
+        ],
+        "left_hip": [
+          0.5755,
+          0.5559
+        ],
+        "right_hip": [
+          0.2761,
+          0.5504
+        ],
+        "left_knee": [
+          0.6399,
+          0.2978
+        ],
+        "right_knee": [
+          0.2813,
+          0.3008
+        ],
+        "left_ankle": [
+          0.6493,
+          0.0816
+        ],
+        "right_ankle": [
+          0.2848,
+          0.0831
+        ],
+        "left_heel": [
+          0.6071,
+          0.0531
+        ],
+        "right_heel": [
+          0.3322,
+          0.0591
+        ]
+      },
+      "angles": {
+        "left_elbow": 18.4,
+        "right_elbow": 33.8,
+        "left_shoulder": 37.6,
+        "right_shoulder": 18.5,
+        "left_hip": 170.6,
+        "right_hip": 170.1,
+        "left_knee": 175.6,
+        "right_knee": 179.9,
+        "left_ankle": 149.9,
+        "right_ankle": 143.7,
+        "upper_back": 180.0,
+        "lower_back": 179.8
+      }
+    },
+    {
+      "t": 11,
+      "joints": {
+        "nose": [
+          0.3966,
+          0.9244
+        ],
+        "left_shoulder": [
+          0.6288,
+          0.8105
+        ],
+        "right_shoulder": [
+          0.1516,
+          0.7962
+        ],
+        "left_elbow": [
+          0.7996,
+          0.7072
+        ],
+        "right_elbow": [
+          0.1155,
+          0.6918
+        ],
+        "left_wrist": [
+          0.5017,
+          0.8028
+        ],
+        "right_wrist": [
+          0.4056,
+          0.8022
+        ],
+        "left_hip": [
+          0.5782,
+          0.5528
+        ],
+        "right_hip": [
+          0.2787,
+          0.5468
+        ],
+        "left_knee": [
+          0.6409,
+          0.2982
+        ],
+        "right_knee": [
+          0.2762,
+          0.2995
+        ],
+        "left_ankle": [
+          0.651,
+          0.0813
+        ],
+        "right_ankle": [
+          0.2911,
+          0.0831
+        ],
+        "left_heel": [
+          0.6131,
+          0.0517
+        ],
+        "right_heel": [
+          0.3437,
+          0.0589
+        ]
+      },
+      "angles": {
+        "left_elbow": 17.7,
+        "right_elbow": 37.3,
+        "left_shoulder": 36.1,
+        "right_shoulder": 18.3,
+        "left_hip": 170.5,
+        "right_hip": 168.9,
+        "left_knee": 175.7,
+        "right_knee": 178.3,
+        "left_ankle": 153.3,
+        "right_ankle": 142.2,
+        "upper_back": 180.0,
+        "lower_back": 179.3
+      }
+    },
+    {
+      "t": 12,
+      "joints": {
+        "nose": [
+          0.4038,
+          0.9125
+        ],
+        "left_shoulder": [
+          0.6352,
+          0.7993
+        ],
+        "right_shoulder": [
+          0.1504,
+          0.7869
+        ],
+        "left_elbow": [
+          0.8051,
+          0.6925
+        ],
+        "right_elbow": [
+          0.1164,
+          0.6813
+        ],
+        "left_wrist": [
+          0.5071,
+          0.7904
+        ],
+        "right_wrist": [
+          0.4086,
+          0.7933
+        ],
+        "left_hip": [
+          0.5841,
+          0.5443
+        ],
+        "right_hip": [
+          0.2818,
+          0.5378
+        ],
+        "left_knee": [
+          0.6409,
+          0.2982
+        ],
+        "right_knee": [
+          0.2668,
+          0.2935
+        ],
+        "left_ankle": [
+          0.6497,
+          0.0823
+        ],
+        "right_ankle": [
+          0.2912,
+          0.0842
+        ],
+        "left_heel": [
+          0.6133,
+          0.0528
+        ],
+        "right_heel": [
+          0.3453,
+          0.0614
+        ]
+      },
+      "angles": {
+        "left_elbow": 17.9,
+        "right_elbow": 37.5,
+        "left_shoulder": 35.2,
+        "right_shoulder": 18.1,
+        "left_hip": 170.7,
+        "right_hip": 167.5,
+        "left_knee": 175.9,
+        "right_knee": 176.2,
+        "left_ankle": 154.2,
+        "right_ankle": 140.8,
+        "upper_back": 180.0,
+        "lower_back": 178.4
+      }
+    },
+    {
+      "t": 13,
+      "joints": {
+        "nose": [
+          0.4086,
+          0.8971
+        ],
+        "left_shoulder": [
+          0.6384,
+          0.7873
+        ],
+        "right_shoulder": [
+          0.1509,
+          0.7762
+        ],
+        "left_elbow": [
+          0.8048,
+          0.6773
+        ],
+        "right_elbow": [
+          0.1184,
+          0.6675
+        ],
+        "left_wrist": [
+          0.5078,
+          0.7765
+        ],
+        "right_wrist": [
+          0.4092,
+          0.7754
+        ],
+        "left_hip": [
+          0.5876,
+          0.5301
+        ],
+        "right_hip": [
+          0.2852,
+          0.5255
+        ],
+        "left_knee": [
+          0.645,
+          0.2925
+        ],
+        "right_knee": [
+          0.2609,
+          0.2886
+        ],
+        "left_ankle": [
+          0.6474,
+          0.0833
+        ],
+        "right_ankle": [
+          0.2912,
+          0.0862
+        ],
+        "left_heel": [
+          0.6103,
+          0.0542
+        ],
+        "right_heel": [
+          0.3487,
+          0.0635
+        ]
+      },
+      "angles": {
+        "left_elbow": 18.7,
+        "right_elbow": 39.0,
+        "left_shoulder": 33.9,
+        "right_shoulder": 17.8,
+        "left_hip": 170.6,
+        "right_hip": 166.4,
+        "left_knee": 175.1,
+        "right_knee": 174.6,
+        "left_ankle": 154.2,
+        "right_ankle": 139.7,
+        "upper_back": 180.0,
+        "lower_back": 178.0
+      }
+    },
+    {
+      "t": 14,
+      "joints": {
+        "nose": [
+          0.4147,
+          0.8795
+        ],
+        "left_shoulder": [
+          0.6466,
+          0.7712
+        ],
+        "right_shoulder": [
+          0.1522,
+          0.7653
+        ],
+        "left_elbow": [
+          0.8066,
+          0.6617
+        ],
+        "right_elbow": [
+          0.1287,
+          0.6549
+        ],
+        "left_wrist": [
+          0.5114,
+          0.7563
+        ],
+        "right_wrist": [
+          0.4159,
+          0.7618
+        ],
+        "left_hip": [
+          0.591,
+          0.5122
+        ],
+        "right_hip": [
+          0.2922,
+          0.5115
+        ],
+        "left_knee": [
+          0.6583,
+          0.2804
+        ],
+        "right_knee": [
+          0.2485,
+          0.2809
+        ],
+        "left_ankle": [
+          0.647,
+          0.0833
+        ],
+        "right_ankle": [
+          0.2831,
+          0.0884
+        ],
+        "left_heel": [
+          0.6081,
+          0.0556
+        ],
+        "right_heel": [
+          0.3424,
+          0.068
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.8,
+        "right_elbow": 40.7,
+        "left_shoulder": 33.4,
+        "right_shoulder": 16.3,
+        "left_hip": 169.2,
+        "right_hip": 164.2,
+        "left_knee": 172.5,
+        "right_knee": 172.1,
+        "left_ankle": 153.3,
+        "right_ankle": 136.4,
+        "upper_back": 180.0,
+        "lower_back": 177.6
+      }
+    },
+    {
+      "t": 15,
+      "joints": {
+        "nose": [
+          0.4207,
+          0.8597
+        ],
+        "left_shoulder": [
+          0.6488,
+          0.7546
+        ],
+        "right_shoulder": [
+          0.1583,
+          0.7494
+        ],
+        "left_elbow": [
+          0.8081,
+          0.6452
+        ],
+        "right_elbow": [
+          0.1317,
+          0.6388
+        ],
+        "left_wrist": [
+          0.5183,
+          0.7401
+        ],
+        "right_wrist": [
+          0.4213,
+          0.7408
+        ],
+        "left_hip": [
+          0.5909,
+          0.4941
+        ],
+        "right_hip": [
+          0.2943,
+          0.494
+        ],
+        "left_knee": [
+          0.6721,
+          0.2705
+        ],
+        "right_knee": [
+          0.2313,
+          0.2726
+        ],
+        "left_ankle": [
+          0.6466,
+          0.0822
+        ],
+        "right_ankle": [
+          0.2785,
+          0.0882
+        ],
+        "left_heel": [
+          0.6048,
+          0.0557
+        ],
+        "right_heel": [
+          0.34,
+          0.0678
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.2,
+        "right_elbow": 41.7,
+        "left_shoulder": 33.5,
+        "right_shoulder": 16.5,
+        "left_hip": 167.5,
+        "right_hip": 162.6,
+        "left_knee": 169.3,
+        "right_knee": 168.4,
+        "left_ankle": 152.3,
+        "right_ankle": 136.9,
+        "upper_back": 180.0,
+        "lower_back": 177.6
+      }
+    },
+    {
+      "t": 16,
+      "joints": {
+        "nose": [
+          0.4233,
+          0.8446
+        ],
+        "left_shoulder": [
+          0.6453,
+          0.745
+        ],
+        "right_shoulder": [
+          0.1603,
+          0.7388
+        ],
+        "left_elbow": [
+          0.8082,
+          0.6315
+        ],
+        "right_elbow": [
+          0.1338,
+          0.6249
+        ],
+        "left_wrist": [
+          0.5273,
+          0.7178
+        ],
+        "right_wrist": [
+          0.4224,
+          0.7248
+        ],
+        "left_hip": [
+          0.5909,
+          0.4898
+        ],
+        "right_hip": [
+          0.2978,
+          0.4889
+        ],
+        "left_knee": [
+          0.6876,
+          0.2708
+        ],
+        "right_knee": [
+          0.2313,
+          0.273
+        ],
+        "left_ankle": [
+          0.6471,
+          0.0816
+        ],
+        "right_ankle": [
+          0.2785,
+          0.0872
+        ],
+        "left_heel": [
+          0.6042,
+          0.0556
+        ],
+        "right_heel": [
+          0.3396,
+          0.0677
+        ]
+      },
+      "angles": {
+        "left_elbow": 22.4,
+        "right_elbow": 42.4,
+        "left_shoulder": 32.9,
+        "right_shoulder": 16.7,
+        "left_hip": 166.0,
+        "right_hip": 161.7,
+        "left_knee": 166.0,
+        "right_knee": 167.9,
+        "left_ankle": 152.7,
+        "right_ankle": 135.7,
+        "upper_back": 180.0,
+        "lower_back": 178.0
+      }
+    },
+    {
+      "t": 17,
+      "joints": {
+        "nose": [
+          0.4239,
+          0.8342
+        ],
+        "left_shoulder": [
+          0.6434,
+          0.7308
+        ],
+        "right_shoulder": [
+          0.1649,
+          0.7265
+        ],
+        "left_elbow": [
+          0.8099,
+          0.6177
+        ],
+        "right_elbow": [
+          0.1297,
+          0.6156
+        ],
+        "left_wrist": [
+          0.5505,
+          0.6927
+        ],
+        "right_wrist": [
+          0.4209,
+          0.7086
+        ],
+        "left_hip": [
+          0.5915,
+          0.4782
+        ],
+        "right_hip": [
+          0.3033,
+          0.4786
+        ],
+        "left_knee": [
+          0.7008,
+          0.269
+        ],
+        "right_knee": [
+          0.2314,
+          0.2688
+        ],
+        "left_ankle": [
+          0.648,
+          0.082
+        ],
+        "right_ankle": [
+          0.2794,
+          0.0845
+        ],
+        "left_heel": [
+          0.6038,
+          0.0591
+        ],
+        "right_heel": [
+          0.3408,
+          0.0669
+        ]
+      },
+      "angles": {
+        "left_elbow": 23.5,
+        "right_elbow": 42.9,
+        "left_shoulder": 33.4,
+        "right_shoulder": 18.7,
+        "left_hip": 164.5,
+        "right_hip": 160.8,
+        "left_knee": 162.8,
+        "right_knee": 167.0,
+        "left_ankle": 150.1,
+        "right_ankle": 132.9,
+        "upper_back": 180.0,
+        "lower_back": 178.2
+      }
+    },
+    {
+      "t": 18,
+      "joints": {
+        "nose": [
+          0.4237,
+          0.8241
+        ],
+        "left_shoulder": [
+          0.6454,
+          0.7147
+        ],
+        "right_shoulder": [
+          0.1697,
+          0.7134
+        ],
+        "left_elbow": [
+          0.8109,
+          0.6005
+        ],
+        "right_elbow": [
+          0.1287,
+          0.6004
+        ],
+        "left_wrist": [
+          0.5592,
+          0.678
+        ],
+        "right_wrist": [
+          0.4207,
+          0.695
+        ],
+        "left_hip": [
+          0.5926,
+          0.4714
+        ],
+        "right_hip": [
+          0.3061,
+          0.4711
+        ],
+        "left_knee": [
+          0.7027,
+          0.2669
+        ],
+        "right_knee": [
+          0.2281,
+          0.2664
+        ],
+        "left_ankle": [
+          0.6488,
+          0.082
+        ],
+        "right_ankle": [
+          0.2792,
+          0.0818
+        ],
+        "left_heel": [
+          0.6037,
+          0.0597
+        ],
+        "right_heel": [
+          0.3408,
+          0.0651
+        ]
+      },
+      "angles": {
+        "left_elbow": 22.1,
+        "right_elbow": 41.5,
+        "left_shoulder": 33.3,
+        "right_shoulder": 19.7,
+        "left_hip": 163.9,
+        "right_hip": 159.9,
+        "left_knee": 162.3,
+        "right_knee": 165.9,
+        "left_ankle": 149.0,
+        "right_ankle": 131.7,
+        "upper_back": 180.0,
+        "lower_back": 178.0
+      }
+    },
+    {
+      "t": 19,
+      "joints": {
+        "nose": [
+          0.4253,
+          0.8102
+        ],
+        "left_shoulder": [
+          0.6484,
+          0.7017
+        ],
+        "right_shoulder": [
+          0.1769,
+          0.7022
+        ],
+        "left_elbow": [
+          0.8122,
+          0.5902
+        ],
+        "right_elbow": [
+          0.122,
+          0.5932
+        ],
+        "left_wrist": [
+          0.5594,
+          0.6686
+        ],
+        "right_wrist": [
+          0.421,
+          0.6827
+        ],
+        "left_hip": [
+          0.594,
+          0.4605
+        ],
+        "right_hip": [
+          0.3108,
+          0.4597
+        ],
+        "left_knee": [
+          0.7053,
+          0.264
+        ],
+        "right_knee": [
+          0.2272,
+          0.2598
+        ],
+        "left_ankle": [
+          0.6497,
+          0.0818
+        ],
+        "right_ankle": [
+          0.2794,
+          0.0823
+        ],
+        "left_heel": [
+          0.6054,
+          0.0601
+        ],
+        "right_heel": [
+          0.3399,
+          0.0663
+        ]
+      },
+      "angles": {
+        "left_elbow": 21.6,
+        "right_elbow": 40.7,
+        "left_shoulder": 33.8,
+        "right_shoulder": 22.5,
+        "left_hip": 163.1,
+        "right_hip": 159.3,
+        "left_knee": 161.4,
+        "right_knee": 164.7,
+        "left_ankle": 149.1,
+        "right_ankle": 131.3,
+        "upper_back": 180.0,
+        "lower_back": 178.0
+      }
+    },
+    {
+      "t": 20,
+      "joints": {
+        "nose": [
+          0.4269,
+          0.7955
+        ],
+        "left_shoulder": [
+          0.6516,
+          0.6878
+        ],
+        "right_shoulder": [
+          0.1815,
+          0.6892
+        ],
+        "left_elbow": [
+          0.815,
+          0.5761
+        ],
+        "right_elbow": [
+          0.1223,
+          0.5813
+        ],
+        "left_wrist": [
+          0.5725,
+          0.6512
+        ],
+        "right_wrist": [
+          0.421,
+          0.6741
+        ],
+        "left_hip": [
+          0.5948,
+          0.4565
+        ],
+        "right_hip": [
+          0.3144,
+          0.4549
+        ],
+        "left_knee": [
+          0.7125,
+          0.2625
+        ],
+        "right_knee": [
+          0.2208,
+          0.2604
+        ],
+        "left_ankle": [
+          0.6496,
+          0.0811
+        ],
+        "right_ankle": [
+          0.2795,
+          0.0832
+        ],
+        "left_heel": [
+          0.6039,
+          0.0601
+        ],
+        "right_heel": [
+          0.34,
+          0.0686
+        ]
+      },
+      "angles": {
+        "left_elbow": 21.7,
+        "right_elbow": 38.8,
+        "left_shoulder": 34.1,
+        "right_shoulder": 23.7,
+        "left_hip": 161.9,
+        "right_hip": 157.7,
+        "left_knee": 159.7,
+        "right_knee": 162.6,
+        "left_ankle": 148.1,
+        "right_ankle": 129.9,
+        "upper_back": 180.0,
+        "lower_back": 177.8
+      }
+    },
+    {
+      "t": 21,
+      "joints": {
+        "nose": [
+          0.429,
+          0.7815
+        ],
+        "left_shoulder": [
+          0.6549,
+          0.6715
+        ],
+        "right_shoulder": [
+          0.1857,
+          0.6745
+        ],
+        "left_elbow": [
+          0.814,
+          0.5618
+        ],
+        "right_elbow": [
+          0.1205,
+          0.5707
+        ],
+        "left_wrist": [
+          0.5721,
+          0.6452
+        ],
+        "right_wrist": [
+          0.4214,
+          0.6633
+        ],
+        "left_hip": [
+          0.5953,
+          0.4415
+        ],
+        "right_hip": [
+          0.3147,
+          0.4393
+        ],
+        "left_knee": [
+          0.7179,
+          0.2593
+        ],
+        "right_knee": [
+          0.2127,
+          0.2526
+        ],
+        "left_ankle": [
+          0.6503,
+          0.0802
+        ],
+        "right_ankle": [
+          0.2796,
+          0.0832
+        ],
+        "left_heel": [
+          0.6035,
+          0.0598
+        ],
+        "right_heel": [
+          0.3405,
+          0.0687
+        ]
+      },
+      "angles": {
+        "left_elbow": 18.9,
+        "right_elbow": 37.4,
+        "left_shoulder": 34.2,
+        "right_shoulder": 25.0,
+        "left_hip": 160.2,
+        "right_hip": 156.7,
+        "left_knee": 157.7,
+        "right_knee": 159.9,
+        "left_ankle": 147.4,
+        "right_ankle": 130.9,
+        "upper_back": 180.0,
+        "lower_back": 178.0
+      }
+    },
+    {
+      "t": 22,
+      "joints": {
+        "nose": [
+          0.4316,
+          0.7666
+        ],
+        "left_shoulder": [
+          0.6546,
+          0.6591
+        ],
+        "right_shoulder": [
+          0.1865,
+          0.6585
+        ],
+        "left_elbow": [
+          0.8039,
+          0.5501
+        ],
+        "right_elbow": [
+          0.1265,
+          0.5546
+        ],
+        "left_wrist": [
+          0.5714,
+          0.6473
+        ],
+        "right_wrist": [
+          0.4191,
+          0.6539
+        ],
+        "left_hip": [
+          0.5956,
+          0.4308
+        ],
+        "right_hip": [
+          0.3151,
+          0.4262
+        ],
+        "left_knee": [
+          0.7225,
+          0.2588
+        ],
+        "right_knee": [
+          0.204,
+          0.2519
+        ],
+        "left_ankle": [
+          0.6504,
+          0.0788
+        ],
+        "right_ankle": [
+          0.2794,
+          0.084
+        ],
+        "left_heel": [
+          0.6032,
+          0.0556
+        ],
+        "right_heel": [
+          0.3403,
+          0.0691
+        ]
+      },
+      "angles": {
+        "left_elbow": 14.7,
+        "right_elbow": 35.7,
+        "left_shoulder": 32.8,
+        "right_shoulder": 24.0,
+        "left_hip": 158.9,
+        "right_hip": 154.7,
+        "left_knee": 155.9,
+        "right_knee": 156.9,
+        "left_ankle": 151.2,
+        "right_ankle": 132.5,
+        "upper_back": 180.0,
+        "lower_back": 177.7
+      }
+    },
+    {
+      "t": 23,
+      "joints": {
+        "nose": [
+          0.4322,
+          0.7482
+        ],
+        "left_shoulder": [
+          0.6568,
+          0.6448
+        ],
+        "right_shoulder": [
+          0.1945,
+          0.6442
+        ],
+        "left_elbow": [
+          0.8027,
+          0.5415
+        ],
+        "right_elbow": [
+          0.1271,
+          0.5444
+        ],
+        "left_wrist": [
+          0.5706,
+          0.6415
+        ],
+        "right_wrist": [
+          0.3997,
+          0.6449
+        ],
+        "left_hip": [
+          0.596,
+          0.4145
+        ],
+        "right_hip": [
+          0.3159,
+          0.4114
+        ],
+        "left_knee": [
+          0.7286,
+          0.2545
+        ],
+        "right_knee": [
+          0.1853,
+          0.2484
+        ],
+        "left_ankle": [
+          0.6499,
+          0.0782
+        ],
+        "right_ankle": [
+          0.279,
+          0.0847
+        ],
+        "left_heel": [
+          0.5996,
+          0.0557
+        ],
+        "right_heel": [
+          0.3411,
+          0.0703
+        ]
+      },
+      "angles": {
+        "left_elbow": 13.1,
+        "right_elbow": 31.3,
+        "left_shoulder": 33.7,
+        "right_shoulder": 25.3,
+        "left_hip": 157.0,
+        "right_hip": 152.1,
+        "left_knee": 153.1,
+        "right_knee": 151.1,
+        "left_ankle": 149.5,
+        "right_ankle": 133.9,
+        "upper_back": 180.0,
+        "lower_back": 177.3
+      }
+    },
+    {
+      "t": 24,
+      "joints": {
+        "nose": [
+          0.4324,
+          0.7294
+        ],
+        "left_shoulder": [
+          0.6677,
+          0.63
+        ],
+        "right_shoulder": [
+          0.2022,
+          0.6216
+        ],
+        "left_elbow": [
+          0.8129,
+          0.5329
+        ],
+        "right_elbow": [
+          0.1265,
+          0.5283
+        ],
+        "left_wrist": [
+          0.5612,
+          0.6321
+        ],
+        "right_wrist": [
+          0.3805,
+          0.6246
+        ],
+        "left_hip": [
+          0.5975,
+          0.3994
+        ],
+        "right_hip": [
+          0.3177,
+          0.3944
+        ],
+        "left_knee": [
+          0.7335,
+          0.2559
+        ],
+        "right_knee": [
+          0.1682,
+          0.2466
+        ],
+        "left_ankle": [
+          0.6485,
+          0.0783
+        ],
+        "right_ankle": [
+          0.2742,
+          0.0845
+        ],
+        "left_heel": [
+          0.595,
+          0.0572
+        ],
+        "right_heel": [
+          0.3382,
+          0.07
+        ]
+      },
+      "angles": {
+        "left_elbow": 14.3,
+        "right_elbow": 27.8,
+        "left_shoulder": 35.9,
+        "right_shoulder": 27.8,
+        "left_hip": 153.9,
+        "right_hip": 148.3,
+        "left_knee": 150.2,
+        "right_knee": 145.3,
+        "left_ankle": 146.5,
+        "right_ankle": 134.9,
+        "upper_back": 180.0,
+        "lower_back": 176.9
+      }
+    },
+    {
+      "t": 25,
+      "joints": {
+        "nose": [
+          0.4326,
+          0.7086
+        ],
+        "left_shoulder": [
+          0.6726,
+          0.606
+        ],
+        "right_shoulder": [
+          0.203,
+          0.5976
+        ],
+        "left_elbow": [
+          0.8369,
+          0.5217
+        ],
+        "right_elbow": [
+          0.108,
+          0.5126
+        ],
+        "left_wrist": [
+          0.5374,
+          0.6182
+        ],
+        "right_wrist": [
+          0.3672,
+          0.5979
+        ],
+        "left_hip": [
+          0.6012,
+          0.3851
+        ],
+        "right_hip": [
+          0.3184,
+          0.3799
+        ],
+        "left_knee": [
+          0.7331,
+          0.2626
+        ],
+        "right_knee": [
+          0.1652,
+          0.2465
+        ],
+        "left_ankle": [
+          0.6478,
+          0.0782
+        ],
+        "right_ankle": [
+          0.2717,
+          0.0832
+        ],
+        "left_heel": [
+          0.5952,
+          0.059
+        ],
+        "right_heel": [
+          0.3327,
+          0.0681
+        ]
+      },
+      "angles": {
+        "left_elbow": 13.2,
+        "right_elbow": 26.0,
+        "left_shoulder": 43.2,
+        "right_shoulder": 34.1,
+        "left_hip": 151.0,
+        "right_hip": 145.4,
+        "left_knee": 148.1,
+        "right_knee": 142.9,
+        "left_ankle": 144.1,
+        "right_ankle": 137.2,
+        "upper_back": 180.0,
+        "lower_back": 176.1
+      }
+    },
+    {
+      "t": 26,
+      "joints": {
+        "nose": [
+          0.4321,
+          0.6879
+        ],
+        "left_shoulder": [
+          0.6738,
+          0.5861
+        ],
+        "right_shoulder": [
+          0.2026,
+          0.5747
+        ],
+        "left_elbow": [
+          0.8456,
+          0.5061
+        ],
+        "right_elbow": [
+          0.1057,
+          0.4908
+        ],
+        "left_wrist": [
+          0.5242,
+          0.6037
+        ],
+        "right_wrist": [
+          0.3718,
+          0.5865
+        ],
+        "left_hip": [
+          0.6092,
+          0.3636
+        ],
+        "right_hip": [
+          0.3207,
+          0.3569
+        ],
+        "left_knee": [
+          0.7325,
+          0.2614
+        ],
+        "right_knee": [
+          0.155,
+          0.2453
+        ],
+        "left_ankle": [
+          0.6476,
+          0.0774
+        ],
+        "right_ankle": [
+          0.2697,
+          0.0814
+        ],
+        "left_heel": [
+          0.5965,
+          0.0589
+        ],
+        "right_heel": [
+          0.3283,
+          0.0657
+        ]
+      },
+      "angles": {
+        "left_elbow": 12.2,
+        "right_elbow": 22.8,
+        "left_shoulder": 45.2,
+        "right_shoulder": 35.0,
+        "left_hip": 149.4,
+        "right_hip": 139.3,
+        "left_knee": 145.7,
+        "right_knee": 136.0,
+        "left_ankle": 143.6,
+        "right_ankle": 140.4,
+        "upper_back": 180.0,
+        "lower_back": 173.1
+      }
+    },
+    {
+      "t": 27,
+      "joints": {
+        "nose": [
+          0.4315,
+          0.6651
+        ],
+        "left_shoulder": [
+          0.6749,
+          0.5626
+        ],
+        "right_shoulder": [
+          0.2026,
+          0.5512
+        ],
+        "left_elbow": [
+          0.8615,
+          0.4814
+        ],
+        "right_elbow": [
+          0.1036,
+          0.4698
+        ],
+        "left_wrist": [
+          0.5245,
+          0.5787
+        ],
+        "right_wrist": [
+          0.3734,
+          0.5673
+        ],
+        "left_hip": [
+          0.6118,
+          0.3455
+        ],
+        "right_hip": [
+          0.3218,
+          0.3383
+        ],
+        "left_knee": [
+          0.736,
+          0.2522
+        ],
+        "right_knee": [
+          0.1414,
+          0.2409
+        ],
+        "left_ankle": [
+          0.6484,
+          0.0763
+        ],
+        "right_ankle": [
+          0.2672,
+          0.0791
+        ],
+        "left_heel": [
+          0.5976,
+          0.0581
+        ],
+        "right_heel": [
+          0.3252,
+          0.0625
+        ]
+      },
+      "angles": {
+        "left_elbow": 11.7,
+        "right_elbow": 21.6,
+        "left_shoulder": 47.1,
+        "right_shoulder": 36.5,
+        "left_hip": 147.2,
+        "right_hip": 133.2,
+        "left_knee": 142.8,
+        "right_knee": 128.8,
+        "left_ankle": 144.2,
+        "right_ankle": 143.6,
+        "upper_back": 180.0,
+        "lower_back": 170.9
+      }
+    },
+    {
+      "t": 28,
+      "joints": {
+        "nose": [
+          0.4312,
+          0.6426
+        ],
+        "left_shoulder": [
+          0.6757,
+          0.5429
+        ],
+        "right_shoulder": [
+          0.2023,
+          0.5314
+        ],
+        "left_elbow": [
+          0.8764,
+          0.4547
+        ],
+        "right_elbow": [
+          0.1023,
+          0.4474
+        ],
+        "left_wrist": [
+          0.5332,
+          0.5554
+        ],
+        "right_wrist": [
+          0.3742,
+          0.5447
+        ],
+        "left_hip": [
+          0.6128,
+          0.3285
+        ],
+        "right_hip": [
+          0.3234,
+          0.3207
+        ],
+        "left_knee": [
+          0.7384,
+          0.2501
+        ],
+        "right_knee": [
+          0.1423,
+          0.2394
+        ],
+        "left_ankle": [
+          0.6491,
+          0.0758
+        ],
+        "right_ankle": [
+          0.2686,
+          0.0782
+        ],
+        "left_heel": [
+          0.6013,
+          0.0578
+        ],
+        "right_heel": [
+          0.3253,
+          0.0623
+        ]
+      },
+      "angles": {
+        "left_elbow": 11.5,
+        "right_elbow": 22.3,
+        "left_shoulder": 46.9,
+        "right_shoulder": 36.3,
+        "left_hip": 142.6,
+        "right_hip": 127.8,
+        "left_knee": 138.0,
+        "right_knee": 123.6,
+        "left_ankle": 146.0,
+        "right_ankle": 143.0,
+        "upper_back": 180.0,
+        "lower_back": 169.6
+      }
+    },
+    {
+      "t": 29,
+      "joints": {
+        "nose": [
+          0.4316,
+          0.6211
+        ],
+        "left_shoulder": [
+          0.6889,
+          0.5234
+        ],
+        "right_shoulder": [
+          0.2042,
+          0.5137
+        ],
+        "left_elbow": [
+          0.8792,
+          0.4323
+        ],
+        "right_elbow": [
+          0.1032,
+          0.4264
+        ],
+        "left_wrist": [
+          0.5345,
+          0.5381
+        ],
+        "right_wrist": [
+          0.3775,
+          0.5213
+        ],
+        "left_hip": [
+          0.6134,
+          0.3092
+        ],
+        "right_hip": [
+          0.3282,
+          0.305
+        ],
+        "left_knee": [
+          0.7429,
+          0.2471
+        ],
+        "right_knee": [
+          0.1463,
+          0.2402
+        ],
+        "left_ankle": [
+          0.6486,
+          0.0759
+        ],
+        "right_ankle": [
+          0.2699,
+          0.0768
+        ],
+        "left_heel": [
+          0.6013,
+          0.058
+        ],
+        "right_heel": [
+          0.3245,
+          0.0622
+        ]
+      },
+      "angles": {
+        "left_elbow": 12.6,
+        "right_elbow": 23.9,
+        "left_shoulder": 45.7,
+        "right_shoulder": 36.1,
+        "left_hip": 134.3,
+        "right_hip": 120.8,
+        "left_knee": 130.2,
+        "right_knee": 117.6,
+        "left_ankle": 146.8,
+        "right_ankle": 141.3,
+        "upper_back": 180.0,
+        "lower_back": 168.7
+      }
+    },
+    {
+      "t": 30,
+      "joints": {
+        "nose": [
+          0.4318,
+          0.5989
+        ],
+        "left_shoulder": [
+          0.6956,
+          0.5019
+        ],
+        "right_shoulder": [
+          0.2096,
+          0.4953
+        ],
+        "left_elbow": [
+          0.8829,
+          0.4075
+        ],
+        "right_elbow": [
+          0.1033,
+          0.408
+        ],
+        "left_wrist": [
+          0.5405,
+          0.5114
+        ],
+        "right_wrist": [
+          0.3925,
+          0.5024
+        ],
+        "left_hip": [
+          0.6184,
+          0.2898
+        ],
+        "right_hip": [
+          0.3343,
+          0.2856
+        ],
+        "left_knee": [
+          0.7438,
+          0.2471
+        ],
+        "right_knee": [
+          0.155,
+          0.2397
+        ],
+        "left_ankle": [
+          0.6483,
+          0.0749
+        ],
+        "right_ankle": [
+          0.271,
+          0.076
+        ],
+        "left_heel": [
+          0.602,
+          0.0578
+        ],
+        "right_heel": [
+          0.3216,
+          0.0609
+        ]
+      },
+      "angles": {
+        "left_elbow": 14.4,
+        "right_elbow": 24.4,
+        "left_shoulder": 44.5,
+        "right_shoulder": 37.2,
+        "left_hip": 124.3,
+        "right_hip": 111.6,
+        "left_knee": 120.3,
+        "right_knee": 109.3,
+        "left_ankle": 146.3,
+        "right_ankle": 143.3,
+        "upper_back": 180.0,
+        "lower_back": 164.7
+      }
+    },
+    {
+      "t": 31,
+      "joints": {
+        "nose": [
+          0.436,
+          0.581
+        ],
+        "left_shoulder": [
+          0.7062,
+          0.4883
+        ],
+        "right_shoulder": [
+          0.215,
+          0.479
+        ],
+        "left_elbow": [
+          0.8875,
+          0.3882
+        ],
+        "right_elbow": [
+          0.1044,
+          0.3894
+        ],
+        "left_wrist": [
+          0.5498,
+          0.4988
+        ],
+        "right_wrist": [
+          0.4115,
+          0.4856
+        ],
+        "left_hip": [
+          0.6275,
+          0.2744
+        ],
+        "right_hip": [
+          0.342,
+          0.27
+        ],
+        "left_knee": [
+          0.742,
+          0.2399
+        ],
+        "right_knee": [
+          0.1568,
+          0.2377
+        ],
+        "left_ankle": [
+          0.6486,
+          0.0747
+        ],
+        "right_ankle": [
+          0.2721,
+          0.0761
+        ],
+        "left_heel": [
+          0.6029,
+          0.0568
+        ],
+        "right_heel": [
+          0.3242,
+          0.0594
+        ]
+      },
+      "angles": {
+        "left_elbow": 14.7,
+        "right_elbow": 25.3,
+        "left_shoulder": 42.1,
+        "right_shoulder": 37.8,
+        "left_hip": 120.8,
+        "right_hip": 102.0,
+        "left_knee": 116.7,
+        "right_knee": 99.8,
+        "left_ankle": 148.0,
+        "right_ankle": 145.5,
+        "upper_back": 180.0,
+        "lower_back": 155.8
+      }
+    },
+    {
+      "t": 32,
+      "joints": {
+        "nose": [
+          0.4396,
+          0.5662
+        ],
+        "left_shoulder": [
+          0.7194,
+          0.4679
+        ],
+        "right_shoulder": [
+          0.2207,
+          0.4638
+        ],
+        "left_elbow": [
+          0.8863,
+          0.365
+        ],
+        "right_elbow": [
+          0.1072,
+          0.3706
+        ],
+        "left_wrist": [
+          0.5496,
+          0.4868
+        ],
+        "right_wrist": [
+          0.4292,
+          0.467
+        ],
+        "left_hip": [
+          0.6252,
+          0.2585
+        ],
+        "right_hip": [
+          0.3412,
+          0.2562
+        ],
+        "left_knee": [
+          0.7403,
+          0.2331
+        ],
+        "right_knee": [
+          0.1673,
+          0.2393
+        ],
+        "left_ankle": [
+          0.6488,
+          0.0746
+        ],
+        "right_ankle": [
+          0.2737,
+          0.0768
+        ],
+        "left_heel": [
+          0.6034,
+          0.0562
+        ],
+        "right_heel": [
+          0.3255,
+          0.0597
+        ]
+      },
+      "angles": {
+        "left_elbow": 14.7,
+        "right_elbow": 26.9,
+        "left_shoulder": 41.0,
+        "right_shoulder": 36.9,
+        "left_hip": 110.8,
+        "right_hip": 92.2,
+        "left_knee": 108.2,
+        "right_knee": 90.7,
+        "left_ankle": 149.5,
+        "right_ankle": 145.1,
+        "upper_back": 180.0,
+        "lower_back": 151.1
+      }
+    },
+    {
+      "t": 33,
+      "joints": {
+        "nose": [
+          0.441,
+          0.5522
+        ],
+        "left_shoulder": [
+          0.7343,
+          0.4525
+        ],
+        "right_shoulder": [
+          0.2263,
+          0.4531
+        ],
+        "left_elbow": [
+          0.885,
+          0.349
+        ],
+        "right_elbow": [
+          0.1043,
+          0.3615
+        ],
+        "left_wrist": [
+          0.5495,
+          0.4709
+        ],
+        "right_wrist": [
+          0.4283,
+          0.453
+        ],
+        "left_hip": [
+          0.625,
+          0.242
+        ],
+        "right_hip": [
+          0.3412,
+          0.2421
+        ],
+        "left_knee": [
+          0.7401,
+          0.2333
+        ],
+        "right_knee": [
+          0.1686,
+          0.2424
+        ],
+        "left_ankle": [
+          0.6464,
+          0.0748
+        ],
+        "right_ankle": [
+          0.2738,
+          0.0755
+        ],
+        "left_heel": [
+          0.6012,
+          0.0568
+        ],
+        "right_heel": [
+          0.3252,
+          0.0576
+        ]
+      },
+      "angles": {
+        "left_elbow": 17.3,
+        "right_elbow": 26.5,
+        "left_shoulder": 39.8,
+        "right_shoulder": 38.2,
+        "left_hip": 90.3,
+        "right_hip": 78.2,
+        "left_knee": 88.8,
+        "right_knee": 76.4,
+        "left_ankle": 149.2,
+        "right_ankle": 146.1,
+        "upper_back": 180.0,
+        "lower_back": 110.9
+      }
+    },
+    {
+      "t": 34,
+      "joints": {
+        "nose": [
+          0.4417,
+          0.5395
+        ],
+        "left_shoulder": [
+          0.7399,
+          0.4372
+        ],
+        "right_shoulder": [
+          0.2262,
+          0.4431
+        ],
+        "left_elbow": [
+          0.8845,
+          0.3373
+        ],
+        "right_elbow": [
+          0.1023,
+          0.3503
+        ],
+        "left_wrist": [
+          0.5486,
+          0.4528
+        ],
+        "right_wrist": [
+          0.4221,
+          0.4413
+        ],
+        "left_hip": [
+          0.6261,
+          0.2284
+        ],
+        "right_hip": [
+          0.3408,
+          0.2293
+        ],
+        "left_knee": [
+          0.743,
+          0.2302
+        ],
+        "right_knee": [
+          0.1704,
+          0.2428
+        ],
+        "left_ankle": [
+          0.6462,
+          0.0765
+        ],
+        "right_ankle": [
+          0.2709,
+          0.0757
+        ],
+        "left_heel": [
+          0.6003,
+          0.0584
+        ],
+        "right_heel": [
+          0.3138,
+          0.058
+        ]
+      },
+      "angles": {
+        "left_elbow": 19.0,
+        "right_elbow": 26.2,
+        "left_shoulder": 40.1,
+        "right_shoulder": 38.1,
+        "left_hip": 76.0,
+        "right_hip": 66.7,
+        "left_knee": 74.2,
+        "right_knee": 65.4,
+        "left_ankle": 149.8,
+        "right_ankle": 150.3,
+        "upper_back": 180.0,
+        "lower_back": 52.6
+      }
+    },
+    {
+      "t": 35,
+      "joints": {
+        "nose": [
+          0.4423,
+          0.5313
+        ],
+        "left_shoulder": [
+          0.7364,
+          0.4318
+        ],
+        "right_shoulder": [
+          0.2259,
+          0.4366
+        ],
+        "left_elbow": [
+          0.8875,
+          0.3263
+        ],
+        "right_elbow": [
+          0.0916,
+          0.3413
+        ],
+        "left_wrist": [
+          0.545,
+          0.4378
+        ],
+        "right_wrist": [
+          0.4127,
+          0.4314
+        ],
+        "left_hip": [
+          0.63,
+          0.2216
+        ],
+        "right_hip": [
+          0.341,
+          0.2171
+        ],
+        "left_knee": [
+          0.7493,
+          0.237
+        ],
+        "right_knee": [
+          0.1724,
+          0.2433
+        ],
+        "left_ankle": [
+          0.6465,
+          0.0766
+        ],
+        "right_ankle": [
+          0.2708,
+          0.0755
+        ],
+        "left_heel": [
+          0.6037,
+          0.0567
+        ],
+        "right_heel": [
+          0.311,
+          0.0577
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.8,
+        "right_elbow": 25.4,
+        "left_shoulder": 39.1,
+        "right_shoulder": 39.1,
+        "left_hip": 60.3,
+        "right_hip": 56.4,
+        "left_knee": 57.6,
+        "right_knee": 55.1,
+        "left_ankle": 154.7,
+        "right_ankle": 152.1,
+        "upper_back": 180.0,
+        "lower_back": 23.6
+      }
+    },
+    {
+      "t": 36,
+      "joints": {
+        "nose": [
+          0.444,
+          0.5255
+        ],
+        "left_shoulder": [
+          0.7428,
+          0.4231
+        ],
+        "right_shoulder": [
+          0.2263,
+          0.4282
+        ],
+        "left_elbow": [
+          0.8872,
+          0.3178
+        ],
+        "right_elbow": [
+          0.0889,
+          0.3345
+        ],
+        "left_wrist": [
+          0.5426,
+          0.4349
+        ],
+        "right_wrist": [
+          0.406,
+          0.4313
+        ],
+        "left_hip": [
+          0.6365,
+          0.2121
+        ],
+        "right_hip": [
+          0.345,
+          0.2045
+        ],
+        "left_knee": [
+          0.749,
+          0.2444
+        ],
+        "right_knee": [
+          0.18,
+          0.2441
+        ],
+        "left_ankle": [
+          0.6473,
+          0.0773
+        ],
+        "right_ankle": [
+          0.2728,
+          0.0756
+        ],
+        "left_heel": [
+          0.6059,
+          0.0556
+        ],
+        "right_heel": [
+          0.3129,
+          0.0579
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.6,
+        "right_elbow": 22.0,
+        "left_shoulder": 38.0,
+        "right_shoulder": 40.2,
+        "left_hip": 41.9,
+        "right_hip": 46.2,
+        "left_knee": 39.7,
+        "right_knee": 45.8,
+        "left_ankle": 157.2,
+        "right_ankle": 151.3,
+        "upper_back": 180.0,
+        "lower_back": 14.8
+      }
+    },
+    {
+      "t": 37,
+      "joints": {
+        "nose": [
+          0.4442,
+          0.5199
+        ],
+        "left_shoulder": [
+          0.7415,
+          0.4173
+        ],
+        "right_shoulder": [
+          0.2236,
+          0.421
+        ],
+        "left_elbow": [
+          0.8867,
+          0.3136
+        ],
+        "right_elbow": [
+          0.0815,
+          0.3286
+        ],
+        "left_wrist": [
+          0.5394,
+          0.4303
+        ],
+        "right_wrist": [
+          0.4009,
+          0.4253
+        ],
+        "left_hip": [
+          0.6358,
+          0.2001
+        ],
+        "right_hip": [
+          0.343,
+          0.1974
+        ],
+        "left_knee": [
+          0.749,
+          0.2459
+        ],
+        "right_knee": [
+          0.1806,
+          0.2442
+        ],
+        "left_ankle": [
+          0.6476,
+          0.0782
+        ],
+        "right_ankle": [
+          0.2759,
+          0.0757
+        ],
+        "left_heel": [
+          0.604,
+          0.0567
+        ],
+        "right_heel": [
+          0.3168,
+          0.0582
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.5,
+        "right_elbow": 21.1,
+        "left_shoulder": 38.1,
+        "right_shoulder": 41.4,
+        "left_hip": 32.5,
+        "right_hip": 41.2,
+        "left_knee": 30.1,
+        "right_knee": 40.5,
+        "left_ankle": 155.5,
+        "right_ankle": 150.6,
+        "upper_back": 180.0,
+        "lower_back": 10.6
+      }
+    },
+    {
+      "t": 38,
+      "joints": {
+        "nose": [
+          0.4443,
+          0.5142
+        ],
+        "left_shoulder": [
+          0.7439,
+          0.4142
+        ],
+        "right_shoulder": [
+          0.2231,
+          0.417
+        ],
+        "left_elbow": [
+          0.8767,
+          0.3046
+        ],
+        "right_elbow": [
+          0.0821,
+          0.3186
+        ],
+        "left_wrist": [
+          0.5397,
+          0.4203
+        ],
+        "right_wrist": [
+          0.3988,
+          0.4123
+        ],
+        "left_hip": [
+          0.6451,
+          0.1855
+        ],
+        "right_hip": [
+          0.3467,
+          0.1842
+        ],
+        "left_knee": [
+          0.7403,
+          0.2505
+        ],
+        "right_knee": [
+          0.1804,
+          0.2463
+        ],
+        "left_ankle": [
+          0.6476,
+          0.0778
+        ],
+        "right_ankle": [
+          0.2769,
+          0.0754
+        ],
+        "left_heel": [
+          0.6041,
+          0.0567
+        ],
+        "right_heel": [
+          0.3217,
+          0.0571
+        ]
+      },
+      "angles": {
+        "left_elbow": 23.1,
+        "right_elbow": 23.5,
+        "left_shoulder": 33.7,
+        "right_shoulder": 39.6,
+        "left_hip": 19.6,
+        "right_hip": 33.9,
+        "left_knee": 17.4,
+        "right_knee": 33.2,
+        "left_ankle": 153.6,
+        "right_ankle": 149.3,
+        "upper_back": 180.0,
+        "lower_back": 10.7
+      }
+    },
+    {
+      "t": 39,
+      "joints": {
+        "nose": [
+          0.4455,
+          0.5104
+        ],
+        "left_shoulder": [
+          0.7442,
+          0.407
+        ],
+        "right_shoulder": [
+          0.2218,
+          0.4124
+        ],
+        "left_elbow": [
+          0.8711,
+          0.2958
+        ],
+        "right_elbow": [
+          0.0781,
+          0.3122
+        ],
+        "left_wrist": [
+          0.542,
+          0.4122
+        ],
+        "right_wrist": [
+          0.3929,
+          0.4018
+        ],
+        "left_hip": [
+          0.6442,
+          0.1789
+        ],
+        "right_hip": [
+          0.3445,
+          0.1816
+        ],
+        "left_knee": [
+          0.7467,
+          0.2521
+        ],
+        "right_knee": [
+          0.1803,
+          0.251
+        ],
+        "left_ankle": [
+          0.6483,
+          0.0783
+        ],
+        "right_ankle": [
+          0.2756,
+          0.0756
+        ],
+        "left_heel": [
+          0.607,
+          0.057
+        ],
+        "right_heel": [
+          0.319,
+          0.0572
+        ]
+      },
+      "angles": {
+        "left_elbow": 23.5,
+        "right_elbow": 24.5,
+        "left_shoulder": 32.6,
+        "right_shoulder": 39.7,
+        "left_hip": 18.4,
+        "right_hip": 30.3,
+        "left_knee": 15.8,
+        "right_knee": 30.1,
+        "left_ankle": 156.0,
+        "right_ankle": 150.1,
+        "upper_back": 180.0,
+        "lower_back": 8.2
+      }
+    },
+    {
+      "t": 40,
+      "joints": {
+        "nose": [
+          0.4479,
+          0.5032
+        ],
+        "left_shoulder": [
+          0.742,
+          0.4071
+        ],
+        "right_shoulder": [
+          0.2223,
+          0.4108
+        ],
+        "left_elbow": [
+          0.8545,
+          0.2953
+        ],
+        "right_elbow": [
+          0.0765,
+          0.3109
+        ],
+        "left_wrist": [
+          0.5428,
+          0.4103
+        ],
+        "right_wrist": [
+          0.3916,
+          0.4005
+        ],
+        "left_hip": [
+          0.6394,
+          0.1696
+        ],
+        "right_hip": [
+          0.3426,
+          0.1744
+        ],
+        "left_knee": [
+          0.7789,
+          0.2537
+        ],
+        "right_knee": [
+          0.1751,
+          0.2543
+        ],
+        "left_ankle": [
+          0.6456,
+          0.0782
+        ],
+        "right_ankle": [
+          0.2753,
+          0.0755
+        ],
+        "left_heel": [
+          0.6065,
+          0.0486
+        ],
+        "right_heel": [
+          0.3169,
+          0.0568
+        ]
+      },
+      "angles": {
+        "left_elbow": 24.8,
+        "right_elbow": 24.1,
+        "left_shoulder": 29.9,
+        "right_shoulder": 39.6,
+        "left_hip": 22.7,
+        "right_hip": 27.4,
+        "left_knee": 16.0,
+        "right_knee": 26.3,
+        "left_ankle": 169.6,
+        "right_ankle": 152.1,
+        "upper_back": 180.0,
+        "lower_back": 2.9
+      }
+    },
+    {
+      "t": 41,
+      "joints": {
+        "nose": [
+          0.4489,
+          0.4968
+        ],
+        "left_shoulder": [
+          0.7313,
+          0.4047
+        ],
+        "right_shoulder": [
+          0.2208,
+          0.4099
+        ],
+        "left_elbow": [
+          0.8512,
+          0.2959
+        ],
+        "right_elbow": [
+          0.073,
+          0.308
+        ],
+        "left_wrist": [
+          0.5437,
+          0.4097
+        ],
+        "right_wrist": [
+          0.3859,
+          0.3958
+        ],
+        "left_hip": [
+          0.6246,
+          0.1687
+        ],
+        "right_hip": [
+          0.3311,
+          0.1743
+        ],
+        "left_knee": [
+          0.773,
+          0.2603
+        ],
+        "right_knee": [
+          0.1709,
+          0.2585
+        ],
+        "left_ankle": [
+          0.6415,
+          0.0779
+        ],
+        "right_ankle": [
+          0.276,
+          0.0753
+        ],
+        "left_heel": [
+          0.6073,
+          0.0455
+        ],
+        "right_heel": [
+          0.3156,
+          0.0554
+        ]
+      },
+      "angles": {
+        "left_elbow": 23.0,
+        "right_elbow": 24.7,
+        "left_shoulder": 32.2,
+        "right_shoulder": 38.6,
+        "left_hip": 21.7,
+        "right_hip": 25.6,
+        "left_knee": 16.2,
+        "right_knee": 23.4,
+        "left_ankle": 173.6,
+        "right_ankle": 155.4,
+        "upper_back": 180.0,
+        "lower_back": 1.3
+      }
+    },
+    {
+      "t": 42,
+      "joints": {
+        "nose": [
+          0.449,
+          0.4923
+        ],
+        "left_shoulder": [
+          0.7202,
+          0.4028
+        ],
+        "right_shoulder": [
+          0.2188,
+          0.4051
+        ],
+        "left_elbow": [
+          0.8379,
+          0.2899
+        ],
+        "right_elbow": [
+          0.0726,
+          0.302
+        ],
+        "left_wrist": [
+          0.5442,
+          0.4059
+        ],
+        "right_wrist": [
+          0.3852,
+          0.3923
+        ],
+        "left_hip": [
+          0.6132,
+          0.165
+        ],
+        "right_hip": [
+          0.3243,
+          0.1715
+        ],
+        "left_knee": [
+          0.773,
+          0.2661
+        ],
+        "right_knee": [
+          0.1634,
+          0.2608
+        ],
+        "left_ankle": [
+          0.6422,
+          0.0767
+        ],
+        "right_ankle": [
+          0.276,
+          0.0752
+        ],
+        "left_heel": [
+          0.609,
+          0.0479
+        ],
+        "right_heel": [
+          0.3153,
+          0.0543
+        ]
+      },
+      "angles": {
+        "left_elbow": 22.2,
+        "right_elbow": 24.4,
+        "left_shoulder": 31.0,
+        "right_shoulder": 37.7,
+        "left_hip": 21.1,
+        "right_hip": 24.5,
+        "left_knee": 16.2,
+        "right_knee": 21.3,
+        "left_ankle": 171.1,
+        "right_ankle": 157.5,
+        "upper_back": 180.0,
+        "lower_back": 0.2
+      }
+    },
+    {
+      "t": 43,
+      "joints": {
+        "nose": [
+          0.4489,
+          0.4907
+        ],
+        "left_shoulder": [
+          0.6998,
+          0.4018
+        ],
+        "right_shoulder": [
+          0.2103,
+          0.4043
+        ],
+        "left_elbow": [
+          0.8367,
+          0.2875
+        ],
+        "right_elbow": [
+          0.0725,
+          0.2918
+        ],
+        "left_wrist": [
+          0.544,
+          0.4013
+        ],
+        "right_wrist": [
+          0.3801,
+          0.3862
+        ],
+        "left_hip": [
+          0.601,
+          0.1657
+        ],
+        "right_hip": [
+          0.3128,
+          0.171
+        ],
+        "left_knee": [
+          0.7475,
+          0.2676
+        ],
+        "right_knee": [
+          0.166,
+          0.2567
+        ],
+        "left_ankle": [
+          0.6402,
+          0.077
+        ],
+        "right_ankle": [
+          0.278,
+          0.0752
+        ],
+        "left_heel": [
+          0.6084,
+          0.0545
+        ],
+        "right_heel": [
+          0.3125,
+          0.0565
+        ]
+      },
+      "angles": {
+        "left_elbow": 19.8,
+        "right_elbow": 26.1,
+        "left_shoulder": 33.2,
+        "right_shoulder": 34.1,
+        "left_hip": 19.5,
+        "right_hip": 23.4,
+        "left_knee": 16.4,
+        "right_knee": 19.7,
+        "left_ankle": 164.1,
+        "right_ankle": 158.3,
+        "upper_back": 180.0,
+        "lower_back": 0.1
+      }
+    },
+    {
+      "t": 44,
+      "joints": {
+        "nose": [
+          0.4472,
+          0.4888
+        ],
+        "left_shoulder": [
+          0.691,
+          0.3996
+        ],
+        "right_shoulder": [
+          0.2007,
+          0.4033
+        ],
+        "left_elbow": [
+          0.8375,
+          0.2834
+        ],
+        "right_elbow": [
+          0.0683,
+          0.2894
+        ],
+        "left_wrist": [
+          0.5451,
+          0.3967
+        ],
+        "right_wrist": [
+          0.3653,
+          0.3847
+        ],
+        "left_hip": [
+          0.5968,
+          0.1664
+        ],
+        "right_hip": [
+          0.31,
+          0.1702
+        ],
+        "left_knee": [
+          0.7427,
+          0.2758
+        ],
+        "right_knee": [
+          0.1667,
+          0.2552
+        ],
+        "left_ankle": [
+          0.6402,
+          0.0775
+        ],
+        "right_ankle": [
+          0.2778,
+          0.0752
+        ],
+        "left_heel": [
+          0.6087,
+          0.0578
+        ],
+        "right_heel": [
+          0.3116,
+          0.0567
+        ]
+      },
+      "angles": {
+        "left_elbow": 18.8,
+        "right_elbow": 25.9,
+        "left_shoulder": 34.0,
+        "right_shoulder": 33.6,
+        "left_hip": 18.0,
+        "right_hip": 22.4,
+        "left_knee": 15.6,
+        "right_knee": 19.3,
+        "left_ankle": 160.0,
+        "right_ankle": 158.7,
+        "upper_back": 180.0,
+        "lower_back": 1.0
+      }
+    },
+    {
+      "t": 45,
+      "joints": {
+        "nose": [
+          0.4464,
+          0.4861
+        ],
+        "left_shoulder": [
+          0.6918,
+          0.3964
+        ],
+        "right_shoulder": [
+          0.1996,
+          0.4012
+        ],
+        "left_elbow": [
+          0.8385,
+          0.2768
+        ],
+        "right_elbow": [
+          0.0654,
+          0.2857
+        ],
+        "left_wrist": [
+          0.5462,
+          0.3872
+        ],
+        "right_wrist": [
+          0.3548,
+          0.374
+        ],
+        "left_hip": [
+          0.5943,
+          0.1655
+        ],
+        "right_hip": [
+          0.3105,
+          0.1674
+        ],
+        "left_knee": [
+          0.715,
+          0.2735
+        ],
+        "right_knee": [
+          0.1621,
+          0.2533
+        ],
+        "left_ankle": [
+          0.6397,
+          0.0771
+        ],
+        "right_ankle": [
+          0.2779,
+          0.0761
+        ],
+        "left_heel": [
+          0.6091,
+          0.0585
+        ],
+        "right_heel": [
+          0.313,
+          0.0586
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.1,
+        "right_elbow": 27.4,
+        "left_shoulder": 33.8,
+        "right_shoulder": 33.7,
+        "left_hip": 13.8,
+        "right_hip": 22.9,
+        "left_knee": 14.6,
+        "right_knee": 19.2,
+        "left_ankle": 156.4,
+        "right_ankle": 156.7,
+        "upper_back": 180.0,
+        "lower_back": 2.5
+      }
+    },
+    {
+      "t": 46,
+      "joints": {
+        "nose": [
+          0.4412,
+          0.4857
+        ],
+        "left_shoulder": [
+          0.6908,
+          0.3926
+        ],
+        "right_shoulder": [
+          0.1977,
+          0.3991
+        ],
+        "left_elbow": [
+          0.8274,
+          0.2712
+        ],
+        "right_elbow": [
+          0.0656,
+          0.2826
+        ],
+        "left_wrist": [
+          0.5426,
+          0.3862
+        ],
+        "right_wrist": [
+          0.3532,
+          0.3738
+        ],
+        "left_hip": [
+          0.5927,
+          0.1608
+        ],
+        "right_hip": [
+          0.3084,
+          0.1635
+        ],
+        "left_knee": [
+          0.6472,
+          0.2546
+        ],
+        "right_knee": [
+          0.1584,
+          0.2545
+        ],
+        "left_ankle": [
+          0.6369,
+          0.0764
+        ],
+        "right_ankle": [
+          0.2838,
+          0.0763
+        ],
+        "left_heel": [
+          0.6042,
+          0.0585
+        ],
+        "right_heel": [
+          0.3253,
+          0.0595
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.0,
+        "right_elbow": 26.8,
+        "left_shoulder": 32.0,
+        "right_shoulder": 33.1,
+        "left_hip": 3.3,
+        "right_hip": 21.8,
+        "left_knee": 11.1,
+        "right_knee": 17.0,
+        "left_ankle": 146.8,
+        "right_ankle": 152.0,
+        "upper_back": 180.0,
+        "lower_back": 10.4
+      }
+    },
+    {
+      "t": 47,
+      "joints": {
+        "nose": [
+          0.4375,
+          0.4847
+        ],
+        "left_shoulder": [
+          0.6902,
+          0.3888
+        ],
+        "right_shoulder": [
+          0.1964,
+          0.3974
+        ],
+        "left_elbow": [
+          0.8152,
+          0.268
+        ],
+        "right_elbow": [
+          0.0655,
+          0.28
+        ],
+        "left_wrist": [
+          0.532,
+          0.3868
+        ],
+        "right_wrist": [
+          0.3529,
+          0.3752
+        ],
+        "left_hip": [
+          0.5881,
+          0.1601
+        ],
+        "right_hip": [
+          0.3051,
+          0.164
+        ],
+        "left_knee": [
+          0.6848,
+          0.2567
+        ],
+        "right_knee": [
+          0.1579,
+          0.2524
+        ],
+        "left_ankle": [
+          0.633,
+          0.0766
+        ],
+        "right_ankle": [
+          0.2866,
+          0.0768
+        ],
+        "left_heel": [
+          0.5987,
+          0.0595
+        ],
+        "right_heel": [
+          0.326,
+          0.0617
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.6,
+        "right_elbow": 25.9,
+        "left_shoulder": 30.8,
+        "right_shoulder": 32.7,
+        "left_hip": 11.1,
+        "right_hip": 22.1,
+        "left_knee": 14.5,
+        "right_knee": 16.6,
+        "left_ankle": 148.9,
+        "right_ankle": 150.9,
+        "upper_back": 180.0,
+        "lower_back": 5.6
+      }
+    },
+    {
+      "t": 48,
+      "joints": {
+        "nose": [
+          0.4339,
+          0.4839
+        ],
+        "left_shoulder": [
+          0.6895,
+          0.3881
+        ],
+        "right_shoulder": [
+          0.1965,
+          0.3963
+        ],
+        "left_elbow": [
+          0.8157,
+          0.2678
+        ],
+        "right_elbow": [
+          0.0665,
+          0.2791
+        ],
+        "left_wrist": [
+          0.5304,
+          0.3858
+        ],
+        "right_wrist": [
+          0.3539,
+          0.3752
+        ],
+        "left_hip": [
+          0.5878,
+          0.1589
+        ],
+        "right_hip": [
+          0.3056,
+          0.1615
+        ],
+        "left_knee": [
+          0.73,
+          0.2687
+        ],
+        "right_knee": [
+          0.1546,
+          0.2523
+        ],
+        "left_ankle": [
+          0.6332,
+          0.0772
+        ],
+        "right_ankle": [
+          0.286,
+          0.0767
+        ],
+        "left_heel": [
+          0.5987,
+          0.0599
+        ],
+        "right_heel": [
+          0.3242,
+          0.0616
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.8,
+        "right_elbow": 25.7,
+        "left_shoulder": 31.0,
+        "right_shoulder": 32.6,
+        "left_hip": 16.5,
+        "right_hip": 22.1,
+        "left_knee": 15.2,
+        "right_knee": 16.3,
+        "left_ankle": 153.9,
+        "right_ankle": 152.3,
+        "upper_back": 180.0,
+        "lower_back": 0.6
+      }
+    },
+    {
+      "t": 49,
+      "joints": {
+        "nose": [
+          0.4344,
+          0.4827
+        ],
+        "left_shoulder": [
+          0.6821,
+          0.3868
+        ],
+        "right_shoulder": [
+          0.1954,
+          0.3954
+        ],
+        "left_elbow": [
+          0.8027,
+          0.2684
+        ],
+        "right_elbow": [
+          0.068,
+          0.2795
+        ],
+        "left_wrist": [
+          0.528,
+          0.3859
+        ],
+        "right_wrist": [
+          0.3545,
+          0.3822
+        ],
+        "left_hip": [
+          0.5821,
+          0.1576
+        ],
+        "right_hip": [
+          0.3033,
+          0.1617
+        ],
+        "left_knee": [
+          0.7336,
+          0.2676
+        ],
+        "right_knee": [
+          0.1663,
+          0.2437
+        ],
+        "left_ankle": [
+          0.6337,
+          0.0771
+        ],
+        "right_ankle": [
+          0.2854,
+          0.0767
+        ],
+        "left_heel": [
+          0.5994,
+          0.0605
+        ],
+        "right_heel": [
+          0.3218,
+          0.0619
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.3,
+        "right_elbow": 23.9,
+        "left_shoulder": 30.3,
+        "right_shoulder": 32.3,
+        "left_hip": 18.1,
+        "right_hip": 22.3,
+        "left_knee": 16.2,
+        "right_knee": 17.1,
+        "left_ankle": 153.4,
+        "right_ankle": 152.1,
+        "upper_back": 180.0,
+        "lower_back": 2.0
+      }
+    },
+    {
+      "t": 50,
+      "joints": {
+        "nose": [
+          0.441,
+          0.4817
+        ],
+        "left_shoulder": [
+          0.6757,
+          0.3867
+        ],
+        "right_shoulder": [
+          0.1954,
+          0.3956
+        ],
+        "left_elbow": [
+          0.7928,
+          0.269
+        ],
+        "right_elbow": [
+          0.0619,
+          0.2789
+        ],
+        "left_wrist": [
+          0.5232,
+          0.386
+        ],
+        "right_wrist": [
+          0.3511,
+          0.3797
+        ],
+        "left_hip": [
+          0.5796,
+          0.1582
+        ],
+        "right_hip": [
+          0.3014,
+          0.1628
+        ],
+        "left_knee": [
+          0.7406,
+          0.2779
+        ],
+        "right_knee": [
+          0.1626,
+          0.2553
+        ],
+        "left_ankle": [
+          0.6331,
+          0.0774
+        ],
+        "right_ankle": [
+          0.2845,
+          0.0771
+        ],
+        "left_heel": [
+          0.6021,
+          0.0605
+        ],
+        "right_heel": [
+          0.3192,
+          0.0624
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.4,
+        "right_elbow": 23.9,
+        "left_shoulder": 29.5,
+        "right_shoulder": 33.0,
+        "left_hip": 17.8,
+        "right_hip": 19.7,
+        "left_knee": 15.4,
+        "right_knee": 15.0,
+        "left_ankle": 156.9,
+        "right_ankle": 152.9,
+        "upper_back": 180.0,
+        "lower_back": 2.7
+      }
+    },
+    {
+      "t": 51,
+      "joints": {
+        "nose": [
+          0.4411,
+          0.4807
+        ],
+        "left_shoulder": [
+          0.6746,
+          0.3881
+        ],
+        "right_shoulder": [
+          0.1996,
+          0.3958
+        ],
+        "left_elbow": [
+          0.7928,
+          0.2692
+        ],
+        "right_elbow": [
+          0.0551,
+          0.2797
+        ],
+        "left_wrist": [
+          0.5211,
+          0.3852
+        ],
+        "right_wrist": [
+          0.3416,
+          0.3758
+        ],
+        "left_hip": [
+          0.5779,
+          0.1585
+        ],
+        "right_hip": [
+          0.3016,
+          0.1633
+        ],
+        "left_knee": [
+          0.7397,
+          0.2784
+        ],
+        "right_knee": [
+          0.166,
+          0.255
+        ],
+        "left_ankle": [
+          0.633,
+          0.0782
+        ],
+        "right_ankle": [
+          0.2836,
+          0.0771
+        ],
+        "left_heel": [
+          0.5963,
+          0.0621
+        ],
+        "right_heel": [
+          0.318,
+          0.0624
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.9,
+        "right_elbow": 23.2,
+        "left_shoulder": 29.5,
+        "right_shoulder": 34.5,
+        "left_hip": 17.9,
+        "right_hip": 19.7,
+        "left_knee": 15.6,
+        "right_knee": 15.1,
+        "left_ankle": 150.7,
+        "right_ankle": 152.7,
+        "upper_back": 180.0,
+        "lower_back": 2.9
+      }
+    },
+    {
+      "t": 52,
+      "joints": {
+        "nose": [
+          0.4388,
+          0.4801
+        ],
+        "left_shoulder": [
+          0.6747,
+          0.3891
+        ],
+        "right_shoulder": [
+          0.2017,
+          0.3959
+        ],
+        "left_elbow": [
+          0.7928,
+          0.2696
+        ],
+        "right_elbow": [
+          0.0481,
+          0.2804
+        ],
+        "left_wrist": [
+          0.5161,
+          0.3839
+        ],
+        "right_wrist": [
+          0.3351,
+          0.3713
+        ],
+        "left_hip": [
+          0.5767,
+          0.1586
+        ],
+        "right_hip": [
+          0.3022,
+          0.1638
+        ],
+        "left_knee": [
+          0.7429,
+          0.277
+        ],
+        "right_knee": [
+          0.1719,
+          0.2537
+        ],
+        "left_ankle": [
+          0.6315,
+          0.0787
+        ],
+        "right_ankle": [
+          0.2861,
+          0.0774
+        ],
+        "left_heel": [
+          0.5867,
+          0.0627
+        ],
+        "right_heel": [
+          0.3234,
+          0.0632
+        ]
+      },
+      "angles": {
+        "left_elbow": 21.9,
+        "right_elbow": 23.3,
+        "left_shoulder": 29.5,
+        "right_shoulder": 35.8,
+        "left_hip": 18.7,
+        "right_hip": 19.3,
+        "left_knee": 15.9,
+        "right_knee": 14.9,
+        "left_ankle": 145.6,
+        "right_ankle": 149.0,
+        "upper_back": 180.0,
+        "lower_back": 3.8
+      }
+    },
+    {
+      "t": 53,
+      "joints": {
+        "nose": [
+          0.4379,
+          0.4797
+        ],
+        "left_shoulder": [
+          0.6724,
+          0.3893
+        ],
+        "right_shoulder": [
+          0.2034,
+          0.396
+        ],
+        "left_elbow": [
+          0.7827,
+          0.2699
+        ],
+        "right_elbow": [
+          0.0489,
+          0.2812
+        ],
+        "left_wrist": [
+          0.5128,
+          0.3861
+        ],
+        "right_wrist": [
+          0.3349,
+          0.3718
+        ],
+        "left_hip": [
+          0.5746,
+          0.1586
+        ],
+        "right_hip": [
+          0.3027,
+          0.1637
+        ],
+        "left_knee": [
+          0.7587,
+          0.2775
+        ],
+        "right_knee": [
+          0.1712,
+          0.2601
+        ],
+        "left_ankle": [
+          0.6296,
+          0.0789
+        ],
+        "right_ankle": [
+          0.2858,
+          0.0778
+        ],
+        "left_heel": [
+          0.5839,
+          0.0631
+        ],
+        "right_heel": [
+          0.3231,
+          0.0635
+        ]
+      },
+      "angles": {
+        "left_elbow": 22.0,
+        "right_elbow": 23.0,
+        "left_shoulder": 28.2,
+        "right_shoulder": 36.0,
+        "left_hip": 21.1,
+        "right_hip": 18.0,
+        "left_knee": 16.5,
+        "right_knee": 13.9,
+        "left_ankle": 146.3,
+        "right_ankle": 148.9,
+        "upper_back": 180.0,
+        "lower_back": 5.3
+      }
+    },
+    {
+      "t": 54,
+      "joints": {
+        "nose": [
+          0.4371,
+          0.479
+        ],
+        "left_shoulder": [
+          0.6713,
+          0.3894
+        ],
+        "right_shoulder": [
+          0.2042,
+          0.3957
+        ],
+        "left_elbow": [
+          0.7739,
+          0.2697
+        ],
+        "right_elbow": [
+          0.0494,
+          0.2816
+        ],
+        "left_wrist": [
+          0.5123,
+          0.3895
+        ],
+        "right_wrist": [
+          0.3343,
+          0.375
+        ],
+        "left_hip": [
+          0.574,
+          0.1584
+        ],
+        "right_hip": [
+          0.3032,
+          0.1636
+        ],
+        "left_knee": [
+          0.7658,
+          0.2736
+        ],
+        "right_knee": [
+          0.1684,
+          0.2611
+        ],
+        "left_ankle": [
+          0.631,
+          0.079
+        ],
+        "right_ankle": [
+          0.2818,
+          0.0781
+        ],
+        "left_heel": [
+          0.5846,
+          0.0621
+        ],
+        "right_heel": [
+          0.3208,
+          0.0633
+        ]
+      },
+      "angles": {
+        "left_elbow": 21.5,
+        "right_elbow": 21.9,
+        "left_shoulder": 26.9,
+        "right_shoulder": 36.2,
+        "left_hip": 23.0,
+        "right_hip": 18.4,
+        "left_knee": 17.4,
+        "right_knee": 14.4,
+        "left_ankle": 148.6,
+        "right_ankle": 148.5,
+        "upper_back": 180.0,
+        "lower_back": 5.8
+      }
+    },
+    {
+      "t": 55,
+      "joints": {
+        "nose": [
+          0.4363,
+          0.4789
+        ],
+        "left_shoulder": [
+          0.6703,
+          0.3897
+        ],
+        "right_shoulder": [
+          0.2041,
+          0.3958
+        ],
+        "left_elbow": [
+          0.7761,
+          0.2697
+        ],
+        "right_elbow": [
+          0.0495,
+          0.2823
+        ],
+        "left_wrist": [
+          0.5139,
+          0.3896
+        ],
+        "right_wrist": [
+          0.3342,
+          0.376
+        ],
+        "left_hip": [
+          0.574,
+          0.1587
+        ],
+        "right_hip": [
+          0.3028,
+          0.1638
+        ],
+        "left_knee": [
+          0.765,
+          0.2715
+        ],
+        "right_knee": [
+          0.1707,
+          0.2577
+        ],
+        "left_ankle": [
+          0.6312,
+          0.0789
+        ],
+        "right_ankle": [
+          0.2815,
+          0.078
+        ],
+        "left_heel": [
+          0.5859,
+          0.0621
+        ],
+        "right_heel": [
+          0.3199,
+          0.0631
+        ]
+      },
+      "angles": {
+        "left_elbow": 21.1,
+        "right_elbow": 21.7,
+        "left_shoulder": 27.3,
+        "right_shoulder": 36.2,
+        "left_hip": 23.6,
+        "right_hip": 18.8,
+        "left_knee": 17.9,
+        "right_knee": 14.8,
+        "left_ankle": 149.2,
+        "right_ankle": 148.8,
+        "upper_back": 180.0,
+        "lower_back": 6.2
+      }
+    },
+    {
+      "t": 56,
+      "joints": {
+        "nose": [
+          0.4381,
+          0.4793
+        ],
+        "left_shoulder": [
+          0.671,
+          0.3897
+        ],
+        "right_shoulder": [
+          0.2043,
+          0.3959
+        ],
+        "left_elbow": [
+          0.7836,
+          0.2693
+        ],
+        "right_elbow": [
+          0.0488,
+          0.2832
+        ],
+        "left_wrist": [
+          0.514,
+          0.388
+        ],
+        "right_wrist": [
+          0.3333,
+          0.3756
+        ],
+        "left_hip": [
+          0.5741,
+          0.1595
+        ],
+        "right_hip": [
+          0.3032,
+          0.1638
+        ],
+        "left_knee": [
+          0.752,
+          0.2748
+        ],
+        "right_knee": [
+          0.1685,
+          0.2563
+        ],
+        "left_ankle": [
+          0.6304,
+          0.0787
+        ],
+        "right_ankle": [
+          0.2834,
+          0.078
+        ],
+        "left_heel": [
+          0.5903,
+          0.0622
+        ],
+        "right_heel": [
+          0.3205,
+          0.0631
+        ]
+      },
+      "angles": {
+        "left_elbow": 21.1,
+        "right_elbow": 21.8,
+        "left_shoulder": 28.4,
+        "right_shoulder": 36.5,
+        "left_hip": 21.1,
+        "right_hip": 19.6,
+        "left_knee": 17.0,
+        "right_knee": 15.1,
+        "left_ankle": 150.7,
+        "right_ankle": 150.5,
+        "upper_back": 180.0,
+        "lower_back": 4.6
+      }
+    },
+    {
+      "t": 57,
+      "joints": {
+        "nose": [
+          0.438,
+          0.4802
+        ],
+        "left_shoulder": [
+          0.6714,
+          0.3901
+        ],
+        "right_shoulder": [
+          0.2042,
+          0.3959
+        ],
+        "left_elbow": [
+          0.7889,
+          0.2704
+        ],
+        "right_elbow": [
+          0.0473,
+          0.2835
+        ],
+        "left_wrist": [
+          0.5123,
+          0.386
+        ],
+        "right_wrist": [
+          0.3313,
+          0.3749
+        ],
+        "left_hip": [
+          0.5739,
+          0.1601
+        ],
+        "right_hip": [
+          0.302,
+          0.1644
+        ],
+        "left_knee": [
+          0.759,
+          0.2741
+        ],
+        "right_knee": [
+          0.1682,
+          0.2574
+        ],
+        "left_ankle": [
+          0.6304,
+          0.0787
+        ],
+        "right_ankle": [
+          0.2831,
+          0.0778
+        ],
+        "left_heel": [
+          0.5901,
+          0.0623
+        ],
+        "right_heel": [
+          0.3196,
+          0.063
+        ]
+      },
+      "angles": {
+        "left_elbow": 21.7,
+        "right_elbow": 21.7,
+        "left_shoulder": 29.3,
+        "right_shoulder": 36.7,
+        "left_hip": 22.4,
+        "right_hip": 19.4,
+        "left_knee": 17.5,
+        "right_knee": 14.9,
+        "left_ankle": 151.2,
+        "right_ankle": 150.6,
+        "upper_back": 180.0,
+        "lower_back": 5.3
+      }
+    },
+    {
+      "t": 58,
+      "joints": {
+        "nose": [
+          0.4381,
+          0.4824
+        ],
+        "left_shoulder": [
+          0.6737,
+          0.3911
+        ],
+        "right_shoulder": [
+          0.2064,
+          0.3956
+        ],
+        "left_elbow": [
+          0.7954,
+          0.2752
+        ],
+        "right_elbow": [
+          0.0455,
+          0.2842
+        ],
+        "left_wrist": [
+          0.5127,
+          0.3868
+        ],
+        "right_wrist": [
+          0.3297,
+          0.3795
+        ],
+        "left_hip": [
+          0.5783,
+          0.1605
+        ],
+        "right_hip": [
+          0.304,
+          0.1649
+        ],
+        "left_knee": [
+          0.7499,
+          0.2742
+        ],
+        "right_knee": [
+          0.1679,
+          0.2576
+        ],
+        "left_ankle": [
+          0.63,
+          0.0786
+        ],
+        "right_ankle": [
+          0.2826,
+          0.0776
+        ],
+        "left_heel": [
+          0.5897,
+          0.0619
+        ],
+        "right_heel": [
+          0.3187,
+          0.0631
+        ]
+      },
+      "angles": {
+        "left_elbow": 22.1,
+        "right_elbow": 19.8,
+        "left_shoulder": 30.4,
+        "right_shoulder": 37.6,
+        "left_hip": 20.7,
+        "right_hip": 19.9,
+        "left_knee": 16.6,
+        "right_knee": 15.4,
+        "left_ankle": 150.6,
+        "right_ankle": 150.5,
+        "upper_back": 180.0,
+        "lower_back": 3.8
+      }
+    },
+    {
+      "t": 59,
+      "joints": {
+        "nose": [
+          0.4375,
+          0.4921
+        ],
+        "left_shoulder": [
+          0.6748,
+          0.3953
+        ],
+        "right_shoulder": [
+          0.2064,
+          0.3965
+        ],
+        "left_elbow": [
+          0.8136,
+          0.281
+        ],
+        "right_elbow": [
+          0.0456,
+          0.2847
+        ],
+        "left_wrist": [
+          0.5122,
+          0.3899
+        ],
+        "right_wrist": [
+          0.335,
+          0.3805
+        ],
+        "left_hip": [
+          0.5837,
+          0.1625
+        ],
+        "right_hip": [
+          0.306,
+          0.1653
+        ],
+        "left_knee": [
+          0.7612,
+          0.2708
+        ],
+        "right_knee": [
+          0.1676,
+          0.2574
+        ],
+        "left_ankle": [
+          0.6314,
+          0.0785
+        ],
+        "right_ankle": [
+          0.2817,
+          0.0774
+        ],
+        "left_heel": [
+          0.5889,
+          0.0589
+        ],
+        "right_heel": [
+          0.3208,
+          0.062
+        ]
+      },
+      "angles": {
+        "left_elbow": 21.6,
+        "right_elbow": 20.2,
+        "left_shoulder": 32.9,
+        "right_shoulder": 37.6,
+        "left_hip": 23.3,
+        "right_hip": 20.3,
+        "left_knee": 17.4,
+        "right_knee": 16.1,
+        "left_ankle": 155.1,
+        "right_ankle": 149.8,
+        "upper_back": 180.0,
+        "lower_back": 4.6
+      }
+    },
+    {
+      "t": 60,
+      "joints": {
+        "nose": [
+          0.44,
+          0.5052
+        ],
+        "left_shoulder": [
+          0.6862,
+          0.4133
+        ],
+        "right_shoulder": [
+          0.2053,
+          0.4107
+        ],
+        "left_elbow": [
+          0.8072,
+          0.2905
+        ],
+        "right_elbow": [
+          0.0566,
+          0.294
+        ],
+        "left_wrist": [
+          0.5163,
+          0.4078
+        ],
+        "right_wrist": [
+          0.3446,
+          0.3957
+        ],
+        "left_hip": [
+          0.5949,
+          0.1777
+        ],
+        "right_hip": [
+          0.3049,
+          0.1794
+        ],
+        "left_knee": [
+          0.7627,
+          0.2489
+        ],
+        "right_knee": [
+          0.1667,
+          0.2508
+        ],
+        "left_ankle": [
+          0.6344,
+          0.0788
+        ],
+        "right_ankle": [
+          0.2819,
+          0.078
+        ],
+        "left_heel": [
+          0.591,
+          0.0588
+        ],
+        "right_heel": [
+          0.3248,
+          0.0622
+        ]
+      },
+      "angles": {
+        "left_elbow": 22.7,
+        "right_elbow": 21.2,
+        "left_shoulder": 28.6,
+        "right_shoulder": 34.8,
+        "left_hip": 33.3,
+        "right_hip": 26.9,
+        "left_knee": 25.7,
+        "right_knee": 22.0,
+        "left_ankle": 156.7,
+        "right_ankle": 148.5,
+        "upper_back": 180.0,
+        "lower_back": 4.8
+      }
+    },
+    {
+      "t": 61,
+      "joints": {
+        "nose": [
+          0.4484,
+          0.5304
+        ],
+        "left_shoulder": [
+          0.6864,
+          0.434
+        ],
+        "right_shoulder": [
+          0.2023,
+          0.4332
+        ],
+        "left_elbow": [
+          0.7911,
+          0.3162
+        ],
+        "right_elbow": [
+          0.0588,
+          0.3226
+        ],
+        "left_wrist": [
+          0.5191,
+          0.4385
+        ],
+        "right_wrist": [
+          0.3562,
+          0.4273
+        ],
+        "left_hip": [
+          0.5943,
+          0.2074
+        ],
+        "right_hip": [
+          0.2976,
+          0.2013
+        ],
+        "left_knee": [
+          0.7378,
+          0.2476
+        ],
+        "right_knee": [
+          0.1758,
+          0.2514
+        ],
+        "left_ankle": [
+          0.6368,
+          0.0785
+        ],
+        "right_ankle": [
+          0.2818,
+          0.0781
+        ],
+        "left_heel": [
+          0.592,
+          0.0562
+        ],
+        "right_heel": [
+          0.327,
+          0.0615
+        ]
+      },
+      "angles": {
+        "left_elbow": 21.4,
+        "right_elbow": 20.9,
+        "left_shoulder": 27.2,
+        "right_shoulder": 34.8,
+        "left_hip": 44.7,
+        "right_hip": 33.7,
+        "left_knee": 40.7,
+        "right_knee": 29.5,
+        "left_ankle": 155.7,
+        "right_ankle": 147.1,
+        "upper_back": 180.0,
+        "lower_back": 5.3
+      }
+    },
+    {
+      "t": 62,
+      "joints": {
+        "nose": [
+          0.4661,
+          0.5566
+        ],
+        "left_shoulder": [
+          0.6934,
+          0.4547
+        ],
+        "right_shoulder": [
+          0.2012,
+          0.4568
+        ],
+        "left_elbow": [
+          0.8037,
+          0.3396
+        ],
+        "right_elbow": [
+          0.0591,
+          0.351
+        ],
+        "left_wrist": [
+          0.523,
+          0.4547
+        ],
+        "right_wrist": [
+          0.3724,
+          0.4515
+        ],
+        "left_hip": [
+          0.6029,
+          0.2376
+        ],
+        "right_hip": [
+          0.2968,
+          0.2288
+        ],
+        "left_knee": [
+          0.7378,
+          0.2444
+        ],
+        "right_knee": [
+          0.1899,
+          0.2448
+        ],
+        "left_ankle": [
+          0.6377,
+          0.081
+        ],
+        "right_ankle": [
+          0.2819,
+          0.0766
+        ],
+        "left_heel": [
+          0.5856,
+          0.0583
+        ],
+        "right_heel": [
+          0.3312,
+          0.0596
+        ]
+      },
+      "angles": {
+        "left_elbow": 22.7,
+        "right_elbow": 22.8,
+        "left_shoulder": 28.7,
+        "right_shoulder": 35.7,
+        "left_hip": 73.5,
+        "right_hip": 59.2,
+        "left_knee": 69.4,
+        "right_knee": 56.6,
+        "left_ankle": 152.1,
+        "right_ankle": 144.1,
+        "upper_back": 180.0,
+        "lower_back": 25.0
+      }
+    },
+    {
+      "t": 63,
+      "joints": {
+        "nose": [
+          0.4727,
+          0.5865
+        ],
+        "left_shoulder": [
+          0.6989,
+          0.4818
+        ],
+        "right_shoulder": [
+          0.2014,
+          0.4814
+        ],
+        "left_elbow": [
+          0.831,
+          0.3731
+        ],
+        "right_elbow": [
+          0.0634,
+          0.3788
+        ],
+        "left_wrist": [
+          0.5339,
+          0.4836
+        ],
+        "right_wrist": [
+          0.3725,
+          0.4784
+        ],
+        "left_hip": [
+          0.6031,
+          0.2723
+        ],
+        "right_hip": [
+          0.2995,
+          0.2635
+        ],
+        "left_knee": [
+          0.7439,
+          0.2451
+        ],
+        "right_knee": [
+          0.1972,
+          0.2445
+        ],
+        "left_ankle": [
+          0.6396,
+          0.0779
+        ],
+        "right_ankle": [
+          0.2826,
+          0.0765
+        ],
+        "left_heel": [
+          0.5863,
+          0.0562
+        ],
+        "right_heel": [
+          0.3336,
+          0.0597
+        ]
+      },
+      "angles": {
+        "left_elbow": 20.8,
+        "right_elbow": 22.6,
+        "left_shoulder": 34.3,
+        "right_shoulder": 36.5,
+        "left_hip": 107.4,
+        "right_hip": 106.7,
+        "left_knee": 104.0,
+        "right_knee": 105.5,
+        "left_ankle": 150.5,
+        "right_ankle": 142.1,
+        "upper_back": 180.0,
+        "lower_back": 162.7
+      }
+    },
+    {
+      "t": 64,
+      "joints": {
+        "nose": [
+          0.4767,
+          0.6188
+        ],
+        "left_shoulder": [
+          0.6998,
+          0.5099
+        ],
+        "right_shoulder": [
+          0.2047,
+          0.5108
+        ],
+        "left_elbow": [
+          0.8428,
+          0.4084
+        ],
+        "right_elbow": [
+          0.0708,
+          0.407
+        ],
+        "left_wrist": [
+          0.5385,
+          0.5194
+        ],
+        "right_wrist": [
+          0.3778,
+          0.5035
+        ],
+        "left_hip": [
+          0.5944,
+          0.305
+        ],
+        "right_hip": [
+          0.3006,
+          0.2988
+        ],
+        "left_knee": [
+          0.7577,
+          0.2369
+        ],
+        "right_knee": [
+          0.2007,
+          0.222
+        ],
+        "left_ankle": [
+          0.6416,
+          0.0765
+        ],
+        "right_ankle": [
+          0.2829,
+          0.0747
+        ],
+        "left_heel": [
+          0.5861,
+          0.0543
+        ],
+        "right_heel": [
+          0.3341,
+          0.0596
+        ]
+      },
+      "angles": {
+        "left_elbow": 18.0,
+        "right_elbow": 24.2,
+        "left_shoulder": 38.9,
+        "right_shoulder": 35.5,
+        "left_hip": 127.0,
+        "right_hip": 144.3,
+        "left_knee": 122.7,
+        "right_knee": 142.1,
+        "left_ankle": 152.1,
+        "right_ankle": 140.0,
+        "upper_back": 180.0,
+        "lower_back": 170.1
+      }
+    },
+    {
+      "t": 65,
+      "joints": {
+        "nose": [
+          0.4791,
+          0.6568
+        ],
+        "left_shoulder": [
+          0.697,
+          0.5419
+        ],
+        "right_shoulder": [
+          0.2143,
+          0.5471
+        ],
+        "left_elbow": [
+          0.8511,
+          0.4472
+        ],
+        "right_elbow": [
+          0.0787,
+          0.4439
+        ],
+        "left_wrist": [
+          0.5513,
+          0.5582
+        ],
+        "right_wrist": [
+          0.3773,
+          0.5438
+        ],
+        "left_hip": [
+          0.5837,
+          0.3366
+        ],
+        "right_hip": [
+          0.3008,
+          0.3312
+        ],
+        "left_knee": [
+          0.7657,
+          0.2368
+        ],
+        "right_knee": [
+          0.2039,
+          0.2099
+        ],
+        "left_ankle": [
+          0.642,
+          0.0762
+        ],
+        "right_ankle": [
+          0.2836,
+          0.0743
+        ],
+        "left_heel": [
+          0.586,
+          0.0542
+        ],
+        "right_heel": [
+          0.3357,
+          0.0594
+        ]
+      },
+      "angles": {
+        "left_elbow": 14.0,
+        "right_elbow": 22.1,
+        "left_shoulder": 43.2,
+        "right_shoulder": 34.8,
+        "left_hip": 133.8,
+        "right_hip": 154.7,
+        "left_knee": 129.4,
+        "right_knee": 150.8,
+        "left_ankle": 152.5,
+        "right_ankle": 139.9,
+        "upper_back": 180.0,
+        "lower_back": 170.4
+      }
+    },
+    {
+      "t": 66,
+      "joints": {
+        "nose": [
+          0.4839,
+          0.6932
+        ],
+        "left_shoulder": [
+          0.6957,
+          0.581
+        ],
+        "right_shoulder": [
+          0.2239,
+          0.584
+        ],
+        "left_elbow": [
+          0.8689,
+          0.4853
+        ],
+        "right_elbow": [
+          0.0842,
+          0.482
+        ],
+        "left_wrist": [
+          0.5809,
+          0.5883
+        ],
+        "right_wrist": [
+          0.3785,
+          0.5838
+        ],
+        "left_hip": [
+          0.5805,
+          0.3651
+        ],
+        "right_hip": [
+          0.3027,
+          0.363
+        ],
+        "left_knee": [
+          0.7717,
+          0.2376
+        ],
+        "right_knee": [
+          0.2078,
+          0.209
+        ],
+        "left_ankle": [
+          0.6469,
+          0.0751
+        ],
+        "right_ankle": [
+          0.2846,
+          0.0743
+        ],
+        "left_heel": [
+          0.5949,
+          0.0543
+        ],
+        "right_heel": [
+          0.3357,
+          0.0595
+        ]
+      },
+      "angles": {
+        "left_elbow": 12.2,
+        "right_elbow": 20.1,
+        "left_shoulder": 45.6,
+        "right_shoulder": 34.9,
+        "left_hip": 139.2,
+        "right_hip": 159.3,
+        "left_knee": 134.5,
+        "right_knee": 154.9,
+        "left_ankle": 152.8,
+        "right_ankle": 139.7,
+        "upper_back": 180.0,
+        "lower_back": 170.9
+      }
+    },
+    {
+      "t": 67,
+      "joints": {
+        "nose": [
+          0.4847,
+          0.7268
+        ],
+        "left_shoulder": [
+          0.6966,
+          0.6173
+        ],
+        "right_shoulder": [
+          0.2296,
+          0.6177
+        ],
+        "left_elbow": [
+          0.8795,
+          0.5278
+        ],
+        "right_elbow": [
+          0.0821,
+          0.5183
+        ],
+        "left_wrist": [
+          0.5911,
+          0.6159
+        ],
+        "right_wrist": [
+          0.3836,
+          0.6031
+        ],
+        "left_hip": [
+          0.5799,
+          0.3923
+        ],
+        "right_hip": [
+          0.3047,
+          0.3903
+        ],
+        "left_knee": [
+          0.7808,
+          0.2406
+        ],
+        "right_knee": [
+          0.2177,
+          0.2097
+        ],
+        "left_ankle": [
+          0.6478,
+          0.0756
+        ],
+        "right_ankle": [
+          0.2902,
+          0.074
+        ],
+        "left_heel": [
+          0.5945,
+          0.0558
+        ],
+        "right_heel": [
+          0.3394,
+          0.0607
+        ]
+      },
+      "angles": {
+        "left_elbow": 13.4,
+        "right_elbow": 24.1,
+        "left_shoulder": 48.6,
+        "right_shoulder": 36.2,
+        "left_hip": 142.5,
+        "right_hip": 162.7,
+        "left_knee": 136.7,
+        "right_knee": 158.4,
+        "left_ankle": 151.5,
+        "right_ankle": 137.0,
+        "upper_back": 180.0,
+        "lower_back": 170.7
+      }
+    },
+    {
+      "t": 68,
+      "joints": {
+        "nose": [
+          0.485,
+          0.7649
+        ],
+        "left_shoulder": [
+          0.7009,
+          0.6532
+        ],
+        "right_shoulder": [
+          0.2433,
+          0.6526
+        ],
+        "left_elbow": [
+          0.8999,
+          0.5677
+        ],
+        "right_elbow": [
+          0.0785,
+          0.5577
+        ],
+        "left_wrist": [
+          0.5903,
+          0.6533
+        ],
+        "right_wrist": [
+          0.3966,
+          0.6395
+        ],
+        "left_hip": [
+          0.5845,
+          0.4146
+        ],
+        "right_hip": [
+          0.3067,
+          0.4144
+        ],
+        "left_knee": [
+          0.7931,
+          0.2494
+        ],
+        "right_knee": [
+          0.2187,
+          0.2122
+        ],
+        "left_ankle": [
+          0.6515,
+          0.0782
+        ],
+        "right_ankle": [
+          0.2913,
+          0.074
+        ],
+        "left_heel": [
+          0.5938,
+          0.058
+        ],
+        "right_heel": [
+          0.3417,
+          0.0611
+        ]
+      },
+      "angles": {
+        "left_elbow": 12.5,
+        "right_elbow": 22.5,
+        "left_shoulder": 51.6,
+        "right_shoulder": 38.9,
+        "left_hip": 144.2,
+        "right_hip": 165.0,
+        "left_knee": 137.3,
+        "right_knee": 159.5,
+        "left_ankle": 150.3,
+        "right_ankle": 135.2,
+        "upper_back": 180.0,
+        "lower_back": 170.6
+      }
+    },
+    {
+      "t": 69,
+      "joints": {
+        "nose": [
+          0.4826,
+          0.794
+        ],
+        "left_shoulder": [
+          0.7011,
+          0.685
+        ],
+        "right_shoulder": [
+          0.2488,
+          0.6827
+        ],
+        "left_elbow": [
+          0.9004,
+          0.607
+        ],
+        "right_elbow": [
+          0.0773,
+          0.5961
+        ],
+        "left_wrist": [
+          0.5862,
+          0.6935
+        ],
+        "right_wrist": [
+          0.4078,
+          0.6739
+        ],
+        "left_hip": [
+          0.5883,
+          0.4392
+        ],
+        "right_hip": [
+          0.3078,
+          0.4416
+        ],
+        "left_knee": [
+          0.7942,
+          0.2572
+        ],
+        "right_knee": [
+          0.222,
+          0.2236
+        ],
+        "left_ankle": [
+          0.6525,
+          0.0803
+        ],
+        "right_ankle": [
+          0.2916,
+          0.0746
+        ],
+        "left_heel": [
+          0.5909,
+          0.0595
+        ],
+        "right_heel": [
+          0.3418,
+          0.0634
+        ]
+      },
+      "angles": {
+        "left_elbow": 9.9,
+        "right_elbow": 21.3,
+        "left_shoulder": 53.7,
+        "right_shoulder": 41.9,
+        "left_hip": 147.2,
+        "right_hip": 166.3,
+        "left_knee": 140.2,
+        "right_knee": 161.6,
+        "left_ankle": 148.7,
+        "right_ankle": 130.7,
+        "upper_back": 180.0,
+        "lower_back": 171.2
+      }
+    },
+    {
+      "t": 70,
+      "joints": {
+        "nose": [
+          0.4773,
+          0.826
+        ],
+        "left_shoulder": [
+          0.7041,
+          0.7219
+        ],
+        "right_shoulder": [
+          0.2517,
+          0.719
+        ],
+        "left_elbow": [
+          0.9182,
+          0.6409
+        ],
+        "right_elbow": [
+          0.0772,
+          0.6336
+        ],
+        "left_wrist": [
+          0.5845,
+          0.7281
+        ],
+        "right_wrist": [
+          0.4188,
+          0.7218
+        ],
+        "left_hip": [
+          0.5916,
+          0.4654
+        ],
+        "right_hip": [
+          0.3082,
+          0.4686
+        ],
+        "left_knee": [
+          0.7923,
+          0.265
+        ],
+        "right_knee": [
+          0.2308,
+          0.2443
+        ],
+        "left_ankle": [
+          0.6537,
+          0.0819
+        ],
+        "right_ankle": [
+          0.2933,
+          0.0782
+        ],
+        "left_heel": [
+          0.5906,
+          0.0614
+        ],
+        "right_heel": [
+          0.3413,
+          0.0665
+        ]
+      },
+      "angles": {
+        "left_elbow": 10.4,
+        "right_elbow": 18.0,
+        "left_shoulder": 54.2,
+        "right_shoulder": 42.4,
+        "left_hip": 150.0,
+        "right_hip": 167.7,
+        "left_knee": 143.4,
+        "right_knee": 164.5,
+        "left_ankle": 146.7,
+        "right_ankle": 131.1,
+        "upper_back": 180.0,
+        "lower_back": 171.4
+      }
+    },
+    {
+      "t": 71,
+      "joints": {
+        "nose": [
+          0.4764,
+          0.8539
+        ],
+        "left_shoulder": [
+          0.7047,
+          0.7452
+        ],
+        "right_shoulder": [
+          0.2709,
+          0.7482
+        ],
+        "left_elbow": [
+          0.9408,
+          0.6689
+        ],
+        "right_elbow": [
+          0.0715,
+          0.6616
+        ],
+        "left_wrist": [
+          0.5842,
+          0.7533
+        ],
+        "right_wrist": [
+          0.4166,
+          0.7426
+        ],
+        "left_hip": [
+          0.5947,
+          0.4821
+        ],
+        "right_hip": [
+          0.3091,
+          0.4869
+        ],
+        "left_knee": [
+          0.7694,
+          0.2681
+        ],
+        "right_knee": [
+          0.2418,
+          0.2561
+        ],
+        "left_ankle": [
+          0.6538,
+          0.0822
+        ],
+        "right_ankle": [
+          0.2959,
+          0.0781
+        ],
+        "left_heel": [
+          0.5901,
+          0.0611
+        ],
+        "right_heel": [
+          0.3425,
+          0.0648
+        ]
+      },
+      "angles": {
+        "left_elbow": 8.5,
+        "right_elbow": 17.2,
+        "left_shoulder": 58.3,
+        "right_shoulder": 44.0,
+        "left_hip": 154.0,
+        "right_hip": 170.6,
+        "left_knee": 149.8,
+        "right_knee": 167.2,
+        "left_ankle": 144.5,
+        "right_ankle": 133.8,
+        "upper_back": 180.0,
+        "lower_back": 171.9
+      }
+    },
+    {
+      "t": 72,
+      "joints": {
+        "nose": [
+          0.4725,
+          0.8734
+        ],
+        "left_shoulder": [
+          0.7127,
+          0.7654
+        ],
+        "right_shoulder": [
+          0.2763,
+          0.7728
+        ],
+        "left_elbow": [
+          0.9531,
+          0.6953
+        ],
+        "right_elbow": [
+          0.0733,
+          0.6875
+        ],
+        "left_wrist": [
+          0.5893,
+          0.7811
+        ],
+        "right_wrist": [
+          0.4138,
+          0.7759
+        ],
+        "left_hip": [
+          0.5971,
+          0.4983
+        ],
+        "right_hip": [
+          0.3102,
+          0.5007
+        ],
+        "left_knee": [
+          0.7472,
+          0.274
+        ],
+        "right_knee": [
+          0.2538,
+          0.2676
+        ],
+        "left_ankle": [
+          0.654,
+          0.0812
+        ],
+        "right_ankle": [
+          0.302,
+          0.0779
+        ],
+        "left_heel": [
+          0.5925,
+          0.0595
+        ],
+        "right_heel": [
+          0.3445,
+          0.0631
+        ]
+      },
+      "angles": {
+        "left_elbow": 5.7,
+        "right_elbow": 13.5,
+        "left_shoulder": 61.5,
+        "right_shoulder": 44.5,
+        "left_hip": 156.6,
+        "right_hip": 172.1,
+        "left_knee": 155.6,
+        "right_knee": 169.3,
+        "left_ankle": 143.5,
+        "right_ankle": 138.3,
+        "upper_back": 180.0,
+        "lower_back": 172.3
+      }
+    },
+    {
+      "t": 73,
+      "joints": {
+        "nose": [
+          0.4678,
+          0.8946
+        ],
+        "left_shoulder": [
+          0.728,
+          0.7821
+        ],
+        "right_shoulder": [
+          0.2745,
+          0.7903
+        ],
+        "left_elbow": [
+          0.9545,
+          0.722
+        ],
+        "right_elbow": [
+          0.073,
+          0.716
+        ],
+        "left_wrist": [
+          0.5906,
+          0.8094
+        ],
+        "right_wrist": [
+          0.4157,
+          0.8068
+        ],
+        "left_hip": [
+          0.5978,
+          0.5155
+        ],
+        "right_hip": [
+          0.3092,
+          0.5161
+        ],
+        "left_knee": [
+          0.7345,
+          0.2816
+        ],
+        "right_knee": [
+          0.263,
+          0.274
+        ],
+        "left_ankle": [
+          0.654,
+          0.0809
+        ],
+        "right_ankle": [
+          0.3054,
+          0.078
+        ],
+        "left_heel": [
+          0.599,
+          0.0575
+        ],
+        "right_heel": [
+          0.3448,
+          0.0624
+        ]
+      },
+      "angles": {
+        "left_elbow": 2.6,
+        "right_elbow": 9.3,
+        "left_shoulder": 65.2,
+        "right_shoulder": 48.3,
+        "left_hip": 157.2,
+        "right_hip": 173.2,
+        "left_knee": 159.0,
+        "right_knee": 171.2,
+        "left_ankle": 147.1,
+        "right_ankle": 141.1,
+        "upper_back": 180.0,
+        "lower_back": 172.1
+      }
+    },
+    {
+      "t": 74,
+      "joints": {
+        "nose": [
+          0.4671,
+          0.9151
+        ],
+        "left_shoulder": [
+          0.7237,
+          0.8035
+        ],
+        "right_shoulder": [
+          0.2679,
+          0.8099
+        ],
+        "left_elbow": [
+          0.9518,
+          0.7433
+        ],
+        "right_elbow": [
+          0.0894,
+          0.7322
+        ],
+        "left_wrist": [
+          0.592,
+          0.8332
+        ],
+        "right_wrist": [
+          0.4145,
+          0.8374
+        ],
+        "left_hip": [
+          0.6001,
+          0.5307
+        ],
+        "right_hip": [
+          0.3097,
+          0.5314
+        ],
+        "left_knee": [
+          0.7123,
+          0.2832
+        ],
+        "right_knee": [
+          0.2715,
+          0.2849
+        ],
+        "left_ankle": [
+          0.6546,
+          0.0806
+        ],
+        "right_ankle": [
+          0.3062,
+          0.0795
+        ],
+        "left_heel": [
+          0.6037,
+          0.0566
+        ],
+        "right_heel": [
+          0.3446,
+          0.0623
+        ]
+      },
+      "angles": {
+        "left_elbow": 1.5,
+        "right_elbow": 8.4,
+        "left_shoulder": 64.6,
+        "right_shoulder": 44.1,
+        "left_hip": 160.6,
+        "right_hip": 173.4,
+        "left_knee": 164.2,
+        "right_knee": 173.0,
+        "left_ankle": 147.6,
+        "right_ankle": 143.5,
+        "upper_back": 180.0,
+        "lower_back": 173.6
+      }
+    },
+    {
+      "t": 75,
+      "joints": {
+        "nose": [
+          0.4666,
+          0.9348
+        ],
+        "left_shoulder": [
+          0.7041,
+          0.8179
+        ],
+        "right_shoulder": [
+          0.2514,
+          0.8203
+        ],
+        "left_elbow": [
+          0.9348,
+          0.7624
+        ],
+        "right_elbow": [
+          0.0924,
+          0.7489
+        ],
+        "left_wrist": [
+          0.5941,
+          0.8569
+        ],
+        "right_wrist": [
+          0.4132,
+          0.8561
+        ],
+        "left_hip": [
+          0.5999,
+          0.5478
+        ],
+        "right_hip": [
+          0.3088,
+          0.5471
+        ],
+        "left_knee": [
+          0.6837,
+          0.2928
+        ],
+        "right_knee": [
+          0.2746,
+          0.2949
+        ],
+        "left_ankle": [
+          0.656,
+          0.0802
+        ],
+        "right_ankle": [
+          0.3061,
+          0.0833
+        ],
+        "left_heel": [
+          0.6068,
+          0.0558
+        ],
+        "right_heel": [
+          0.3437,
+          0.0645
+        ]
+      },
+      "angles": {
+        "left_elbow": 3.8,
+        "right_elbow": 8.4,
+        "left_shoulder": 65.6,
+        "right_shoulder": 44.5,
+        "left_hip": 164.7,
+        "right_hip": 172.6,
+        "left_knee": 170.2,
+        "right_knee": 173.9,
+        "left_ankle": 145.6,
+        "right_ankle": 146.2,
+        "upper_back": 180.0,
+        "lower_back": 176.0
+      }
+    },
+    {
+      "t": 76,
+      "joints": {
+        "nose": [
+          0.4638,
+          0.9386
+        ],
+        "left_shoulder": [
+          0.6914,
+          0.8262
+        ],
+        "right_shoulder": [
+          0.2247,
+          0.8269
+        ],
+        "left_elbow": [
+          0.9179,
+          0.7724
+        ],
+        "right_elbow": [
+          0.0958,
+          0.7662
+        ],
+        "left_wrist": [
+          0.5939,
+          0.8705
+        ],
+        "right_wrist": [
+          0.4129,
+          0.8796
+        ],
+        "left_hip": [
+          0.5998,
+          0.5627
+        ],
+        "right_hip": [
+          0.3006,
+          0.5607
+        ],
+        "left_knee": [
+          0.6578,
+          0.3105
+        ],
+        "right_knee": [
+          0.2823,
+          0.3073
+        ],
+        "left_ankle": [
+          0.6566,
+          0.0809
+        ],
+        "right_ankle": [
+          0.3063,
+          0.086
+        ],
+        "left_heel": [
+          0.6084,
+          0.0557
+        ],
+        "right_heel": [
+          0.3457,
+          0.0654
+        ]
+      },
+      "angles": {
+        "left_elbow": 6.6,
+        "right_elbow": 7.8,
+        "left_shoulder": 65.2,
+        "right_shoulder": 44.7,
+        "left_hip": 167.6,
+        "right_hip": 172.3,
+        "left_knee": 174.9,
+        "right_knee": 176.1,
+        "left_ankle": 144.3,
+        "right_ankle": 146.5,
+        "upper_back": 180.0,
+        "lower_back": 177.7
+      }
+    },
+    {
+      "t": 77,
+      "joints": {
+        "nose": [
+          0.4619,
+          0.943
+        ],
+        "left_shoulder": [
+          0.6919,
+          0.8303
+        ],
+        "right_shoulder": [
+          0.2124,
+          0.8332
+        ],
+        "left_elbow": [
+          0.9012,
+          0.7803
+        ],
+        "right_elbow": [
+          0.0952,
+          0.7823
+        ],
+        "left_wrist": [
+          0.5932,
+          0.8872
+        ],
+        "right_wrist": [
+          0.3842,
+          0.8974
+        ],
+        "left_hip": [
+          0.6018,
+          0.5679
+        ],
+        "right_hip": [
+          0.294,
+          0.5656
+        ],
+        "left_knee": [
+          0.6484,
+          0.3078
+        ],
+        "right_knee": [
+          0.288,
+          0.3124
+        ],
+        "left_ankle": [
+          0.6571,
+          0.0821
+        ],
+        "right_ankle": [
+          0.3057,
+          0.0879
+        ],
+        "left_heel": [
+          0.6086,
+          0.0547
+        ],
+        "right_heel": [
+          0.346,
+          0.0657
+        ]
+      },
+      "angles": {
+        "left_elbow": 10.3,
+        "right_elbow": 2.5,
+        "left_shoulder": 65.0,
+        "right_shoulder": 47.4,
+        "left_hip": 168.8,
+        "right_hip": 173.0,
+        "left_knee": 177.0,
+        "right_knee": 177.8,
+        "left_ankle": 145.5,
+        "right_ankle": 147.3,
+        "upper_back": 180.0,
+        "lower_back": 177.9
+      }
+    },
+    {
+      "t": 78,
+      "joints": {
+        "nose": [
+          0.4581,
+          0.9504
+        ],
+        "left_shoulder": [
+          0.6849,
+          0.8373
+        ],
+        "right_shoulder": [
+          0.1946,
+          0.8397
+        ],
+        "left_elbow": [
+          0.8885,
+          0.7823
+        ],
+        "right_elbow": [
+          0.0938,
+          0.7871
+        ],
+        "left_wrist": [
+          0.5893,
+          0.8887
+        ],
+        "right_wrist": [
+          0.3865,
+          0.9036
+        ],
+        "left_hip": [
+          0.6029,
+          0.5757
+        ],
+        "right_hip": [
+          0.292,
+          0.5708
+        ],
+        "left_knee": [
+          0.6384,
+          0.3171
+        ],
+        "right_knee": [
+          0.2883,
+          0.314
+        ],
+        "left_ankle": [
+          0.6587,
+          0.0835
+        ],
+        "right_ankle": [
+          0.3041,
+          0.0883
+        ],
+        "left_heel": [
+          0.6092,
+          0.0546
+        ],
+        "right_heel": [
+          0.3444,
+          0.0645
+        ]
+      },
+      "angles": {
+        "left_elbow": 7.7,
+        "right_elbow": 7.6,
+        "left_shoulder": 61.0,
+        "right_shoulder": 43.5,
+        "left_hip": 170.3,
+        "right_hip": 171.9,
+        "left_knee": 178.9,
+        "right_knee": 178.2,
+        "left_ankle": 145.4,
+        "right_ankle": 149.0,
+        "upper_back": 180.0,
+        "lower_back": 179.3
+      }
+    },
+    {
+      "t": 79,
+      "joints": {
+        "nose": [
+          0.4556,
+          0.9539
+        ],
+        "left_shoulder": [
+          0.6813,
+          0.8376
+        ],
+        "right_shoulder": [
+          0.1893,
+          0.8395
+        ],
+        "left_elbow": [
+          0.886,
+          0.7807
+        ],
+        "right_elbow": [
+          0.0933,
+          0.7865
+        ],
+        "left_wrist": [
+          0.5823,
+          0.887
+        ],
+        "right_wrist": [
+          0.4103,
+          0.8971
+        ],
+        "left_hip": [
+          0.6029,
+          0.5755
+        ],
+        "right_hip": [
+          0.2918,
+          0.5721
+        ],
+        "left_knee": [
+          0.6284,
+          0.3153
+        ],
+        "right_knee": [
+          0.29,
+          0.3139
+        ],
+        "left_ankle": [
+          0.6576,
+          0.0834
+        ],
+        "right_ankle": [
+          0.3041,
+          0.088
+        ],
+        "left_heel": [
+          0.6063,
+          0.052
+        ],
+        "right_heel": [
+          0.3457,
+          0.0645
+        ]
+      },
+      "angles": {
+        "left_elbow": 6.5,
+        "right_elbow": 12.9,
+        "left_shoulder": 60.0,
+        "right_shoulder": 42.5,
+        "left_hip": 171.5,
+        "right_hip": 171.6,
+        "left_knee": 179.4,
+        "right_knee": 178.5,
+        "left_ankle": 145.7,
+        "right_ankle": 147.8,
+        "upper_back": 180.0,
+        "lower_back": 180.0
+      }
+    },
+    {
+      "t": 80,
+      "joints": {
+        "nose": [
+          0.4456,
+          0.9545
+        ],
+        "left_shoulder": [
+          0.6784,
+          0.8357
+        ],
+        "right_shoulder": [
+          0.1876,
+          0.8349
+        ],
+        "left_elbow": [
+          0.8853,
+          0.776
+        ],
+        "right_elbow": [
+          0.0972,
+          0.7787
+        ],
+        "left_wrist": [
+          0.5819,
+          0.8815
+        ],
+        "right_wrist": [
+          0.4314,
+          0.8898
+        ],
+        "left_hip": [
+          0.6027,
+          0.5726
+        ],
+        "right_hip": [
+          0.2917,
+          0.5701
+        ],
+        "left_knee": [
+          0.6226,
+          0.3163
+        ],
+        "right_knee": [
+          0.2913,
+          0.3148
+        ],
+        "left_ankle": [
+          0.6579,
+          0.0833
+        ],
+        "right_ankle": [
+          0.3065,
+          0.089
+        ],
+        "left_heel": [
+          0.6113,
+          0.052
+        ],
+        "right_heel": [
+          0.35,
+          0.0671
+        ]
+      },
+      "angles": {
+        "left_elbow": 5.3,
+        "right_elbow": 17.3,
+        "left_shoulder": 58.7,
+        "right_shoulder": 39.6,
+        "left_hip": 172.2,
+        "right_hip": 171.6,
+        "left_knee": 178.4,
+        "right_knee": 178.5,
+        "left_ankle": 147.5,
+        "right_ankle": 144.6,
+        "upper_back": 180.0,
+        "lower_back": 179.7
+      }
+    },
+    {
+      "t": 81,
+      "joints": {
+        "nose": [
+          0.4404,
+          0.9519
+        ],
+        "left_shoulder": [
+          0.6782,
+          0.8329
+        ],
+        "right_shoulder": [
+          0.1861,
+          0.8328
+        ],
+        "left_elbow": [
+          0.876,
+          0.7729
+        ],
+        "right_elbow": [
+          0.1142,
+          0.7701
+        ],
+        "left_wrist": [
+          0.5734,
+          0.8789
+        ],
+        "right_wrist": [
+          0.4311,
+          0.8867
+        ],
+        "left_hip": [
+          0.6028,
+          0.571
+        ],
+        "right_hip": [
+          0.2936,
+          0.5686
+        ],
+        "left_knee": [
+          0.6209,
+          0.3163
+        ],
+        "right_knee": [
+          0.2913,
+          0.315
+        ],
+        "left_ankle": [
+          0.6564,
+          0.0833
+        ],
+        "right_ankle": [
+          0.3054,
+          0.0909
+        ],
+        "left_heel": [
+          0.6109,
+          0.0516
+        ],
+        "right_heel": [
+          0.3499,
+          0.0702
+        ]
+      },
+      "angles": {
+        "left_elbow": 4.1,
+        "right_elbow": 22.3,
+        "left_shoulder": 57.3,
+        "right_shoulder": 32.1,
+        "left_hip": 172.3,
+        "right_hip": 171.1,
+        "left_knee": 178.3,
+        "right_knee": 178.5,
+        "left_ankle": 148.4,
+        "right_ankle": 142.3,
+        "upper_back": 180.0,
+        "lower_back": 179.4
+      }
+    },
+    {
+      "t": 82,
+      "joints": {
+        "nose": [
+          0.4369,
+          0.9502
+        ],
+        "left_shoulder": [
+          0.6783,
+          0.8305
+        ],
+        "right_shoulder": [
+          0.187,
+          0.8313
+        ],
+        "left_elbow": [
+          0.8666,
+          0.769
+        ],
+        "right_elbow": [
+          0.1155,
+          0.763
+        ],
+        "left_wrist": [
+          0.5701,
+          0.8755
+        ],
+        "right_wrist": [
+          0.4307,
+          0.8849
+        ],
+        "left_hip": [
+          0.6023,
+          0.565
+        ],
+        "right_hip": [
+          0.2947,
+          0.5645
+        ],
+        "left_knee": [
+          0.6219,
+          0.3153
+        ],
+        "right_knee": [
+          0.2912,
+          0.313
+        ],
+        "left_ankle": [
+          0.6523,
+          0.0828
+        ],
+        "right_ankle": [
+          0.3032,
+          0.0921
+        ],
+        "left_heel": [
+          0.6086,
+          0.0509
+        ],
+        "right_heel": [
+          0.3485,
+          0.0726
+        ]
+      },
+      "angles": {
+        "left_elbow": 2.7,
+        "right_elbow": 22.7,
+        "left_shoulder": 55.1,
+        "right_shoulder": 30.1,
+        "left_hip": 172.2,
+        "right_hip": 171.1,
+        "left_knee": 178.9,
+        "right_knee": 178.5,
+        "left_ankle": 149.9,
+        "right_ankle": 139.9,
+        "upper_back": 180.0,
+        "lower_back": 179.4
+      }
+    },
+    {
+      "t": 83,
+      "joints": {
+        "nose": [
+          0.4344,
+          0.9497
+        ],
+        "left_shoulder": [
+          0.6773,
+          0.8306
+        ],
+        "right_shoulder": [
+          0.1855,
+          0.831
+        ],
+        "left_elbow": [
+          0.8661,
+          0.768
+        ],
+        "right_elbow": [
+          0.1186,
+          0.762
+        ],
+        "left_wrist": [
+          0.5692,
+          0.8747
+        ],
+        "right_wrist": [
+          0.4299,
+          0.8837
+        ],
+        "left_hip": [
+          0.6013,
+          0.5624
+        ],
+        "right_hip": [
+          0.2942,
+          0.5626
+        ],
+        "left_knee": [
+          0.6231,
+          0.3129
+        ],
+        "right_knee": [
+          0.2893,
+          0.3117
+        ],
+        "left_ankle": [
+          0.6499,
+          0.0826
+        ],
+        "right_ankle": [
+          0.2969,
+          0.0927
+        ],
+        "left_heel": [
+          0.6072,
+          0.0508
+        ],
+        "right_heel": [
+          0.3438,
+          0.0739
+        ]
+      },
+      "angles": {
+        "left_elbow": 2.3,
+        "right_elbow": 23.8,
+        "left_shoulder": 54.7,
+        "right_shoulder": 28.7,
+        "left_hip": 172.0,
+        "right_hip": 170.9,
+        "left_knee": 179.4,
+        "right_knee": 178.8,
+        "left_ankle": 150.6,
+        "right_ankle": 137.5,
+        "upper_back": 180.0,
+        "lower_back": 179.4
+      }
+    },
+    {
+      "t": 84,
+      "joints": {
+        "nose": [
+          0.4316,
+          0.9507
+        ],
+        "left_shoulder": [
+          0.6732,
+          0.8303
+        ],
+        "right_shoulder": [
+          0.1857,
+          0.8313
+        ],
+        "left_elbow": [
+          0.8668,
+          0.7683
+        ],
+        "right_elbow": [
+          0.1146,
+          0.7633
+        ],
+        "left_wrist": [
+          0.5693,
+          0.8744
+        ],
+        "right_wrist": [
+          0.4295,
+          0.8845
+        ],
+        "left_hip": [
+          0.5986,
+          0.5621
+        ],
+        "right_hip": [
+          0.2911,
+          0.5624
+        ],
+        "left_knee": [
+          0.6235,
+          0.3125
+        ],
+        "right_knee": [
+          0.2896,
+          0.3119
+        ],
+        "left_ankle": [
+          0.65,
+          0.0825
+        ],
+        "right_ankle": [
+          0.293,
+          0.0926
+        ],
+        "left_heel": [
+          0.6072,
+          0.0508
+        ],
+        "right_heel": [
+          0.3409,
+          0.0742
+        ]
+      },
+      "angles": {
+        "left_elbow": 3.1,
+        "right_elbow": 22.9,
+        "left_shoulder": 55.6,
+        "right_shoulder": 29.9,
+        "left_hip": 171.9,
+        "right_hip": 171.5,
+        "left_knee": 179.7,
+        "right_knee": 179.5,
+        "left_ankle": 150.5,
+        "right_ankle": 135.9,
+        "upper_back": 180.0,
+        "lower_back": 179.8
+      }
+    }
+  ]
+}

@@ -73,6 +73,9 @@
             </div>
             {% endfor %}
         </div>
+
+        {% elif question.type == "spot_click" %}
+        <div id="spot-click-container"></div>
         {% endif %}
 
         <div class="text-center mt-4">
@@ -83,6 +86,18 @@
         </div>
     </div>
 </div>
+
+{% if question.type == "spot_click" %}
+<link rel="stylesheet" href="/static/css/compensation_click.css">
+<script src="/static/js/skeleton_player.js"></script>
+<script src="/static/js/compensation_click.js"></script>
+<script>
+$(document).ready(function() {
+    const question = {{ question|tojson }};
+    CompensationClick.init(document.getElementById('spot-click-container'), question);
+});
+</script>
+{% endif %}
 
 <script>
 $('#submit-btn').on('click', function() {
@@ -109,6 +124,14 @@ $('#submit-btn').on('click', function() {
             }
             answer.push(checked.val() === 'true');
         }
+    } else if (type === 'spot_click') {
+        // CompensationClick stores the answer data on the button
+        const answerData = $(this).data('spot-click-answer');
+        if (!answerData) {
+            alert('Please click on the skeleton to identify the compensation.');
+            return;
+        }
+        answer = answerData;
     }
 
     if (answer === undefined || (Array.isArray(answer) && answer.length === 0)) {

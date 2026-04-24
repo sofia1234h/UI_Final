@@ -29,6 +29,24 @@
         { "text": "Knee valgus (knees caving in) is best assessed from the side view.", "correct": false }
       ],
       "explanation": "Heel rise is an ankle mobility issue, not a knee strength issue. Lumbar flexion and torso-tibia alignment are defined exactly as stated. Knee valgus is a front-view check — you can't see the knees tracking inward from the side."
+    },
+    {
+      "id": 4,
+      "type": "spot_click",
+      "prompt": "Where is the compensation in this squat?",
+      "skeleton": "sample_1.json",
+      "frame_index": 10,
+      "correct_zone": {
+        "x": 0.6,
+        "y": 0.13,
+        "radius": 0.1,
+        "label": "heels lifting"
+      },
+      "distractor_zones": [
+        {"x": 0.6, "y": 0.65, "label": "torso", "hint": "Torso looks fine here — check the feet."},
+        {"x": 0.6, "y": 0.29, "label": "knees", "hint": "Knees are tracking OK. Look lower."}
+      ],
+      "explanation": "The heels are lifting off the ground — that's a heel rise, indicating limited ankle mobility."
     }
   ]
 }
