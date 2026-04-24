@@ -8,6 +8,17 @@
         <h2 class="title-serif mb-4">{{ lesson.title }}</h2>
 
         {% if lesson.type == "intro" %}
+            {% if lesson.hero_image %}
+            <div class="lesson-hero-image">
+                <img src="/static/images/reference/{{ lesson.hero_image }}"
+                     alt="{{ lesson.hero_caption or lesson.title }}"
+                     class="img-fluid">
+                {% if lesson.hero_caption %}
+                <p class="lesson-hero-caption">{{ lesson.hero_caption }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+
             <p class="mb-4">{{ lesson.body }}</p>
 
             {% if lesson.bullets %}
@@ -25,6 +36,54 @@
             {% endif %}
 
         {% elif lesson.type == "comparison" %}
+            {% if lesson.two_column_layout and lesson.hero_image %}
+            {# Two-column layout: hero image on left, skeleton comparisons on right #}
+            <div class="lesson-two-column">
+                <div class="lesson-two-column-left">
+                    <div class="lesson-hero-image">
+                        <img src="/static/images/reference/{{ lesson.hero_image }}"
+                             alt="{{ lesson.hero_caption or lesson.title }}"
+                             class="img-fluid">
+                        {% if lesson.hero_caption %}
+                        <p class="lesson-hero-caption">{{ lesson.hero_caption }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="lesson-two-column-right">
+                    <div class="row mb-4">
+                        <div class="col-12 mb-3">
+                            <div class="card">
+                                <div class="card-header card-header-good">
+                                    GOOD: {{ lesson.good.caption }}
+                                </div>
+                                <div class="card-body text-center">
+                                    {% if lesson.good.skeleton %}
+                                    <div class="skeleton-player" data-src="/static/skeletons/{{ lesson.good.skeleton }}" data-variant="good"></div>
+                                    {% else %}
+                                    <img src="/static/img/{{ lesson.good.image }}" class="img-fluid" alt="{{ lesson.good.caption }}">
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="card">
+                                <div class="card-header card-header-bad">
+                                    COMPENSATION: {{ lesson.bad.caption }}
+                                </div>
+                                <div class="card-body text-center">
+                                    {% if lesson.bad.skeleton %}
+                                    <div class="skeleton-player" data-src="/static/skeletons/{{ lesson.bad.skeleton }}" data-variant="bad"></div>
+                                    {% else %}
+                                    <img src="/static/img/{{ lesson.bad.image }}" class="img-fluid" alt="{{ lesson.bad.caption }}">
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            {# Standard single-column layout #}
             <div class="row mb-4">
                 <div class="col-md-6 mb-3">
                     <div class="card h-100">
@@ -32,7 +91,11 @@
                             GOOD: {{ lesson.good.caption }}
                         </div>
                         <div class="card-body text-center">
+                            {% if lesson.good.skeleton %}
+                            <div class="skeleton-player" data-src="/static/skeletons/{{ lesson.good.skeleton }}" data-variant="good"></div>
+                            {% else %}
                             <img src="/static/img/{{ lesson.good.image }}" class="img-fluid" alt="{{ lesson.good.caption }}">
+                            {% endif %}
                             <p class="text-muted small mt-2">{{ lesson.good.caption }}</p>
                         </div>
                     </div>
@@ -43,12 +106,17 @@
                             COMPENSATION: {{ lesson.bad.caption }}
                         </div>
                         <div class="card-body text-center">
+                            {% if lesson.bad.skeleton %}
+                            <div class="skeleton-player" data-src="/static/skeletons/{{ lesson.bad.skeleton }}" data-variant="bad"></div>
+                            {% else %}
                             <img src="/static/img/{{ lesson.bad.image }}" class="img-fluid" alt="{{ lesson.bad.caption }}">
+                            {% endif %}
                             <p class="text-muted small mt-2">{{ lesson.bad.caption }}</p>
                         </div>
                     </div>
                 </div>
             </div>
+            {% endif %}
 
             <p class="text-muted"><strong>What to look for:</strong> {{ lesson.tip }}</p>
 
@@ -58,9 +126,33 @@
                 <p class="mb-0 mt-2">{{ lesson.side_by_side_note }}</p>
             </div>
             {% endif %}
+
+        {% elif lesson.type == "build_a_squat" %}
+            <p class="mb-4">{{ lesson.intro }}</p>
+            <div id="build-a-squat-container"
+                 data-lesson='{{ lesson | tojson }}'></div>
         {% endif %}
     </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+{% if lesson.type == "comparison" and (lesson.good.skeleton or lesson.bad.skeleton) %}
+<script src="/static/js/skeleton_player.js"></script>
+<script>SkeletonPlayer.initAll();</script>
+{% elif lesson.type == "build_a_squat" %}
+<link rel="stylesheet" href="/static/css/build_a_squat.css">
+<link rel="stylesheet" href="/static/css/skeleton.css">
+<script src="/static/js/skeleton_player.js"></script>
+<script src="/static/js/build_a_squat.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const container = document.getElementById('build-a-squat-container');
+        const lessonData = JSON.parse(container.dataset.lesson);
+        BuildASquat.init(container, lessonData);
+    });
+</script>
+{% endif %}
 {% endblock %}
 
 {% block nav %}

@@ -1,4 +1,5 @@
 /* SquatCheck Custom Styles */
+@import url('skeleton.css');
 
 body {
     background: #F4F4F2;
@@ -98,4 +99,53 @@ body {
 
 .btn-link.text-success-custom:hover {
     text-decoration: underline;
+}
+
+/* Lesson Hero Images */
+.lesson-hero-image {
+    max-width: 500px;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+}
+
+.lesson-hero-image img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-hero-caption {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* Two-column layout for lessons with hero image + skeleton */
+.lesson-two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.lesson-two-column-left {
+    display: flex;
+    align-items: flex-start;
+}
+
+.lesson-two-column-left .lesson-hero-image {
+    max-width: 100%;
+    margin: 0;
+}
+
+.lesson-two-column-right .skeleton-player {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .lesson-two-column {
+        grid-template-columns: 1fr;
+    }
 }
