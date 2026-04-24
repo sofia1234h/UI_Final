@@ -2,17 +2,12 @@
 """
 CSV to Skeleton JSON Converter
 
-Converts MediaPipe pose CSV files from the dynalytix repo into
-JSON format suitable for the skeleton player.
+Converts MediaPipe pose CSV files into JSON format suitable for skeleton_player.js.
+Uses scripts/visualizer.py as the single source of truth for skeleton definitions.
 
 Usage:
-    python csv_to_skeleton.py <input.csv> <output.json> [options]
-
-Options:
-    --downsample N    Keep every Nth frame (default: 2)
-    --frames START:END  Trim to frame range (e.g., 45:120)
-    --label NAME      Label for the skeleton (default: filename)
-    --mirror          Flip x coordinates (face opposite direction)
+    python scripts/csv_to_skeleton.py data/pose_csvs/good_squat.csv static/skeletons/good_squat.json \\
+        [--downsample 2] [--frames 45:120] [--label "Good Squat"] [--mirror]
 """
 
 import argparse
@@ -20,39 +15,27 @@ import json
 import sys
 from pathlib import Path
 
-import pandas as pd
+# Import from the visualizer module (single source of truth)
+from visualizer import (
+    load_pose_csv,
+    get_landmark_position,
+    get_landmark_visibility,
+    ALL_LANDMARK_NAMES,
+    ALL_ANGLE_NAMES,
+)
 
 
-# Landmarks we extract (in order)
-LANDMARKS = [
-    "nose",
-    "left_shoulder", "right_shoulder",
-    "left_elbow", "right_elbow",
-    "left_wrist", "right_wrist",
-    "left_hip", "right_hip",
-    "left_knee", "right_knee",
-    "left_ankle", "right_ankle",
-    "left_heel", "right_heel",
-]
+# Visibility threshold for considering a landmark "valid"
+VISIBILITY_THRESHOLD = 0.5
 
-# Angle columns to extract
-ANGLE_COLUMNS = [
-    "angle_left_elbow", "angle_right_elbow",
-    "angle_left_shoulder", "angle_right_shoulder",
-    "angle_left_hip", "angle_right_hip",
-    "angle_left_knee", "angle_right_knee",
-    "angle_left_ankle", "angle_right_ankle",
-    "angle_upper_back", "angle_lower_back",
-]
+# Padding for bounding box (5%)
+PADDING = 0.05
 
 # Key joints that must be visible for a frame to be valid
 KEY_JOINTS = ["left_hip", "right_hip", "left_knee", "right_knee", "left_ankle", "right_ankle"]
 
-VISIBILITY_THRESHOLD = 0.5
-PADDING = 0.05  # 5% padding for bounding box
 
-
-def parse_frame_range(frame_str: str) -> tuple[int, int]:
+def parse_frame_range(frame_str: str) -> tuple[int, int | None]:
     """Parse a frame range string like '45:120' into (start, end)."""
     if ":" not in frame_str:
         raise ValueError(f"Invalid frame range: {frame_str}. Expected format: START:END")
@@ -62,39 +45,14 @@ def parse_frame_range(frame_str: str) -> tuple[int, int]:
     return start, end
 
 
-def extract_landmarks(row: pd.Series) -> dict:
-    """Extract landmark positions from a CSV row."""
-    joints = {}
-    for lm in LANDMARKS:
-        x = row.get(f"landmark_{lm}_x")
-        y = row.get(f"landmark_{lm}_y")
-        vis = row.get(f"landmark_{lm}_visibility", 0)
-
-        if pd.isna(x) or pd.isna(y) or vis < VISIBILITY_THRESHOLD:
-            joints[lm] = None
-        else:
-            joints[lm] = [float(x), float(y)]
-    return joints
-
-
-def extract_angles(row: pd.Series) -> dict:
-    """Extract angle measurements from a CSV row."""
-    angles = {}
-    for col in ANGLE_COLUMNS:
-        val = row.get(col)
-        if pd.notna(val):
-            # Remove 'angle_' prefix for cleaner output
-            key = col.replace("angle_", "")
-            angles[key] = round(float(val), 1)
-    return angles
-
-
-def frame_is_valid(joints: dict) -> bool:
+def frame_is_valid(landmarks: dict) -> bool:
     """Check if a frame has enough visible key joints."""
-    # Need at least one side of hip/knee/ankle to be valid
-    left_valid = all(joints.get(f"left_{j}") is not None for j in ["hip", "knee", "ankle"])
-    right_valid = all(joints.get(f"right_{j}") is not None for j in ["hip", "knee", "ankle"])
-    return left_valid or right_valid
+    def side_valid(side: str) -> bool:
+        return all(
+            get_landmark_visibility(landmarks, f"{side}_{j}") >= VISIBILITY_THRESHOLD
+            for j in ["hip", "knee", "ankle"]
+        )
+    return side_valid("left") or side_valid("right")
 
 
 def compute_bounds(frames: list[dict]) -> tuple[float, float, float, float]:
@@ -103,7 +61,7 @@ def compute_bounds(frames: list[dict]) -> tuple[float, float, float, float]:
     all_y = []
 
     for frame in frames:
-        for pos in frame["joints"].values():
+        for name, pos in frame["joints"].items():
             if pos is not None:
                 all_x.append(pos[0])
                 all_y.append(pos[1])
@@ -124,7 +82,11 @@ def compute_bounds(frames: list[dict]) -> tuple[float, float, float, float]:
 
 
 def normalize_frames(frames: list[dict], mirror: bool = False) -> tuple[list[dict], dict]:
-    """Normalize all frames to 0-1 coordinates and flip y for SVG."""
+    """
+    Normalize all frames to 0-1 coordinates.
+
+    MediaPipe pixel y goes DOWN, SVG y also goes DOWN, so NO flip needed.
+    """
     min_x, min_y, max_x, max_y = compute_bounds(frames)
     width = max_x - min_x
     height = max_y - min_y
@@ -143,8 +105,7 @@ def normalize_frames(frames: list[dict], mirror: bool = False) -> tuple[list[dic
             else:
                 nx = (pos[0] - min_x) / width
                 ny = (pos[1] - min_y) / height
-                # Flip y so SVG renders right-side up (y=0 at top in SVG)
-                ny = 1 - ny
+                # NO flip: MediaPipe y and SVG y both go down
                 if mirror:
                     nx = 1 - nx
                 new_joints[name] = [round(nx, 4), round(ny, 4)]
@@ -158,6 +119,7 @@ def normalize_frames(frames: list[dict], mirror: bool = False) -> tuple[list[dic
     # If mirrored, swap left/right labels
     if mirror:
         for frame in normalized:
+            # Swap joint names
             new_joints = {}
             for name, pos in frame["joints"].items():
                 if name.startswith("left_"):
@@ -169,6 +131,7 @@ def normalize_frames(frames: list[dict], mirror: bool = False) -> tuple[list[dic
                 new_joints[new_name] = pos
             frame["joints"] = new_joints
 
+            # Swap angle names
             new_angles = {}
             for name, val in frame["angles"].items():
                 if name.startswith("left_"):
@@ -184,38 +147,110 @@ def normalize_frames(frames: list[dict], mirror: bool = False) -> tuple[list[dic
     return normalized, bounds
 
 
+def print_orientation_check(frames: list[dict]) -> bool:
+    """
+    Print orientation sanity check and return True if correct.
+
+    Expects: nose.y < shoulders.y < hips.y < knees.y < ankles.y
+    (smaller y = higher on screen, which is correct for head at top)
+    """
+    if not frames:
+        print("No frames to check orientation")
+        return False
+
+    # Use middle frame
+    mid_idx = len(frames) // 2
+    frame = frames[mid_idx]
+    joints = frame["joints"]
+
+    def get_y(name: str) -> float | None:
+        pos = joints.get(name)
+        if pos is None:
+            # Try the other side
+            if name.startswith("left_"):
+                pos = joints.get(name.replace("left_", "right_"))
+            elif name.startswith("right_"):
+                pos = joints.get(name.replace("right_", "left_"))
+        return pos[1] if pos else None
+
+    nose_y = get_y("nose")
+    shoulder_y = get_y("left_shoulder")
+    hip_y = get_y("left_hip")
+    knee_y = get_y("left_knee")
+    ankle_y = get_y("left_ankle")
+
+    print("\nOrientation check (middle frame):")
+    print(f"  nose          y={nose_y:.2f}   (expect: small, near top)" if nose_y else "  nose          [missing]")
+    print(f"  shoulders     y={shoulder_y:.2f}" if shoulder_y else "  shoulders     [missing]")
+    print(f"  hips          y={hip_y:.2f}" if hip_y else "  hips          [missing]")
+    print(f"  knees         y={knee_y:.2f}" if knee_y else "  knees         [missing]")
+    print(f"  ankles        y={ankle_y:.2f}   (expect: large, near bottom)" if ankle_y else "  ankles        [missing]")
+
+    # Check orientation: nose should have smaller y than ankles
+    if nose_y is not None and ankle_y is not None:
+        if nose_y < ankle_y:
+            print("\nResult: \u2713 correct")
+            return True
+        else:
+            print("\nResult: \u2717 INVERTED \u2014 output skeleton will render upside-down")
+            return False
+    else:
+        print("\nResult: [unable to verify - missing key landmarks]")
+        return True  # Don't fail if we can't check
+
+
 def convert_csv_to_skeleton(
     input_path: Path,
     output_path: Path,
     label: str = None,
     downsample: int = 2,
-    frame_range: tuple[int, int] = None,
+    frame_range: tuple[int, int | None] = None,
     mirror: bool = False,
 ) -> dict:
     """Convert a CSV file to skeleton JSON."""
 
-    # Read CSV
-    df = pd.read_csv(input_path)
+    # Load CSV using visualizer module
+    raw_data = load_pose_csv(input_path)
+
+    if not raw_data:
+        raise ValueError(f"No data found in CSV: {input_path}")
 
     # Apply frame range filter
     if frame_range:
         start, end = frame_range
         if end is None:
-            end = len(df)
-        df = df.iloc[start:end].reset_index(drop=True)
+            end = len(raw_data)
+        raw_data = raw_data[start:end]
 
-    # Extract frames
+    # Extract frames with valid joints
     raw_frames = []
-    for idx, row in df.iterrows():
-        joints = extract_landmarks(row)
-        angles = extract_angles(row)
+    for idx, frame_data in enumerate(raw_data):
+        landmarks = frame_data['landmarks']
 
-        if frame_is_valid(joints):
-            raw_frames.append({
-                "t": idx,
-                "joints": joints,
-                "angles": angles,
-            })
+        if not frame_is_valid(landmarks):
+            continue
+
+        # Convert landmarks to joints dict
+        joints = {}
+        for lm_name in ALL_LANDMARK_NAMES:
+            pos = get_landmark_position(landmarks, lm_name)
+            vis = get_landmark_visibility(landmarks, lm_name)
+            if pos is not None and vis >= VISIBILITY_THRESHOLD:
+                joints[lm_name] = list(pos)
+            else:
+                joints[lm_name] = None
+
+        # Extract angles
+        angles = {}
+        for angle_name in ALL_ANGLE_NAMES:
+            if angle_name in frame_data['angles']:
+                angles[angle_name] = round(frame_data['angles'][angle_name], 1)
+
+        raw_frames.append({
+            "t": idx,
+            "joints": joints,
+            "angles": angles,
+        })
 
     if not raw_frames:
         raise ValueError("No valid frames found in CSV")
@@ -230,6 +265,11 @@ def convert_csv_to_skeleton(
 
     # Normalize coordinates
     frames, bounds = normalize_frames(raw_frames, mirror=mirror)
+
+    # Orientation sanity check
+    if not print_orientation_check(frames):
+        print("\nERROR: Skeleton appears inverted. Not writing output.", file=sys.stderr)
+        sys.exit(1)
 
     # Calculate FPS (original is ~30fps, after downsample)
     original_fps = 30
@@ -291,7 +331,7 @@ def main():
             frame_range=frame_range,
             mirror=args.mirror,
         )
-        print(f"Converted {len(result['frames'])} frames to {args.output}")
+        print(f"\nConverted {len(result['frames'])} frames to {args.output}")
         print(f"  Label: {result['label']}")
         print(f"  FPS: {result['fps']}")
         if result['frame_range']:

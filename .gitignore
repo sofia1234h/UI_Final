@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .skeleton_cache/
+
+# Video files (large binaries, keep local only)
+videos/*
+!videos/.gitkeep
+!videos/README.md
