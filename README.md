@@ -4,46 +4,65 @@ SquatCheck HW10 Flask prototype - a learning module for identifying squat compen
 
 ## Skeleton Animation System
 
-The app supports animated skeleton players driven by real MediaPipe pose data from CSV files.
+The app supports animated skeleton players driven by real MediaPipe pose data.
 
-### Regenerating Skeleton JSONs
+### Regenerating skeleton data
 
-When you record new videos and want to update the skeleton animations:
+The full pipeline: **video → pose CSV → skeleton JSON**
 
-1. **Ensure the dynalytix repo is available:**
-   ```bash
-   # If not already cloned:
-   git clone --branch fms-demo --depth 1 https://github.com/Jolieabadir/dynalytix.git ../dynalytix
+#### 1. Set up dynalytix (one-time)
 
-   # Or if already cloned, update:
-   cd ../dynalytix && git checkout fms-demo && git pull
-   ```
+```bash
+# Clone next to this repo
+git clone --branch fms-demo https://github.com/Jolieabadir/dynalytix.git ../dynalytix
 
-2. **List available CSVs:**
-   ```bash
-   python scripts/build_all_skeletons.py --list
-   ```
+# Or set the path explicitly
+export DYNALYTIX_PATH=/path/to/your/dynalytix
+```
 
-3. **Auto-generate samples (quick test):**
-   ```bash
-   python scripts/build_all_skeletons.py --auto
-   ```
-   This converts the first 5 CSVs to `sample_1.json` through `sample_5.json`.
+#### 2. Add videos
 
-4. **Interactive mode (for production):**
-   ```bash
-   python scripts/build_all_skeletons.py
-   ```
-   This prompts you to map each CSV to a lesson (good_squat, heel_rise, etc.) and specify frame ranges.
+Drop video files into `videos/` (this folder is gitignored):
+- `good_squat.mov` — clean squat with no compensations
+- `heel_rise.mov` — squat with heels lifting
+- `forward_lean.mov` — excessive torso forward lean
+- `lumbar_flexion.mov` — lower back rounding at depth
 
-5. **Convert a single CSV manually:**
-   ```bash
-   python scripts/csv_to_skeleton.py <input.csv> static/skeletons/<output.json> \
-       --label "Good Squat" \
-       --frames 45:120 \
-       --downsample 2 \
-       --mirror
-   ```
+#### 3. Build all skeletons
+
+```bash
+python scripts/build_all.py
+```
+
+This will:
+1. Extract pose data from videos → `data/pose_csvs/*.csv`
+2. Convert to skeleton JSON → `static/skeletons/*.json`
+3. Print orientation sanity check for each
+
+#### 4. Other commands
+
+```bash
+# Build single clip
+python scripts/build_all.py --only good_squat
+
+# Force re-extraction (even if CSV exists)
+python scripts/build_all.py --force
+
+# List configured clips and status
+python scripts/build_all.py --list
+
+# Convert existing CSV manually
+python scripts/csv_to_skeleton.py data/pose_csvs/good_squat.csv static/skeletons/good_squat.json \
+    --label "Good Squat" --frames 45:120 --downsample 2 --mirror
+```
+
+### What gets committed
+
+| Folder | Committed? | Contains |
+|--------|------------|----------|
+| `videos/` | No | Source video files (large binaries) |
+| `data/pose_csvs/` | Yes | Extracted pose data (small text) |
+| `static/skeletons/` | Yes | Player-ready JSON (small text) |
 
 ### CSV to JSON Converter Options
 
