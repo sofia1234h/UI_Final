@@ -11,7 +11,7 @@
         {% if question.type == "multi_select" %}
         <div class="row">
             <div class="col-md-4 mb-3">
-                <img src="/static/img/{{ question.image }}" class="img-fluid rounded" alt="Quiz image">
+                <img src="/static/img/{{ question.image }}" class="img-fluid rounded" alt="Quiz image" >
             </div>
             <div class="col-md-4 mb-3">
                 <div class="bg-light p-3 rounded h-100">
@@ -33,6 +33,8 @@
             </div>
         </div>
 
+
+        
         {% elif question.type == "single_select" %}
         <div class="row">
             <div class="col-md-6 mb-3">
