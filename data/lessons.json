@@ -28,11 +28,22 @@
     },
     {
       "id": 3,
-      "title": "Heel Position",
+      "title": "Squat Depth",
       "type": "comparison",
-      "good": { "image": "heel_good.png", "skeleton": "sample_1.json", "caption": "Heels flat on ground" },
-      "bad": { "image": "heel_bad.png", "skeleton": "sample_2.json", "caption": "Heels lifted off ground" },
-      "tip": "If the heels come up during the squat, the person probably can't bend their ankles far enough to stay flat. This is often from tight calves or stiff ankle joints. A quick fix to try: have them squat with their heels on a small plate or a rolled towel and see if the rest of the squat cleans up."
+      "good": {
+        "video": "good_squat.mov",
+        "csv": "good_squat.csv",
+        "caption": "Femur passes below horizontal at the bottom of the squat"
+      },
+      "bad": {
+        "video": "bad_squat.MOV",
+        "csv": "bad_squat.csv",
+        "skeleton_rotation": 90,
+        "caption": "Hips don't reach below knee level — partial squat"
+      },
+      "tip": "Watch the hip crease at the bottom of the squat. In a deep squat, the hip crease drops below the top of the knee — the femur passes parallel to the ground or lower. If they bottom out higher than that, it's a partial squat. Common causes are limited ankle or hip mobility, or simply not knowing how low to go.",
+      "hero_image": "squat_depth_angles.jpg",
+      "hero_caption": "Three squat depths: partial (above parallel), parallel (90°), and deep (below parallel). Compare against the 90° reference."
     },
     {
       "id": 4,
