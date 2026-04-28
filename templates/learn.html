@@ -57,7 +57,9 @@
                                     GOOD: {{ lesson.good.caption }}
                                 </div>
                                 <div class="card-body text-center">
-                                    {% if lesson.good.skeleton %}
+                                    {% if lesson.good.video and lesson.good.csv %}
+                                    <div class="video-skeleton-player" data-video="/static/videos/{{ lesson.good.video }}" data-csv="/static/csvs/{{ lesson.good.csv }}"{% if lesson.good.skeleton_rotation %} data-skeleton-rotation="{{ lesson.good.skeleton_rotation }}"{% endif %} data-variant="good"></div>
+                                    {% elif lesson.good.skeleton %}
                                     <div class="skeleton-player" data-src="/static/skeletons/{{ lesson.good.skeleton }}" data-variant="good"></div>
                                     {% else %}
                                     <img src="/static/img/{{ lesson.good.image }}" class="img-fluid" alt="{{ lesson.good.caption }}">
@@ -71,7 +73,9 @@
                                     COMPENSATION: {{ lesson.bad.caption }}
                                 </div>
                                 <div class="card-body text-center">
-                                    {% if lesson.bad.skeleton %}
+                                    {% if lesson.bad.video and lesson.bad.csv %}
+                                    <div class="video-skeleton-player" data-video="/static/videos/{{ lesson.bad.video }}" data-csv="/static/csvs/{{ lesson.bad.csv }}"{% if lesson.bad.skeleton_rotation %} data-skeleton-rotation="{{ lesson.bad.skeleton_rotation }}"{% endif %} data-variant="bad"></div>
+                                    {% elif lesson.bad.skeleton %}
                                     <div class="skeleton-player" data-src="/static/skeletons/{{ lesson.bad.skeleton }}" data-variant="bad"></div>
                                     {% else %}
                                     <img src="/static/img/{{ lesson.bad.image }}" class="img-fluid" alt="{{ lesson.bad.caption }}">
@@ -84,6 +88,16 @@
             </div>
             {% else %}
             {# Standard single-column layout #}
+            {% if lesson.hero_image %}
+            <div class="lesson-hero-image">
+                <img src="/static/images/reference/{{ lesson.hero_image }}"
+                     alt="{{ lesson.hero_caption or lesson.title }}"
+                     class="img-fluid">
+                {% if lesson.hero_caption %}
+                <p class="lesson-hero-caption">{{ lesson.hero_caption }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
             <div class="row mb-4">
                 <div class="col-md-6 mb-3">
                     <div class="card h-100">
@@ -91,7 +105,9 @@
                             GOOD: {{ lesson.good.caption }}
                         </div>
                         <div class="card-body text-center">
-                            {% if lesson.good.skeleton %}
+                            {% if lesson.good.video and lesson.good.csv %}
+                            <div class="video-skeleton-player" data-video="/static/videos/{{ lesson.good.video }}" data-csv="/static/csvs/{{ lesson.good.csv }}"{% if lesson.good.skeleton_rotation %} data-skeleton-rotation="{{ lesson.good.skeleton_rotation }}"{% endif %} data-variant="good"></div>
+                            {% elif lesson.good.skeleton %}
                             <div class="skeleton-player" data-src="/static/skeletons/{{ lesson.good.skeleton }}" data-variant="good"></div>
                             {% else %}
                             <img src="/static/img/{{ lesson.good.image }}" class="img-fluid" alt="{{ lesson.good.caption }}">
@@ -106,7 +122,9 @@
                             COMPENSATION: {{ lesson.bad.caption }}
                         </div>
                         <div class="card-body text-center">
-                            {% if lesson.bad.skeleton %}
+                            {% if lesson.bad.video and lesson.bad.csv %}
+                            <div class="video-skeleton-player" data-video="/static/videos/{{ lesson.bad.video }}" data-csv="/static/csvs/{{ lesson.bad.csv }}"{% if lesson.bad.skeleton_rotation %} data-skeleton-rotation="{{ lesson.bad.skeleton_rotation }}"{% endif %} data-variant="bad"></div>
+                            {% elif lesson.bad.skeleton %}
                             <div class="skeleton-player" data-src="/static/skeletons/{{ lesson.bad.skeleton }}" data-variant="bad"></div>
                             {% else %}
                             <img src="/static/img/{{ lesson.bad.image }}" class="img-fluid" alt="{{ lesson.bad.caption }}">
@@ -137,9 +155,16 @@
 {% endblock %}
 
 {% block scripts %}
-{% if lesson.type == "comparison" and (lesson.good.skeleton or lesson.bad.skeleton) %}
+{% if lesson.type == "comparison" %}
+<link rel="stylesheet" href="/static/css/skeleton.css">
+{% if (lesson.good.video and lesson.good.csv) or (lesson.bad.video and lesson.bad.csv) %}
+<script src="/static/js/video_skeleton_player.js"></script>
+<script>VideoSkeletonPlayer.initAll();</script>
+{% endif %}
+{% if lesson.good.skeleton or lesson.bad.skeleton %}
 <script src="/static/js/skeleton_player.js"></script>
 <script>SkeletonPlayer.initAll();</script>
+{% endif %}
 {% elif lesson.type == "build_a_squat" %}
 <link rel="stylesheet" href="/static/css/build_a_squat.css">
 <link rel="stylesheet" href="/static/css/skeleton.css">

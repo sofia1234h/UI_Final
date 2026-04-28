@@ -6,3 +6,6 @@ __pycache__/
 videos/*
 !videos/.gitkeep
 !videos/README.md
+
+# Static videos are tracked (lesson assets)
+# static/videos/ is NOT ignored
