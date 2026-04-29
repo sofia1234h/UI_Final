@@ -2,6 +2,10 @@ __pycache__/
 *.pyc
 .skeleton_cache/
 
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
 # Video files (large binaries, keep local only)
 videos/*
 !videos/.gitkeep
