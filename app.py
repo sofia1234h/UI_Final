@@ -1,4 +1,5 @@
 import json
+import os
 from datetime import datetime
 from pathlib import Path
 
@@ -36,11 +37,12 @@ def ensure_state():
 
 @app.after_request
 def log_state(response):
-    print(
-        f"[{request.method} {request.path}] session="
-        f"{dict(session)}",
-        flush=True,
-    )
+    if app.debug and os.environ.get("VERBOSE_LOG") == "1":
+        print(
+            f"[{request.method} {request.path}] session="
+            f"{dict(session)}",
+            flush=True,
+        )
     return response
 
 
