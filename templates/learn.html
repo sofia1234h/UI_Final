@@ -145,10 +145,6 @@
             </div>
             {% endif %}
 
-        {% elif lesson.type == "build_a_squat" %}
-            <p class="mb-4">{{ lesson.intro }}</p>
-            <div id="build-a-squat-container"
-                 data-lesson='{{ lesson | tojson }}'></div>
         {% endif %}
     </div>
 </div>
@@ -165,18 +161,6 @@
 <script src="/static/js/skeleton_player.js"></script>
 <script>SkeletonPlayer.initAll();</script>
 {% endif %}
-{% elif lesson.type == "build_a_squat" %}
-<link rel="stylesheet" href="/static/css/build_a_squat.css">
-<link rel="stylesheet" href="/static/css/skeleton.css">
-<script src="/static/js/skeleton_player.js"></script>
-<script src="/static/js/build_a_squat.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const container = document.getElementById('build-a-squat-container');
-        const lessonData = JSON.parse(container.dataset.lesson);
-        BuildASquat.init(container, lessonData);
-    });
-</script>
 {% endif %}
 {% endblock %}
 
