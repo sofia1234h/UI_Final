@@ -64,68 +64,6 @@
       "hero_image": "spine_neutral_vs_flexion.jpg",
       "hero_caption": "Red = lumbar flexion (butt wink). Green = neutral spine.",
       "two_column_layout": true
-    },
-    {
-      "id": 6,
-      "type": "build_a_squat",
-      "title": "Build a Squat: Cause and Effect",
-      "intro": "Move the sliders. Watch what happens to the squat.",
-      "inputs": [
-        {
-          "id": "ankle_mobility",
-          "label": "Ankle Mobility",
-          "options": [
-            { "value": "good", "label": "Full range" },
-            { "value": "limited", "label": "Limited" }
-          ]
-        },
-        {
-          "id": "hip_mobility",
-          "label": "Hip Mobility",
-          "options": [
-            { "value": "good", "label": "Full range" },
-            { "value": "limited", "label": "Limited" }
-          ]
-        },
-        {
-          "id": "core_control",
-          "label": "Core Control",
-          "options": [
-            { "value": "good", "label": "Strong" },
-            { "value": "poor", "label": "Weak" }
-          ]
-        }
-      ],
-      "outcomes": [
-        {
-          "when": { "ankle_mobility": "good", "hip_mobility": "good", "core_control": "good" },
-          "skeleton": "good_squat.json",
-          "score": 3,
-          "label": "Clean squat",
-          "explanation": "All systems working — torso stays upright, heels stay down, low back stays neutral."
-        },
-        {
-          "when": { "ankle_mobility": "limited" },
-          "skeleton": "heel_rise.json",
-          "score": 2,
-          "label": "Heel rise",
-          "explanation": "Limited ankle dorsiflexion forces the heels up to reach depth."
-        },
-        {
-          "when": { "hip_mobility": "limited" },
-          "skeleton": "forward_lean.json",
-          "score": 2,
-          "label": "Excessive forward lean",
-          "explanation": "Tight hips force the torso forward to counterbalance."
-        },
-        {
-          "when": { "core_control": "poor" },
-          "skeleton": "lumbar_flexion.json",
-          "score": 1,
-          "label": "Butt wink",
-          "explanation": "Without core stiffness, the pelvis tucks under at depth."
-        }
-      ]
     }
   ]
 }

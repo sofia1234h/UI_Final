@@ -160,9 +160,18 @@ def result():
         correct = bool(entry.get("correct"))
         if correct:
             score += 1
-        breakdown.append(
-            {"id": q["id"], "prompt": q["prompt"], "correct": correct}
-        )
+        breakdown.append({
+            "id": q["id"],
+            "prompt": q["prompt"],
+            "correct": correct,
+            "type": q["type"],
+            "user_answer": entry.get("answer"),
+            "correct_answer": q.get("correct"),
+            "explanation": q.get("explanation", ""),
+            "options": q.get("options", []),
+            "statements": q.get("statements", []),
+            "correct_zone": q.get("correct_zone", {}),
+        })
     return render_template(
         "result.html", score=score, total=len(questions), breakdown=breakdown
     )

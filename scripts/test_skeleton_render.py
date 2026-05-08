@@ -42,17 +42,29 @@ def test_learn_pages():
             all_passed = False
             continue
 
-        # For comparison lessons (3, 4, 5), check for either skeleton player or image
+        # For comparison lessons (3, 4, 5), check for either skeleton player, video-skeleton player, or image
         if n >= 3:
             has_skeleton = 'class="skeleton-player"' in html
+            has_video_skeleton = 'class="video-skeleton-player"' in html
             has_image = '<img src="/static/img/' in html
 
-            if not has_skeleton and not has_image:
-                print(f"  [FAIL] /learn/{n} - Missing both skeleton player and image")
+            if not has_skeleton and not has_video_skeleton and not has_image:
+                print(f"  [FAIL] /learn/{n} - Missing skeleton player, video-skeleton player, and image")
                 all_passed = False
                 continue
 
-            if has_skeleton:
+            if has_video_skeleton:
+                # Check that video skeleton player JS is included
+                if 'video_skeleton_player.js' not in html:
+                    print(f"  [FAIL] /learn/{n} - Video skeleton player div present but JS not included")
+                    all_passed = False
+                    continue
+                if 'VideoSkeletonPlayer.initAll()' not in html:
+                    print(f"  [FAIL] /learn/{n} - Video skeleton player JS missing init call")
+                    all_passed = False
+                    continue
+                print(f"  [PASS] /learn/{n} - Video skeleton player renders")
+            elif has_skeleton:
                 # Check that skeleton player JS is included
                 if 'skeleton_player.js' not in html:
                     print(f"  [FAIL] /learn/{n} - Skeleton player div present but JS not included")
@@ -134,6 +146,25 @@ def test_skeleton_json_files():
     return all_passed
 
 
+def test_removed_lessons():
+    """Test that removed lesson pages return 404."""
+    client = app.test_client()
+
+    print("\nTesting removed lessons...")
+    print("-" * 40)
+
+    response = client.get("/learn/6")
+
+    if response.status_code == 404:
+        print("  [PASS] /learn/6 - Returns 404 as expected")
+        print("-" * 40)
+        return True
+    else:
+        print(f"  [FAIL] /learn/6 - Expected 404, got {response.status_code}")
+        print("-" * 40)
+        return False
+
+
 def test_static_files():
     """Test that required static files exist."""
     print("\nTesting static files...")
@@ -173,6 +204,7 @@ def main():
     results = []
 
     results.append(("Learn Pages", test_learn_pages()))
+    results.append(("Removed Lessons", test_removed_lessons()))
     results.append(("Skeleton JSONs", test_skeleton_json_files()))
     results.append(("Static Files", test_static_files()))
 

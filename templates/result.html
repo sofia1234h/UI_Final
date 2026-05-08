@@ -16,25 +16,105 @@
     </p>
 </div>
 
+{% for item in breakdown %}
 <div class="card mt-4">
-    <div class="card-body">
-        <h5 class="mb-3">Results Breakdown</h5>
-        {% for item in breakdown %}
-        <div class="d-flex justify-content-between align-items-center py-2 {% if not loop.last %}border-bottom{% endif %}">
-            <span>
-                <strong>Question {{ item.id }}:</strong> {{ item.prompt|truncate(60) }}
-            </span>
+    <div class="card-body p-4">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+            <h5 class="mb-0"><strong>Question {{ item.id }}:</strong> {{ item.prompt }}</h5>
             {% if item.correct %}
-            <span class="badge-pass">PASS</span>
+            <span class="badge-pass ms-3">PASS</span>
             {% else %}
-            <span class="badge-fail">FAIL</span>
+            <span class="badge-fail ms-3">FAIL</span>
             {% endif %}
         </div>
-        {% endfor %}
+
+        <div class="mb-3">
+            <strong>Your Answer:</strong>
+            {% if item.type == "multi_select" %}
+                {% if item.user_answer %}
+                <ul class="mb-0 mt-1">
+                    {% for ans in item.user_answer %}
+                    <li>{{ ans }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <span class="text-muted">No answer selected</span>
+                {% endif %}
+
+            {% elif item.type == "single_select" %}
+                {% if item.user_answer %}
+                {{ item.user_answer }}
+                {% else %}
+                <span class="text-muted">No answer selected</span>
+                {% endif %}
+
+            {% elif item.type == "true_false_multi" %}
+                <div class="mt-2">
+                {% for stmt in item.statements %}
+                    <div class="d-flex align-items-center mb-1">
+                        <span class="me-2">{{ stmt.text }}</span>
+                        {% if item.user_answer and item.user_answer[loop.index0] is defined %}
+                            {% set user_tf = item.user_answer[loop.index0] %}
+                            {% set correct_tf = stmt.correct %}
+                            {% if user_tf == correct_tf %}
+                            <span class="badge bg-secondary">{{ "T" if user_tf else "F" }}</span>
+                            {% else %}
+                            <span class="badge bg-secondary">{{ "T" if user_tf else "F" }}</span>
+                            <span class="text-danger ms-1">(correct: {{ "T" if correct_tf else "F" }})</span>
+                            {% endif %}
+                        {% else %}
+                        <span class="text-muted">—</span>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                </div>
+
+            {% elif item.type == "spot_click" %}
+                {% if item.correct %}
+                Identified: {{ item.correct_zone.label }}
+                {% else %}
+                Did not identify the compensation
+                {% endif %}
+            {% endif %}
+        </div>
+
+        {% if not item.correct %}
+        <div class="mb-3">
+            <strong>Correct Answer:</strong>
+            {% if item.type == "multi_select" %}
+                <ul class="mb-0 mt-1">
+                    {% for ans in item.correct_answer %}
+                    <li>{{ ans }}</li>
+                    {% endfor %}
+                </ul>
+
+            {% elif item.type == "single_select" %}
+                {{ item.correct_answer }}
+
+            {% elif item.type == "true_false_multi" %}
+                <div class="mt-2">
+                {% for stmt in item.statements %}
+                    <div class="mb-1">
+                        {{ stmt.text }} — <strong>{{ "T" if stmt.correct else "F" }}</strong>
+                    </div>
+                {% endfor %}
+                </div>
+
+            {% elif item.type == "spot_click" %}
+                {{ item.correct_zone.label }}
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <div class="callout-blue">
+            {{ item.explanation }}
+        </div>
     </div>
 </div>
+{% endfor %}
 
-<div class="text-center mt-4">
+<div class="text-center mt-4 mb-4">
+    <a href="/learn/1" class="btn btn-squat-primary btn-lg me-2">Review Lessons</a>
     <a href="/" class="btn btn-squat-primary btn-lg">Restart</a>
 </div>
 {% endblock %}
