@@ -76,6 +76,30 @@
 
         {% elif question.type == "spot_click" %}
         <div id="spot-click-container"></div>
+
+        {% elif question.type == "connect_dots" %}
+        <div class="connect-dots-wrapper" style="max-width: {{ question.image_width }}px; margin: 0 auto; position: relative;">
+            <img src="/static/images/reference/{{ question.image }}"
+                 alt="Connect the dots"
+                 style="width: 100%; display: block; pointer-events: none;">
+            <svg id="connect-dots-svg"
+                 viewBox="0 0 {{ question.image_width }} {{ question.image_height }}"
+                 preserveAspectRatio="xMidYMid meet"
+                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: all;">
+                <line id="connect-line" x1="0" y1="0" x2="0" y2="0"
+                      stroke="#2E5E4E" stroke-width="6" stroke-linecap="round"
+                      style="display: none;"/>
+                {% for circle in question.circles %}
+                <g class="connect-dot" data-id="{{ circle.id }}" style="cursor: pointer;">
+                    <circle cx="{{ circle.x }}" cy="{{ circle.y }}" r="18"
+                            fill="rgba(46, 94, 78, 0.85)" stroke="white" stroke-width="3"/>
+                    <text x="{{ circle.x }}" y="{{ circle.y + 36 }}"
+                          text-anchor="middle" font-size="16" font-weight="bold"
+                          fill="white" stroke="black" stroke-width="0.5">{{ circle.label }}</text>
+                </g>
+                {% endfor %}
+            </svg>
+        </div>
         {% endif %}
 
         <div class="text-center mt-4">
@@ -95,6 +119,46 @@
 $(document).ready(function() {
     const question = {{ question|tojson }};
     CompensationClick.init(document.getElementById('spot-click-container'), question);
+});
+</script>
+{% elif question.type == "connect_dots" %}
+<script>
+$(document).ready(function() {
+    window.connectDotsSelected = [];
+    const circles = {{ question.circles|tojson }};
+    const line = document.getElementById('connect-line');
+
+    $('.connect-dot').on('click', function() {
+        const id = $(this).data('id');
+        const circleData = circles.find(c => c.id === id);
+
+        // If clicking already selected circle, ignore
+        if (window.connectDotsSelected.includes(id)) {
+            return;
+        }
+
+        // If we already have 2 selected, reset and start fresh
+        if (window.connectDotsSelected.length >= 2) {
+            window.connectDotsSelected = [];
+            $('.connect-dot circle').attr('r', 18).attr('fill', 'rgba(46, 94, 78, 0.85)');
+            line.style.display = 'none';
+        }
+
+        // Select this circle
+        window.connectDotsSelected.push(id);
+        $(this).find('circle').attr('r', 22).attr('fill', '#2E5E4E');
+
+        // If we now have 2, draw the line
+        if (window.connectDotsSelected.length === 2) {
+            const c1 = circles.find(c => c.id === window.connectDotsSelected[0]);
+            const c2 = circles.find(c => c.id === window.connectDotsSelected[1]);
+            line.setAttribute('x1', c1.x);
+            line.setAttribute('y1', c1.y);
+            line.setAttribute('x2', c2.x);
+            line.setAttribute('y2', c2.y);
+            line.style.display = 'block';
+        }
+    });
 });
 </script>
 {% endif %}
@@ -132,6 +196,13 @@ $('#submit-btn').on('click', function() {
             return;
         }
         answer = answerData;
+    } else if (type === 'connect_dots') {
+        const selected = window.connectDotsSelected || [];
+        if (selected.length !== 2) {
+            alert('Please click two joints to connect them.');
+            return;
+        }
+        answer = selected;
     }
 
     if (answer === undefined || (Array.isArray(answer) && answer.length === 0)) {

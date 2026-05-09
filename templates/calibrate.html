@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block title %}Calibrate - SquatCheck{% endblock %}
+
+{% block content %}
+<h2>Calibrate connect_dots circles for question 5</h2>
+<p class="text-muted">
+  Drag any circle to its correct joint. The JSON below updates live.<br>
+  When done, click <strong>Copy JSON</strong> and paste into <code>data/quiz.json</code> question id 5's <code>circles</code> array.
+</p>
+
+<div id="calibrate-wrapper" style="position: relative; max-width: 750px; margin: 0 auto;">
+  <img
+    id="calibrate-img"
+    src="/static/images/reference/{{ image }}"
+    alt="Torso-Tibia reference"
+    style="width: 100%; display: block; pointer-events: none;"
+  >
+  <svg
+    id="calibrate-svg"
+    viewBox="0 0 750 1000"
+    preserveAspectRatio="xMidYMid meet"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: all;"
+  >
+    {% for c in circles %}
+    <g class="cal-handle" data-id="{{ c.id }}" data-label="{{ c.label }}" transform="translate({{ c.x }}, {{ c.y }})" style="cursor: grab;">
+      <circle r="22" fill="rgba(46,94,78,0.85)" stroke="white" stroke-width="3"/>
+      <text dy="40" text-anchor="middle" font-size="18" font-weight="bold" fill="white" stroke="black" stroke-width="0.5">{{ c.label }}</text>
+    </g>
+    {% endfor %}
+  </svg>
+</div>
+
+<div class="mt-4">
+  <button id="reset-btn" class="btn btn-secondary me-2">Reset</button>
+  <button id="copy-btn" class="btn btn-primary">Copy JSON</button>
+  <span id="status-msg" class="ms-3 text-muted"></span>
+</div>
+
+<h5 class="mt-4">Current circles JSON:</h5>
+<pre id="calibrate-output" style="background: #f5f5f5; padding: 1rem; border-radius: 4px; min-height: 100px;"></pre>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function() {
+  const VIEWBOX_WIDTH = 750;
+  const VIEWBOX_HEIGHT = 1000;
+
+  // Store original positions from server for reset
+  const ORIGINAL_CIRCLES = {{ circles | tojson }};
+
+  // Current state (mutable)
+  let circleState = ORIGINAL_CIRCLES.map(c => ({ ...c }));
+
+  const svg = document.getElementById("calibrate-svg");
+  const output = document.getElementById("calibrate-output");
+  const statusMsg = document.getElementById("status-msg");
+  const handles = document.querySelectorAll(".cal-handle");
+
+  // Dragging state
+  let dragging = null;
+  let dragStartPointer = { x: 0, y: 0 };
+  let dragStartCircle = { x: 0, y: 0 };
+
+  function updateOutput() {
+    const formatted = circleState.map(c => ({
+      id: c.id,
+      label: c.label,
+      x: c.x,
+      y: c.y
+    }));
+    output.textContent = JSON.stringify(formatted, null, 2);
+  }
+
+  function getCircleById(id) {
+    return circleState.find(c => c.id === id);
+  }
+
+  function clientToSVG(clientX, clientY) {
+    const rect = svg.getBoundingClientRect();
+    const x = (clientX - rect.left) * VIEWBOX_WIDTH / rect.width;
+    const y = (clientY - rect.top) * VIEWBOX_HEIGHT / rect.height;
+    return { x, y };
+  }
+
+  function clamp(val, min, max) {
+    return Math.max(min, Math.min(max, val));
+  }
+
+  function updateHandlePosition(handle, x, y) {
+    handle.setAttribute("transform", `translate(${x}, ${y})`);
+  }
+
+  handles.forEach(handle => {
+    handle.addEventListener("pointerdown", function(e) {
+      e.preventDefault();
+      handle.setPointerCapture(e.pointerId);
+      handle.style.cursor = "grabbing";
+
+      const id = handle.dataset.id;
+      const circle = getCircleById(id);
+      dragging = { handle, id };
+      dragStartPointer = clientToSVG(e.clientX, e.clientY);
+      dragStartCircle = { x: circle.x, y: circle.y };
+
+      statusMsg.textContent = `Dragging ${circle.label}...`;
+    });
+
+    handle.addEventListener("pointermove", function(e) {
+      if (!dragging || dragging.handle !== handle) return;
+
+      const currentPointer = clientToSVG(e.clientX, e.clientY);
+      const dx = currentPointer.x - dragStartPointer.x;
+      const dy = currentPointer.y - dragStartPointer.y;
+
+      let newX = Math.round(clamp(dragStartCircle.x + dx, 0, VIEWBOX_WIDTH));
+      let newY = Math.round(clamp(dragStartCircle.y + dy, 0, VIEWBOX_HEIGHT));
+
+      const circle = getCircleById(dragging.id);
+      circle.x = newX;
+      circle.y = newY;
+
+      updateHandlePosition(handle, newX, newY);
+    });
+
+    handle.addEventListener("pointerup", function(e) {
+      if (!dragging || dragging.handle !== handle) return;
+
+      handle.releasePointerCapture(e.pointerId);
+      handle.style.cursor = "grab";
+
+      const circle = getCircleById(dragging.id);
+      statusMsg.textContent = `Placed ${circle.label} at (${circle.x}, ${circle.y})`;
+
+      dragging = null;
+      updateOutput();
+    });
+
+    handle.addEventListener("pointercancel", function(e) {
+      if (dragging && dragging.handle === handle) {
+        handle.releasePointerCapture(e.pointerId);
+        handle.style.cursor = "grab";
+        dragging = null;
+        updateOutput();
+      }
+    });
+  });
+
+  document.getElementById("reset-btn").addEventListener("click", function() {
+    circleState = ORIGINAL_CIRCLES.map(c => ({ ...c }));
+    handles.forEach(handle => {
+      const id = handle.dataset.id;
+      const circle = getCircleById(id);
+      updateHandlePosition(handle, circle.x, circle.y);
+    });
+    updateOutput();
+    statusMsg.textContent = "Reset to original positions";
+  });
+
+  document.getElementById("copy-btn").addEventListener("click", function() {
+    const formatted = circleState.map(c => ({
+      id: c.id,
+      label: c.label,
+      x: c.x,
+      y: c.y
+    }));
+    const json = JSON.stringify(formatted, null, 2);
+    navigator.clipboard.writeText(json).then(function() {
+      statusMsg.textContent = "Copied to clipboard!";
+    }).catch(function(err) {
+      statusMsg.textContent = "Copy failed - check console";
+      console.error("Copy failed:", err);
+    });
+  });
+
+  // Initialize output
+  updateOutput();
+  statusMsg.textContent = "Drag circles to position them";
+})();
+</script>
+{% endblock %}

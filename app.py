@@ -108,6 +108,9 @@ def check_answer(question, submitted):
     if qtype == "spot_click":
         # Frontend already computed correctness; backend just stores it
         return bool(submitted.get("correct")) if isinstance(submitted, dict) else False
+    if qtype == "connect_dots":
+        # Order-independent comparison of two circle ids
+        return set(submitted or []) == set(question["correct"])
     return False
 
 
@@ -146,6 +149,24 @@ def log_interaction():
     })
     session.modified = True
     return jsonify({"ok": True})
+
+
+@app.route("/calibrate")
+def calibrate():
+    # Dev-only route for tuning connect_dots circle positions
+    if not app.debug and os.environ.get("ALLOW_CALIBRATE") != "1":
+        abort(404)
+    questions = load_json("quiz.json")["questions"]
+    q5 = next((q for q in questions if q["id"] == 5), None)
+    if q5 is None:
+        abort(404)
+    return render_template(
+        "calibrate.html",
+        image=q5.get("image"),
+        image_width=q5.get("image_width", 750),
+        image_height=q5.get("image_height", 1000),
+        circles=q5.get("circles", []),
+    )
 
 
 @app.route("/result")

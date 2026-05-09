@@ -47,6 +47,24 @@
         {"x": 0.6, "y": 0.29, "label": "knees", "hint": "Knees are tracking OK. Look lower."}
       ],
       "explanation": "The heels are lifting off the ground — that's a heel rise, indicating limited ankle mobility."
+    },
+    {
+      "id": 5,
+      "type": "connect_dots",
+      "prompt": "Draw the line that shows knee-over-foot alignment. Click two joints to connect them.",
+      "image": "TORSO_TIBIA.jpg",
+      "image_width": 750,
+      "image_height": 1000,
+      "circles": [
+        { "id": "head", "label": "Head", "x": 202, "y": 339 },
+        { "id": "shoulder", "label": "Shoulder", "x": 292, "y": 436 },
+        { "id": "elbow", "label": "Elbow", "x": 88, "y": 493 },
+        { "id": "hip", "label": "Hip", "x": 634, "y": 549 },
+        { "id": "knee", "label": "Knee", "x": 359, "y": 558 },
+        { "id": "ankle", "label": "Ankle", "x": 521, "y": 729 }
+      ],
+      "correct": ["knee", "ankle"],
+      "explanation": "The tibia line runs from knee to ankle — this is the 'knee over foot' alignment. In a good squat, the knee tracks over the foot. If the tibia angle is too far forward or too vertical relative to the torso, it can indicate mobility limitations or compensation patterns."
     }
   ]
 }
