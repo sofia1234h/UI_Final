@@ -25,33 +25,28 @@
       "statements": [
         { "text": "If heels lift, it means the knees are weak.", "correct": false },
         { "text": "Lumbar flexion means the lower back rounds at the bottom of the squat.", "correct": true },
-        { "text": "Torso-tibia alignment means comparing the angle of the torso to the angle of the shin.", "correct": true },
-        { "text": "Knee valgus (knees caving in) is best assessed from the side view.", "correct": false }
+        { "text": "Torso-tibia alignment means comparing the angle of the torso to the angle of the shin.", "correct": true }
       ],
-      "explanation": "Heel rise is an ankle mobility issue, not a knee strength issue. Lumbar flexion and torso-tibia alignment are defined exactly as stated. Knee valgus is a front-view check — you can't see the knees tracking inward from the side."
+      "explanation": "Heel rise is an ankle mobility issue, not a knee strength issue. Lumbar flexion and torso-tibia alignment are defined exactly as stated."
     },
     {
       "id": 4,
-      "type": "spot_click",
+      "type": "single_select",
       "prompt": "Where is the compensation in this squat?",
-      "skeleton": "sample_1.json",
-      "frame_index": 10,
-      "correct_zone": {
-        "x": 0.6,
-        "y": 0.13,
-        "radius": 0.1,
-        "label": "heels lifting"
-      },
-      "distractor_zones": [
-        {"x": 0.6, "y": 0.65, "label": "torso", "hint": "Torso looks fine here — check the feet."},
-        {"x": 0.6, "y": 0.29, "label": "knees", "hint": "Knees are tracking OK. Look lower."}
+      "skeleton": "bad_squat.json",
+      "options": [
+        "Excessive Forward Lean",
+        "Heel Rise",
+        "Lumbar Flexion (Butt Wink)",
+        "Partial Squat — hip crease does not drop below the knee"
       ],
-      "explanation": "The heels are lifting off the ground — that's a heel rise, indicating limited ankle mobility."
+      "correct": "Partial Squat — hip crease does not drop below the knee",
+      "explanation": "This is a partial squat — the hip crease never drops below the top of the knee, so the lifter doesn't reach proper depth. Squat depth is measured by where the hip crease sits relative to the knee at the bottom of the rep, regardless of how the torso, heels, or back look."
     },
     {
       "id": 5,
       "type": "connect_dots",
-      "prompt": "Draw the line that shows knee-over-foot alignment. Click two joints to connect them.",
+      "prompt": "Draw the line where the compensation happens. Click two joints to connect them.",
       "image": "TORSO_TIBIA.jpg",
       "image_width": 750,
       "image_height": 1000,
@@ -63,8 +58,8 @@
         { "id": "knee", "label": "Knee", "x": 359, "y": 558 },
         { "id": "ankle", "label": "Ankle", "x": 521, "y": 729 }
       ],
-      "correct": ["knee", "ankle"],
-      "explanation": "The tibia line runs from knee to ankle — this is the 'knee over foot' alignment. In a good squat, the knee tracks over the foot. If the tibia angle is too far forward or too vertical relative to the torso, it can indicate mobility limitations or compensation patterns."
+      "correct": ["shoulder", "hip"],
+      "explanation": "The compensation here is excessive forward lean — measured along the torso, from the shoulder down to the hip. When this segment tips far away from vertical, the lifter is compensating for limited hip or ankle mobility by sending the chest forward. In this squat, the torso is nearly horizontal, an extreme example of the pattern."
     }
   ]
 }

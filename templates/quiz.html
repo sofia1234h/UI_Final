@@ -37,12 +37,51 @@
         
         {% elif question.type == "single_select" %}
         <div class="row">
+            {% if question.video and question.csv %}
+            <div class="col-md-6 mb-3">
+                <div class="video-skeleton-player"
+                     data-video="/static/videos/{{ question.video }}"
+                     data-csv="/static/csvs/{{ question.csv }}"
+                     {% if question.skeleton_rotation %}data-skeleton-rotation="{{ question.skeleton_rotation }}"{% endif %}
+                     data-variant="bad"></div>
+            </div>
+            {% elif question.skeleton %}
+            <div class="col-md-6 mb-3">
+                <div class="quiz-skeleton-wrapper">
+                    <div class="skeleton-player"
+                         data-src="/static/skeletons/{{ question.skeleton }}"
+                         data-variant="bad"></div>
+                </div>
+                <style>
+                    .quiz-skeleton-wrapper .skeleton-player {
+                        width: 200px;
+                        height: 250px;
+                    }
+                    .quiz-skeleton-wrapper .skeleton-svg {
+                        transform: rotate(90deg);
+                        transform-origin: center center;
+                        width: 100% !important;
+                        height: 100% !important;
+                    }
+                    .quiz-skeleton-wrapper .skeleton-controls {
+                        display: none;
+                    }
+                    .quiz-skeleton-wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 300px;
+                    }
+                </style>
+            </div>
+            {% elif question.notes %}
             <div class="col-md-6 mb-3">
                 <div class="bg-light p-4 rounded border-start border-4" style="border-color: #6c757d !important;">
                     <strong class="text-muted d-block mb-2">Observer notes:</strong>
                     <p class="fst-italic mb-0">"{{ question.notes }}"</p>
                 </div>
             </div>
+            {% endif %}
             <div class="col-md-6 mb-3">
                 {% for option in question.options %}
                 <div class="form-check mb-3">
@@ -121,6 +160,14 @@ $(document).ready(function() {
     CompensationClick.init(document.getElementById('spot-click-container'), question);
 });
 </script>
+{% elif question.type == "single_select" and question.video and question.csv %}
+<link rel="stylesheet" href="/static/css/skeleton.css">
+<script src="/static/js/video_skeleton_player.js"></script>
+<script>VideoSkeletonPlayer.initAll();</script>
+{% elif question.type == "single_select" and question.skeleton %}
+<link rel="stylesheet" href="/static/css/skeleton.css">
+<script src="/static/js/skeleton_player.js"></script>
+<script>SkeletonPlayer.initAll();</script>
 {% elif question.type == "connect_dots" %}
 <script>
 $(document).ready(function() {
