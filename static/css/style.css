@@ -149,3 +149,45 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Container for the white "card" look */
+.content-wrapper {
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 60px; /* This creates that "bigger" white space you like */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 70vh; /* Keeps the card tall even with little text */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Push the navigation to the very bottom of the white card */
+.lesson-nav-footer {
+    margin-top: auto; /* Pushes nav to bottom */
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee; /* Optional: adds a subtle line above arrows */
+}
+
+/* Standardize the nav links/arrows */
+.nav-arrow {
+    text-decoration: none;
+    color: #2E5E4E;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s;
+}
+
+.nav-arrow:hover {
+    transform: translateX(5px); /* Small animation for the "Next" arrow */
+}
+
+.nav-arrow-back:hover {
+    transform: translateX(-5px); /* Small animation for the "Back" arrow */
+}

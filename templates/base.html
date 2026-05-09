@@ -2,30 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}SquatCheck{% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="/static/css/style.css">
+    
+    <style>
+        body {
+            background-color: #F4F4F2 !important;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-bar {
+            background: #2E5E4E;
+            padding: 14px 0;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1100px; /* Wider header to match content */
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .brand-link {
+            text-decoration: none;
+            color: white !important;
+            font-size: 24px;
+            font-family: Georgia, serif;
+        }
+
+        .home-nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 6px 16px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+        }
+
+        /* NEW: Wider and more flexible container */
+        .content-wrapper {
+            background: #FFFFFF;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            
+            width: 90%;
+            max-width: 1100px; /* Wider for better image/text side-by-side */
+            margin: 40px auto 100px auto; /* Extra bottom margin for sticky nav */
+            padding: 80px; /* Extra large white space */
+            
+            min-height: 600px; /* Still keeps a good size on empty pages */
+            position: relative;
+        }
+
+        .page-content {
+            width: 100%;
+        }
+
+        /* NEW: Sticky Footer Navigation */
+        .lesson-nav-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(244, 244, 242, 0.9); /* Matches the gray background */
+            backdrop-filter: blur(10px); /* Modern blur effect */
+            padding: 20px 0;
+            z-index: 999;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        /* Consistent Arrow Buttons */
+        .nav-btn {
+            background: #2E5E4E;
+            color: white !important;
+            padding: 10px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: #1f4035;
+            transform: translateY(-2px);
+        }
+
+        /* Adjustments for images inside the wider layout */
+        .img-fluid {
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <header class="header-bar">
-        <span class="title-serif" style="font-size: 24px;">SquatCheck</span>
+        <div class="header-container">
+            <a href="/" class="brand-link">SquatCheck</a>
+            <nav>
+                <a href="/" class="home-nav-link">Home</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="container py-4" style="max-width: 900px;">
-        {% block content %}{% endblock %}
+    <main>
+        <div class="content-wrapper">
+            <div class="page-content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
     </main>
 
-    <footer class="container py-3" style="max-width: 900px;">
-        <div class="d-flex justify-content-between">
+    <footer class="lesson-nav-footer">
+        <div class="nav-container">
             {% block nav %}{% endblock %}
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/static/js/app.js"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "type": "multi_select",
-      "prompt": "Watch this side-view squat. Do you see any compensation patterns? Select all that apply.",
+      "prompt": "Look at this side-view squat. Do you see any compensation patterns? Select all that apply.",
       "image": "quiz_q1.png",
       "options": ["Heel Rise", "Excessive Forward Lean", "Lumbar Flexion", "No compensations"],
       "correct": ["Excessive Forward Lean", "Lumbar Flexion"],
