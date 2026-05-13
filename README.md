@@ -1,4 +1,8 @@
 # UI_Final
+# Team Members
+
+- Sofia Hirao — sofia1234
+- Name — GitHub username
 
 SquatCheck HW10 Flask prototype - a learning module for identifying squat compensation patterns.
 
